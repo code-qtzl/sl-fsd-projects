@@ -1,0 +1,258 @@
+/* Navigation Component CSS Module */
+
+.navigation {
+	position: relative;
+}
+
+/* Mobile menu toggle button */
+.menuToggle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	padding: var(--spacing-xs);
+	background: none;
+	border: none;
+	cursor: pointer;
+	border-radius: var(--border-radius-md);
+	transition: all var(--transition-fast);
+}
+
+.menuToggle:hover {
+	background-color: var(--color-bg-secondary);
+}
+
+.menuToggle:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* Hamburger lines */
+.menuLine {
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: var(--color-content-secondary);
+	transition: all var(--transition-normal);
+	margin: 2px 0;
+}
+
+.menuLine:first-child {
+	transform-origin: center;
+}
+
+.menuLine:nth-child(2) {
+	opacity: 1;
+}
+
+.menuLine:last-child {
+	transform-origin: center;
+}
+
+/* Animated hamburger when menu is open */
+.menuToggle[aria-expanded='true'] .menuLine:first-child {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuToggle[aria-expanded='true'] .menuLine:nth-child(2) {
+	opacity: 0;
+}
+
+.menuToggle[aria-expanded='true'] .menuLine:last-child {
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Navigation menu */
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Mobile menu styles */
+.mobileMenu {
+	position: absolute;
+	top: calc(100% + var(--spacing-sm));
+	right: 0;
+	background-color: var(--color-bg-primary);
+	border: 1px solid var(--color-border-light);
+	border-radius: var(--border-radius-xl);
+	box-shadow: var(--shadow-lg);
+	padding: var(--spacing-sm) 0;
+	min-width: 200px;
+	z-index: var(--z-dropdown);
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-10px);
+	transition: all var(--transition-fast);
+}
+
+.mobileMenu.open {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+/* Desktop menu styles */
+.desktopMenu {
+	display: none;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--spacing-sm);
+}
+
+/* Navigation items */
+.navItem {
+	margin: 0;
+}
+
+.navLink {
+	display: block;
+	padding: var(--spacing-sm) var(--spacing-md);
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+	color: var(--color-content-secondary);
+	text-decoration: none;
+	border-radius: var(--border-radius-lg);
+	transition: all var(--transition-fast);
+	position: relative;
+}
+
+.navLink:hover {
+	color: var(--color-primary);
+	background-color: var(--color-bg-secondary);
+}
+
+.navLink:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* Active link styles */
+.navLink.active {
+	color: var(--color-primary);
+	background-color: rgba(254, 196, 0, 0.1);
+}
+
+.navLink.active::after {
+	content: '';
+	position: absolute;
+	bottom: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 4px;
+	background-color: var(--color-primary);
+	border-radius: 50%;
+}
+
+/* Button-style navigation link (Book a Ride) */
+.navButton {
+	background-color: var(--color-primary);
+	color: var(--color-content-primary);
+	font-weight: var(--font-weight-semibold);
+	padding: var(--spacing-sm) var(--spacing-lg);
+	border-radius: var(--border-radius-full);
+	transition: all var(--transition-fast);
+}
+
+.navButton:hover {
+	background-color: var(--color-secondary);
+	color: var(--color-bg-primary);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-md);
+}
+
+.navButton.active {
+	background-color: var(--color-secondary);
+	color: var(--color-bg-primary);
+}
+
+.navButton.active::after {
+	display: none;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+	.menuToggle {
+		display: none;
+	}
+
+	.mobileMenu {
+		display: none;
+	}
+
+	.desktopMenu {
+		display: flex;
+	}
+
+	.navButton {
+		margin-left: var(--spacing-sm);
+		padding: var(--spacing-sm) var(--spacing-xl);
+	}
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.navLink {
+		border: 1px solid transparent;
+	}
+
+	.navLink:hover,
+	.navLink.active {
+		border-color: currentColor;
+	}
+
+	.menuLine {
+		background-color: var(--color-content-primary);
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	.menuLine,
+	.mobileMenu,
+	.navLink,
+	.navButton {
+		transition: none;
+	}
+
+	.menuToggle[aria-expanded='true'] .menuLine {
+		transition: none;
+	}
+}
+
+/* Focus management for mobile menu */
+.mobileMenu:focus-within {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+/* Ensure menu items are accessible via keyboard */
+.navLink:focus {
+	z-index: 1;
+}
+
+/* Mobile menu backdrop for better UX */
+@media (max-width: 767px) {
+	.menuBackdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.1);
+		z-index: calc(var(--z-dropdown) - 1);
+		opacity: 0;
+		visibility: hidden;
+		transition: all var(--transition-fast);
+	}
+
+	.menuBackdrop.open {
+		opacity: 1;
+		visibility: visible;
+	}
+}

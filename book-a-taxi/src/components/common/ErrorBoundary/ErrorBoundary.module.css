@@ -1,0 +1,181 @@
+/* Error Boundary Component CSS Module */
+
+.errorBoundary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 400px;
+	padding: var(--spacing-xl);
+	background-color: var(--color-bg-primary);
+}
+
+.errorContainer {
+	max-width: 600px;
+	text-align: center;
+	padding: var(--spacing-2xl);
+	background-color: var(--color-bg-secondary);
+	border-radius: var(--border-radius-xl);
+	box-shadow: var(--shadow-lg);
+}
+
+.errorIcon {
+	font-size: var(--font-size-5xl);
+	margin-bottom: var(--spacing-lg);
+	display: block;
+}
+
+.errorTitle {
+	font-size: var(--font-size-3xl);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-error);
+	margin-bottom: var(--spacing-md);
+}
+
+.errorMessage {
+	font-size: var(--font-size-lg);
+	color: var(--color-content-secondary);
+	line-height: var(--line-height-relaxed);
+	margin-bottom: var(--spacing-xl);
+}
+
+.errorDetails {
+	text-align: left;
+	margin: var(--spacing-xl) 0;
+	padding: var(--spacing-lg);
+	background-color: var(--color-bg-tertiary);
+	border-radius: var(--border-radius-lg);
+	border: 1px solid var(--color-border-light);
+}
+
+.errorSummary {
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-content-primary);
+	cursor: pointer;
+	padding: var(--spacing-sm);
+	border-radius: var(--border-radius-md);
+	transition: background-color var(--transition-fast);
+}
+
+.errorSummary:hover {
+	background-color: var(--color-bg-primary);
+}
+
+.errorStack {
+	margin-top: var(--spacing-md);
+	padding: var(--spacing-md);
+	background-color: var(--color-bg-primary);
+	border-radius: var(--border-radius-md);
+	font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+	font-size: var(--font-size-sm);
+	color: var(--color-error);
+	overflow-x: auto;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.errorActions {
+	display: flex;
+	gap: var(--spacing-md);
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.retryButton,
+.reloadButton {
+	padding: var(--spacing-md) var(--spacing-xl);
+	border: none;
+	border-radius: var(--border-radius-lg);
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-semibold);
+	cursor: pointer;
+	transition: all var(--transition-fast);
+	min-height: 48px;
+	min-width: 120px;
+}
+
+.retryButton {
+	background-color: var(--color-primary);
+	color: var(--color-content-primary);
+}
+
+.retryButton:hover {
+	background-color: var(--color-secondary);
+	color: var(--color-bg-primary);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-md);
+}
+
+.reloadButton {
+	background-color: var(--color-bg-primary);
+	color: var(--color-content-secondary);
+	border: 2px solid var(--color-border-medium);
+}
+
+.reloadButton:hover {
+	background-color: var(--color-bg-tertiary);
+	color: var(--color-content-primary);
+	border-color: var(--color-border-dark);
+	transform: translateY(-1px);
+	box-shadow: var(--shadow-md);
+}
+
+.retryButton:focus-visible,
+.reloadButton:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.errorBoundary {
+		padding: var(--spacing-lg);
+		min-height: 300px;
+	}
+
+	.errorContainer {
+		padding: var(--spacing-xl);
+	}
+
+	.errorTitle {
+		font-size: var(--font-size-2xl);
+	}
+
+	.errorMessage {
+		font-size: var(--font-size-base);
+	}
+
+	.errorActions {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.retryButton,
+	.reloadButton {
+		width: 100%;
+		max-width: 200px;
+	}
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.errorContainer {
+		border: 2px solid var(--color-content-primary);
+	}
+
+	.retryButton,
+	.reloadButton {
+		border: 2px solid currentColor;
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	.retryButton:hover,
+	.reloadButton:hover {
+		transform: none;
+	}
+
+	.errorSummary {
+		transition: none;
+	}
+}

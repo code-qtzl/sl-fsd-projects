@@ -1,0 +1,206 @@
+/* Lazy Image Component CSS Module */
+
+.container {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	background-color: var(--color-bg-secondary);
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity var(--transition-normal);
+	opacity: 0;
+}
+
+.image.loaded {
+	opacity: 1;
+}
+
+.image.error {
+	display: none;
+}
+
+.placeholder {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(10px);
+	transform: scale(1.1);
+	transition: opacity var(--transition-normal);
+}
+
+.loaded .placeholder {
+	opacity: 0;
+}
+
+.skeleton {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		var(--color-bg-secondary) 25%,
+		var(--color-bg-tertiary) 50%,
+		var(--color-bg-secondary) 75%
+	);
+	background-size: 200% 100%;
+	animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200% 0;
+	}
+	100% {
+		background-position: 200% 0;
+	}
+}
+
+.loadingOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: opacity var(--transition-normal);
+}
+
+.loaded .loadingOverlay {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.loadingSpinner {
+	width: 24px;
+	height: 24px;
+	border: 2px solid var(--color-border-light);
+	border-top: 2px solid var(--color-primary);
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.errorContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 200px;
+	background-color: var(--color-bg-tertiary);
+	color: var(--color-content-tertiary);
+	text-align: center;
+	padding: var(--spacing-lg);
+}
+
+.errorIcon {
+	font-size: var(--font-size-4xl);
+	margin-bottom: var(--spacing-sm);
+	opacity: 0.5;
+}
+
+.errorText {
+	font-size: var(--font-size-sm);
+	font-weight: var(--font-weight-medium);
+}
+
+/* Aspect ratio utilities */
+.container.aspectSquare {
+	aspect-ratio: 1 / 1;
+}
+
+.container.aspectVideo {
+	aspect-ratio: 16 / 9;
+}
+
+.container.aspectPortrait {
+	aspect-ratio: 3 / 4;
+}
+
+.container.aspectLandscape {
+	aspect-ratio: 4 / 3;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+	.errorContainer {
+		min-height: 150px;
+		padding: var(--spacing-md);
+	}
+
+	.errorIcon {
+		font-size: var(--font-size-3xl);
+	}
+
+	.errorText {
+		font-size: var(--font-size-xs);
+	}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+	.image,
+	.placeholder,
+	.loadingOverlay {
+		transition: none;
+	}
+
+	.skeleton {
+		animation: none;
+		background: var(--color-bg-tertiary);
+	}
+
+	.loadingSpinner {
+		animation: none;
+		border-top-color: transparent;
+		border-right-color: var(--color-primary);
+	}
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+	.errorContainer {
+		border: 2px solid var(--color-content-primary);
+	}
+
+	.skeleton {
+		background: repeating-linear-gradient(
+			90deg,
+			var(--color-bg-secondary) 0px,
+			var(--color-bg-tertiary) 20px,
+			var(--color-bg-secondary) 40px
+		);
+	}
+}
+
+/* Print styles */
+@media print {
+	.loadingOverlay,
+	.skeleton,
+	.placeholder {
+		display: none;
+	}
+
+	.image {
+		opacity: 1;
+	}
+}
