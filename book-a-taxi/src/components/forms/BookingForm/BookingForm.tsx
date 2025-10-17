@@ -422,49 +422,56 @@ const BookingForm: React.FC = () => {
 				<h3 className={styles.sectionTitle}>
 					When do you need a ride?
 				</h3>
-				<DateTimeSelection
-					date={formData.date}
-					time={formData.time}
-					passengers={formData.passengers}
-					onDateChange={(date) =>
-						setFormData((prev) => ({ ...prev, date }))
-					}
-					onTimeChange={(time) =>
-						setFormData((prev) => ({ ...prev, time }))
-					}
-					onPassengersChange={(passengers) =>
-						setFormData((prev) => ({ ...prev, passengers }))
-					}
-					dateError={errors.date?.message}
-					timeError={errors.time?.message}
-					passengersError={errors.passengers?.message}
-				/>
+				<div className={styles.formGridThreeCol}>
+					<DateTimeSelection
+						date={formData.date}
+						time={formData.time}
+						passengers={formData.passengers}
+						onDateChange={(date) =>
+							setFormData((prev) => ({ ...prev, date }))
+						}
+						onTimeChange={(time) =>
+							setFormData((prev) => ({ ...prev, time }))
+						}
+						onPassengersChange={(passengers) =>
+							setFormData((prev) => ({ ...prev, passengers }))
+						}
+						dateError={errors.date?.message}
+						timeError={errors.time?.message}
+						passengersError={errors.passengers?.message}
+					/>
+				</div>
 			</div>
 
 			<div className={styles.formSection}>
 				<h3 className={styles.sectionTitle}>Contact Information</h3>
-				<CustomerInfo
-					name={formData.name}
-					phone={formData.phone}
-					email={formData.email}
-					specialRequests={formData.specialRequests}
-					onNameChange={(name) =>
-						setFormData((prev) => ({ ...prev, name }))
-					}
-					onPhoneChange={(phone) =>
-						setFormData((prev) => ({ ...prev, phone }))
-					}
-					onEmailChange={(email) =>
-						setFormData((prev) => ({ ...prev, email }))
-					}
-					onSpecialRequestsChange={(specialRequests) =>
-						setFormData((prev) => ({ ...prev, specialRequests }))
-					}
-					nameError={errors.name?.message}
-					phoneError={errors.phone?.message}
-					emailError={errors.email?.message}
-					specialRequestsError={errors.specialRequests?.message}
-				/>
+				<div className={styles.formGridTwoCol}>
+					<CustomerInfo
+						name={formData.name}
+						phone={formData.phone}
+						email={formData.email}
+						specialRequests={formData.specialRequests}
+						onNameChange={(name) =>
+							setFormData((prev) => ({ ...prev, name }))
+						}
+						onPhoneChange={(phone) =>
+							setFormData((prev) => ({ ...prev, phone }))
+						}
+						onEmailChange={(email) =>
+							setFormData((prev) => ({ ...prev, email }))
+						}
+						onSpecialRequestsChange={(specialRequests) =>
+							setFormData((prev) => ({
+								...prev,
+								specialRequests,
+							}))
+						}
+						nameError={errors.name?.message}
+						phoneError={errors.phone?.message}
+						emailError={errors.email?.message}
+						specialRequestsError={errors.specialRequests?.message}
+					/>
+				</div>
 			</div>
 
 			<div className={styles.buttonGroup}>

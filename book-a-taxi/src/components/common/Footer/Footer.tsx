@@ -18,29 +18,6 @@ const Footer: React.FC = () => {
 							Safe, comfortable, and affordable rides in your
 							city.
 						</p>
-						<div className='flex space-x-3'>
-							<a
-								href='#'
-								aria-label='Facebook'
-								className='text-lg hover:text-blue-400 transition-colors duration-200'
-							>
-								📘
-							</a>
-							<a
-								href='#'
-								aria-label='Twitter'
-								className='text-lg hover:text-blue-400 transition-colors duration-200'
-							>
-								🐦
-							</a>
-							<a
-								href='#'
-								aria-label='Instagram'
-								className='text-lg hover:text-pink-400 transition-colors duration-200'
-							>
-								📷
-							</a>
-						</div>
 					</div>
 
 					{/* Quick Links Section */}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
 	return (
-		<div className='min-h-screen bg-white'>
+		<div className='bg-white'>
 			{/* Hero Section */}
 			<section className='py-16 px-4 sm:px-6 lg:px-8 bg-gray-50'>
 				<div className='max-w-4xl mx-auto text-center'>

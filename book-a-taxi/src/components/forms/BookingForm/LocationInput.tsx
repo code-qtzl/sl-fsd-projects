@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import styles from './BookingForm.module.css';
 
 interface LocationInputProps {
 	label: string;
@@ -118,8 +119,11 @@ const LocationInput: React.FC<LocationInputProps> = ({
 	const hasValidationError = error || (value && !isValidAddress(value));
 
 	return (
-		<div className='relative mb-4'>
-			<div className='relative'>
+		<div className={styles.formGroup}>
+			<label htmlFor={id} className={styles.formLabel}>
+				{label} {required && <span className={styles.required}>*</span>}
+			</label>
+			<div className={styles.locationInputWrapper}>
 				<input
 					ref={inputRef}
 					type='text'
@@ -130,10 +134,8 @@ const LocationInput: React.FC<LocationInputProps> = ({
 					onBlur={handleInputBlur}
 					onKeyDown={handleKeyDown}
 					placeholder={placeholder}
-					className={`w-full pl-4 pr-12 py-4 border rounded-full text-base bg-gray-50 text-content-primary transition-all duration-200 placeholder-content-disabled focus:outline-none focus:bg-white focus:ring-2 ${
-						hasValidationError
-							? 'border-error focus:border-error focus:ring-red-100'
-							: 'border-gray-200 focus:border-primary focus:ring-yellow-100'
+					className={`${styles.formInput} ${styles.locationInput} ${
+						hasValidationError ? styles.error : ''
 					}`}
 					aria-describedby={error ? `${id}-error` : undefined}
 					aria-expanded={showSuggestions}
@@ -142,7 +144,7 @@ const LocationInput: React.FC<LocationInputProps> = ({
 					autoComplete='street-address'
 				/>
 
-				<div className='absolute right-4 top-1/2 transform -translate-y-1/2 text-content-disabled pointer-events-none'>
+				<div className={styles.locationIcon}>
 					<svg
 						width='20'
 						height='20'
@@ -160,23 +162,23 @@ const LocationInput: React.FC<LocationInputProps> = ({
 			{showSuggestions && suggestions.length > 0 && (
 				<ul
 					ref={suggestionsRef}
-					className='absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-2xl mt-2 max-h-48 overflow-y-auto z-10 shadow-lg'
+					className={styles.locationSuggestions}
 					role='listbox'
 					aria-label='Location suggestions'
 				>
 					{suggestions.map((suggestion, index) => (
 						<li
 							key={index}
-							className={`flex items-center px-4 py-3 cursor-pointer transition-colors duration-200 first:rounded-t-2xl last:rounded-b-2xl ${
+							className={`${styles.locationSuggestion} ${
 								index === activeSuggestionIndex
-									? 'bg-yellow-50'
-									: 'hover:bg-gray-50'
+									? styles.suggestionActive
+									: ''
 							}`}
 							onClick={() => handleSuggestionClick(suggestion)}
 							role='option'
 							aria-selected={index === activeSuggestionIndex}
 						>
-							<div className='text-content-disabled mr-3 flex-shrink-0'>
+							<div className={styles.suggestionIcon}>
 								<svg
 									width='16'
 									height='16'
@@ -189,7 +191,7 @@ const LocationInput: React.FC<LocationInputProps> = ({
 									<circle cx='12' cy='10' r='3' />
 								</svg>
 							</div>
-							<span className='text-content-primary text-sm'>
+							<span className={styles.suggestionText}>
 								{suggestion}
 							</span>
 						</li>
@@ -200,12 +202,14 @@ const LocationInput: React.FC<LocationInputProps> = ({
 			{hasValidationError && (
 				<div
 					id={`${id}-error`}
-					className='mt-2 text-sm text-error flex items-center px-4'
+					className={styles.errorMessage}
 					role='alert'
 				>
-					<span className='mr-2'>⚠</span>
-					{error ||
-						'Please enter a valid address (e.g., "123 Main Street")'}
+					<span className={styles.errorIcon}>⚠</span>
+					<span>
+						{error ||
+							'Please enter a valid address (e.g., "123 Main Street")'}
+					</span>
 				</div>
 			)}
 		</div>

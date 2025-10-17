@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './BookingForm.module.css';
 
 export interface Service {
 	id: 'economy' | 'premium' | 'luxury';
@@ -69,15 +70,15 @@ const ServiceSelection: React.FC<ServiceSelectionProps> = ({
 	onServiceSelect,
 }) => {
 	return (
-		<div className='mb-8'>
-			<div className='space-y-4'>
+		<div className={styles.serviceSelection}>
+			<div className={styles.serviceGrid}>
 				{services.map((service) => (
 					<div
 						key={service.id}
-						className={`border-2 rounded-2xl p-4 bg-white cursor-pointer transition-all duration-200 relative ${
+						className={`${styles.serviceCard} ${
 							selectedService === service.id
-								? 'border-primary bg-yellow-50'
-								: 'border-gray-200 hover:border-gray-300'
+								? styles.serviceCardSelected
+								: ''
 						}`}
 						onClick={() => onServiceSelect(service.id)}
 						role='button'
@@ -90,10 +91,10 @@ const ServiceSelection: React.FC<ServiceSelectionProps> = ({
 						}}
 						aria-label={`Select ${service.name} service`}
 					>
-						<div className='flex items-center justify-between'>
-							<div className='flex items-center'>
-								<div className='w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mr-4'>
-									<span className='text-2xl'>
+						<div className={styles.serviceCardContent}>
+							<div className={styles.serviceInfo}>
+								<div className={styles.serviceIcon}>
+									<span>
 										{service.id === 'economy'
 											? '🚗'
 											: service.id === 'premium'
@@ -101,28 +102,28 @@ const ServiceSelection: React.FC<ServiceSelectionProps> = ({
 											: '🚐'}
 									</span>
 								</div>
-								<div>
-									<h3 className='text-lg font-semibold text-content-primary'>
+								<div className={styles.serviceDetails}>
+									<h3 className={styles.serviceName}>
 										{service.name}
 									</h3>
-									<p className='text-sm text-content-secondary'>
+									<p className={styles.serviceDescription}>
 										{service.description}
 									</p>
 								</div>
 							</div>
-							<div className='text-right'>
-								<div className='text-lg font-bold text-content-primary'>
+							<div className={styles.servicePricing}>
+								<div className={styles.servicePrice}>
 									${service.basePrice.toFixed(2)}
 								</div>
-								<div className='text-xs text-content-tertiary'>
+								<div className={styles.servicePricePerMile}>
 									+ ${service.pricePerMile.toFixed(2)}/mile
 								</div>
 							</div>
 						</div>
 
 						{selectedService === service.id && (
-							<div className='absolute top-4 right-4 w-6 h-6 bg-primary rounded-full flex items-center justify-center'>
-								<span className='text-white text-sm'>✓</span>
+							<div className={styles.serviceSelectedIcon}>
+								<span>✓</span>
 							</div>
 						)}
 					</div>

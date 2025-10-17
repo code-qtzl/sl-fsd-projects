@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './DateTimeSelection.module.css';
 
 interface DateTimeSelectionProps {
 	date: string;
@@ -84,139 +85,131 @@ const DateTimeSelection: React.FC<DateTimeSelectionProps> = ({
 	};
 
 	return (
-		<div className='mb-8'>
-			<div className='space-y-4 mb-6'>
-				{/* Date Selection */}
-				<div>
-					<input
-						type='date'
-						id='booking-date'
-						value={date}
-						onChange={handleDateChange}
-						min={today}
-						className={`w-full px-4 py-4 border rounded-full text-base bg-gray-50 text-content-primary transition-all duration-200 focus:outline-none focus:bg-white focus:ring-2 ${
-							dateError
-								? 'border-error focus:border-error focus:ring-red-100'
-								: 'border-gray-200 focus:border-primary focus:ring-yellow-100'
-						}`}
-						aria-describedby={dateError ? 'date-error' : undefined}
-					/>
-					{dateError && (
-						<div
-							id='date-error'
-							className='mt-2 text-sm text-error flex items-center px-4'
-							role='alert'
-						>
-							<span className='mr-2'>⚠</span>
-							{dateError}
-						</div>
-					)}
-				</div>
-
-				{/* Time Selection */}
-				<div>
-					<select
-						id='booking-time'
-						value={time}
-						onChange={(e) => onTimeChange(e.target.value)}
-						className={`w-full px-4 py-4 border rounded-full text-base bg-gray-50 text-content-primary transition-all duration-200 focus:outline-none focus:bg-white focus:ring-2 appearance-none ${
-							timeError
-								? 'border-error focus:border-error focus:ring-red-100'
-								: 'border-gray-200 focus:border-primary focus:ring-yellow-100'
-						}`}
-						style={{
-							backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e")`,
-							backgroundPosition: 'right 1rem center',
-							backgroundRepeat: 'no-repeat',
-							backgroundSize: '1.5em 1.5em',
-						}}
-						aria-describedby={timeError ? 'time-error' : undefined}
-						disabled={!date}
+		<div className={styles.dateTimeContainer}>
+			{/* Date Selection */}
+			<div className={styles.formGroup}>
+				<label className={styles.formLabel} htmlFor='booking-date'>
+					📅 Date *
+				</label>
+				<input
+					type='date'
+					id='booking-date'
+					value={date}
+					onChange={handleDateChange}
+					min={today}
+					className={`${styles.formInput} ${styles.dateInput} ${
+						dateError ? styles.error : ''
+					}`}
+					aria-describedby={dateError ? 'date-error' : undefined}
+					required
+				/>
+				{dateError && (
+					<div
+						id='date-error'
+						className={styles.errorMessage}
+						role='alert'
 					>
-						<option value=''>Select time</option>
-						{availableTimeSlots.map((slot) => (
-							<option key={slot} value={slot}>
-								{new Date(
-									`2000-01-01T${slot}`,
-								).toLocaleTimeString('en-US', {
+						<span className={styles.errorIcon}>⚠</span>
+						{dateError}
+					</div>
+				)}
+			</div>
+
+			{/* Time Selection */}
+			<div className={styles.formGroup}>
+				<label className={styles.formLabel} htmlFor='booking-time'>
+					🕒 Time *
+				</label>
+				<select
+					id='booking-time'
+					value={time}
+					onChange={(e) => onTimeChange(e.target.value)}
+					className={`${styles.formInput} ${styles.formSelect} ${
+						timeError ? styles.error : ''
+					}`}
+					aria-describedby={timeError ? 'time-error' : undefined}
+					disabled={!date}
+					required
+				>
+					<option value=''>Select time</option>
+					{availableTimeSlots.map((slot) => (
+						<option key={slot} value={slot}>
+							{new Date(`2000-01-01T${slot}`).toLocaleTimeString(
+								'en-US',
+								{
 									hour: 'numeric',
 									minute: '2-digit',
 									hour12: true,
-								})}
-							</option>
-						))}
-					</select>
-					{timeError && (
-						<div
-							id='time-error'
-							className='mt-2 text-sm text-error flex items-center px-4'
-							role='alert'
-						>
-							<span className='mr-2'>⚠</span>
-							{timeError}
-						</div>
-					)}
-					{date && availableTimeSlots.length === 0 && (
-						<div className='mt-2 text-sm text-warning flex items-center px-4'>
-							<span className='mr-2'>ℹ️</span>
-							No available time slots for today. Please select a
-							future date.
-						</div>
-					)}
-				</div>
-
-				{/* Passenger Count Selection */}
-				<div>
-					<select
-						id='passenger-count'
-						value={passengers}
-						onChange={handlePassengersChange}
-						className={`w-full px-4 py-4 border rounded-full text-base bg-gray-50 text-content-primary transition-all duration-200 focus:outline-none focus:bg-white focus:ring-2 appearance-none ${
-							passengersError
-								? 'border-error focus:border-error focus:ring-red-100'
-								: 'border-gray-200 focus:border-primary focus:ring-yellow-100'
-						}`}
-						style={{
-							backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e")`,
-							backgroundPosition: 'right 1rem center',
-							backgroundRepeat: 'no-repeat',
-							backgroundSize: '1.5em 1.5em',
-						}}
-						aria-describedby={
-							passengersError ? 'passengers-error' : undefined
-						}
+								},
+							)}
+						</option>
+					))}
+				</select>
+				{timeError && (
+					<div
+						id='time-error'
+						className={styles.errorMessage}
+						role='alert'
 					>
-						{[1, 2, 3, 4, 5, 6, 7, 8].map((count) => (
-							<option key={count} value={count}>
-								{count}{' '}
-								{count === 1 ? 'passenger' : 'passengers'}
-							</option>
-						))}
-					</select>
-					{passengersError && (
-						<div
-							id='passengers-error'
-							className='mt-2 text-sm text-error flex items-center px-4'
-							role='alert'
-						>
-							<span className='mr-2'>⚠</span>
-							{passengersError}
-						</div>
-					)}
-				</div>
+						<span className={styles.errorIcon}>⚠</span>
+						{timeError}
+					</div>
+				)}
+				{date && availableTimeSlots.length === 0 && (
+					<div className={styles.warningMessage}>
+						<span className={styles.errorIcon}>ℹ️</span>
+						No available time slots for today. Please select a
+						future date.
+					</div>
+				)}
+			</div>
+
+			{/* Passenger Count Selection */}
+			<div className={styles.formGroup}>
+				<label className={styles.formLabel} htmlFor='passenger-count'>
+					👥 Passengers *
+				</label>
+				<select
+					id='passenger-count'
+					value={passengers}
+					onChange={handlePassengersChange}
+					className={`${styles.formInput} ${styles.formSelect} ${
+						passengersError ? styles.error : ''
+					}`}
+					aria-describedby={
+						passengersError ? 'passengers-error' : undefined
+					}
+					required
+				>
+					{[1, 2, 3, 4, 5, 6, 7, 8].map((count) => (
+						<option key={count} value={count}>
+							{count} {count === 1 ? 'passenger' : 'passengers'}
+						</option>
+					))}
+				</select>
+				{passengersError && (
+					<div
+						id='passengers-error'
+						className={styles.errorMessage}
+						role='alert'
+					>
+						<span className={styles.errorIcon}>⚠</span>
+						{passengersError}
+					</div>
+				)}
 			</div>
 
 			{/* Booking Info */}
-			<div className='bg-yellow-50 border border-yellow-200 rounded-2xl p-4'>
-				<div className='flex items-center mb-2'>
-					<span className='mr-2 text-base'>ℹ️</span>
-					<span className='text-sm text-content-secondary'>
+			<div className={styles.infoBox}>
+				<div className={styles.infoItem}>
+					<span className={styles.infoIcon}>ℹ️</span>
+					<span className={styles.infoText}>
 						Bookings must be made at least 1 hour in advance
 					</span>
 				</div>
-				<div className='flex items-center'>
-					<span className='mr-2 text-base'>🕒</span>
-					<span className='text-sm text-content-secondary'>
+				<div className={styles.infoItem}>
+					<span className={styles.infoIcon}>🕒</span>
+					<span className={styles.infoText}>
 						Service available daily from 6:00 AM to 11:45 PM
 					</span>
 				</div>

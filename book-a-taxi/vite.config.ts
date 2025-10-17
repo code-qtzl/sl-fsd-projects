@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -22,12 +24,6 @@ export default defineConfig({
 		sourcemap: true,
 		// Minify for production
 		minify: 'terser',
-		terserOptions: {
-			compress: {
-				drop_console: true, // Remove console.log in production
-				drop_debugger: true,
-			},
-		},
 	},
 	// Optimize dependencies
 	optimizeDeps: {
@@ -46,7 +42,10 @@ export default defineConfig({
 		modules: {
 			localsConvention: 'camelCase',
 		},
-		// PostCSS configuration is handled by postcss.config.js
+		// PostCSS configuration
+		postcss: {
+			plugins: [tailwindcss, autoprefixer],
+		},
 	},
 	// Asset optimization
 	assetsInclude: ['**/*.woff', '**/*.woff2'],
