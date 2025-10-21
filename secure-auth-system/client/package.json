@@ -1,5 +1,5 @@
 {
-  "name": "secure-auth-system",
+  "name": "client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +11,6 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.15",
-    "axios": "^1.12.2",
-    "bcrypt": "^6.0.0",
-    "express": "^5.1.0",
-    "mongodb": "^6.20.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.15"
