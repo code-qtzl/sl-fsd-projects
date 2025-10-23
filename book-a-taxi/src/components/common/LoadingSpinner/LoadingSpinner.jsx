@@ -1,15 +1,7 @@
 import React from 'react';
 import styles from './LoadingSpinner.module.css';
 
-interface LoadingSpinnerProps {
-	size?: 'small' | 'medium' | 'large';
-	color?: 'primary' | 'secondary' | 'white';
-	text?: string;
-	fullScreen?: boolean;
-	className?: string;
-}
-
-const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
+const LoadingSpinner = ({
 	size = 'medium',
 	color = 'primary',
 	text = 'Loading...',

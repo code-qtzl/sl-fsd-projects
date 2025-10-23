@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation/Navigation';
 
-const Header: React.FC = () => {
+const Header = () => {
 	return (
 		<header className='bg-white shadow-sm' role='banner'>
 			<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>

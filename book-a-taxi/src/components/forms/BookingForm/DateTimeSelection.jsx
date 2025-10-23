@@ -1,19 +1,7 @@
 import React from 'react';
 import styles from './DateTimeSelection.module.css';
 
-interface DateTimeSelectionProps {
-	date: string;
-	time: string;
-	passengers: number;
-	onDateChange: (date: string) => void;
-	onTimeChange: (time: string) => void;
-	onPassengersChange: (passengers: number) => void;
-	dateError?: string;
-	timeError?: string;
-	passengersError?: string;
-}
-
-const DateTimeSelection: React.FC<DateTimeSelectionProps> = ({
+const DateTimeSelection = ({
 	date,
 	time,
 	passengers,
@@ -35,8 +23,8 @@ const DateTimeSelection: React.FC<DateTimeSelectionProps> = ({
 		.padStart(2, '0')}`;
 
 	// Generate time slots (every 15 minutes from 6:00 AM to 11:45 PM)
-	const generateTimeSlots = (): string[] => {
-		const slots: string[] = [];
+	const generateTimeSlots = () => {
+		const slots = [];
 		for (let hour = 6; hour < 24; hour++) {
 			for (let minute = 0; minute < 60; minute += 15) {
 				const timeString = `${hour.toString().padStart(2, '0')}:${minute
@@ -51,7 +39,7 @@ const DateTimeSelection: React.FC<DateTimeSelectionProps> = ({
 	const timeSlots = generateTimeSlots();
 
 	// Filter available time slots based on selected date
-	const getAvailableTimeSlots = (): string[] => {
+	const getAvailableTimeSlots = () => {
 		if (date === today) {
 			// If booking for today, only show future time slots (at least 1 hour from now)
 			const oneHourFromNow = new Date(now.getTime() + 60 * 60 * 1000);
@@ -68,7 +56,7 @@ const DateTimeSelection: React.FC<DateTimeSelectionProps> = ({
 
 	const availableTimeSlots = getAvailableTimeSlots();
 
-	const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+	const handleDateChange = (e) => {
 		const newDate = e.target.value;
 		onDateChange(newDate);
 
@@ -78,9 +66,7 @@ const DateTimeSelection: React.FC<DateTimeSelectionProps> = ({
 		}
 	};
 
-	const handlePassengersChange = (
-		e: React.ChangeEvent<HTMLSelectElement>,
-	) => {
+	const handlePassengersChange = (e) => {
 		onPassengersChange(parseInt(e.target.value));
 	};
 

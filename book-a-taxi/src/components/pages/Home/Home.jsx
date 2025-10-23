@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home: React.FC = () => {
+const Home= () => {
 	return (
 		<div className='bg-white'>
 			{/* Hero Section */}

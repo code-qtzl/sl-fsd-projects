@@ -6,14 +6,16 @@
  * Manages focus for modal dialogs and overlays
  */
 export class FocusManager {
-	private previousActiveElement: Element | null = null;
-	private focusableElements: NodeListOf<HTMLElement> | null = null;
-	private container: HTMLElement | null = null;
+	constructor() {
+		this.previousActiveElement = null;
+		this.focusableElements = null;
+		this.container = null;
+	}
 
 	/**
 	 * Trap focus within a container element
 	 */
-	trapFocus(container: HTMLElement): void {
+	trapFocus(container) {
 		this.container = container;
 		this.previousActiveElement = document.activeElement;
 
@@ -34,14 +36,14 @@ export class FocusManager {
 	/**
 	 * Release focus trap and restore previous focus
 	 */
-	releaseFocus(): void {
+	releaseFocus() {
 		document.removeEventListener('keydown', this.handleTabKey);
 
 		if (
 			this.previousActiveElement &&
 			'focus' in this.previousActiveElement
 		) {
-			(this.previousActiveElement as HTMLElement).focus();
+			this.previousActiveElement.focus();
 		}
 
 		this.container = null;
@@ -49,7 +51,7 @@ export class FocusManager {
 		this.previousActiveElement = null;
 	}
 
-	private handleTabKey = (event: KeyboardEvent): void => {
+	handleTabKey = (event) => {
 		if (
 			event.key !== 'Tab' ||
 			!this.focusableElements ||
@@ -82,13 +84,12 @@ export class FocusManager {
  * Announces messages to screen readers
  */
 export class ScreenReaderAnnouncer {
-	private announcer: HTMLElement | null = null;
-
 	constructor() {
+		this.announcer = null;
 		this.createAnnouncer();
 	}
 
-	private createAnnouncer(): void {
+	createAnnouncer() {
 		this.announcer = document.createElement('div');
 		this.announcer.setAttribute('aria-live', 'polite');
 		this.announcer.setAttribute('aria-atomic', 'true');
@@ -99,10 +100,7 @@ export class ScreenReaderAnnouncer {
 	/**
 	 * Announce a message to screen readers
 	 */
-	announce(
-		message: string,
-		priority: 'polite' | 'assertive' = 'polite',
-	): void {
+	announce(message, priority = 'polite') {
 		if (!this.announcer) {
 			this.createAnnouncer();
 		}
@@ -123,7 +121,7 @@ export class ScreenReaderAnnouncer {
 	/**
 	 * Clean up the announcer element
 	 */
-	destroy(): void {
+	destroy() {
 		if (this.announcer && this.announcer.parentNode) {
 			this.announcer.parentNode.removeChild(this.announcer);
 			this.announcer = null;
@@ -138,7 +136,7 @@ export const KeyboardUtils = {
 	/**
 	 * Check if an element is focusable
 	 */
-	isFocusable(element: HTMLElement): boolean {
+	isFocusable(element) {
 		const focusableSelectors = [
 			'button:not([disabled])',
 			'[href]',
@@ -155,7 +153,7 @@ export const KeyboardUtils = {
 	/**
 	 * Get all focusable elements within a container
 	 */
-	getFocusableElements(container: HTMLElement): HTMLElement[] {
+	getFocusableElements(container) {
 		const focusableSelectors = [
 			'button:not([disabled])',
 			'[href]',
@@ -172,12 +170,7 @@ export const KeyboardUtils = {
 	/**
 	 * Handle arrow key navigation in a list
 	 */
-	handleArrowNavigation(
-		event: KeyboardEvent,
-		items: HTMLElement[],
-		currentIndex: number,
-		onIndexChange: (newIndex: number) => void,
-	): void {
+	handleArrowNavigation(event, items, currentIndex, onIndexChange) {
 		let newIndex = currentIndex;
 
 		switch (event.key) {
@@ -217,18 +210,14 @@ export const AriaUtils = {
 	/**
 	 * Generate a unique ID for ARIA relationships
 	 */
-	generateId(prefix: string = 'aria'): string {
+	generateId(prefix = 'aria') {
 		return `${prefix}-${Math.random().toString(36).substr(2, 9)}`;
 	},
 
 	/**
 	 * Set up ARIA relationship between elements
 	 */
-	setAriaRelationship(
-		element: HTMLElement,
-		relatedElement: HTMLElement,
-		relationship: 'describedby' | 'labelledby' | 'controls' | 'owns',
-	): void {
+	setAriaRelationship(element, relatedElement, relationship) {
 		if (!relatedElement.id) {
 			relatedElement.id = this.generateId();
 		}
@@ -238,7 +227,7 @@ export const AriaUtils = {
 	/**
 	 * Update ARIA live region
 	 */
-	updateLiveRegion(element: HTMLElement, message: string): void {
+	updateLiveRegion(element, message) {
 		element.textContent = message;
 	},
 };
@@ -250,7 +239,7 @@ export const ContrastUtils = {
 	/**
 	 * Calculate relative luminance of a color
 	 */
-	getLuminance(r: number, g: number, b: number): number {
+	getLuminance(r, g, b) {
 		const [rs, gs, bs] = [r, g, b].map((c) => {
 			c = c / 255;
 			return c <= 0.03928
@@ -263,10 +252,7 @@ export const ContrastUtils = {
 	/**
 	 * Calculate contrast ratio between two colors
 	 */
-	getContrastRatio(
-		color1: [number, number, number],
-		color2: [number, number, number],
-	): number {
+	getContrastRatio(color1, color2) {
 		const lum1 = this.getLuminance(...color1);
 		const lum2 = this.getLuminance(...color2);
 		const brightest = Math.max(lum1, lum2);
@@ -277,20 +263,14 @@ export const ContrastUtils = {
 	/**
 	 * Check if color combination meets WCAG AA standards
 	 */
-	meetsWCAGAA(
-		color1: [number, number, number],
-		color2: [number, number, number],
-	): boolean {
+	meetsWCAGAA(color1, color2) {
 		return this.getContrastRatio(color1, color2) >= 4.5;
 	},
 
 	/**
 	 * Check if color combination meets WCAG AAA standards
 	 */
-	meetsWCAGAAA(
-		color1: [number, number, number],
-		color2: [number, number, number],
-	): boolean {
+	meetsWCAGAAA(color1, color2) {
 		return this.getContrastRatio(color1, color2) >= 7;
 	},
 };
@@ -302,25 +282,21 @@ export const MotionUtils = {
 	/**
 	 * Check if user prefers reduced motion
 	 */
-	prefersReducedMotion(): boolean {
+	prefersReducedMotion() {
 		return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 	},
 
 	/**
 	 * Get appropriate animation duration based on user preferences
 	 */
-	getAnimationDuration(normalDuration: number): number {
+	getAnimationDuration(normalDuration) {
 		return this.prefersReducedMotion() ? 0 : normalDuration;
 	},
 
 	/**
 	 * Apply animation with respect to motion preferences
 	 */
-	safeAnimate(
-		element: HTMLElement,
-		keyframes: Keyframe[],
-		options: KeyframeAnimationOptions,
-	): Animation | null {
+	safeAnimate(element, keyframes, options) {
 		if (this.prefersReducedMotion()) {
 			return null;
 		}
@@ -335,10 +311,7 @@ export const FormUtils = {
 	/**
 	 * Associate form field with error message
 	 */
-	associateFieldWithError(
-		field: HTMLElement,
-		errorElement: HTMLElement,
-	): void {
+	associateFieldWithError(field, errorElement) {
 		AriaUtils.setAriaRelationship(field, errorElement, 'describedby');
 		field.setAttribute('aria-invalid', 'true');
 	},
@@ -346,7 +319,7 @@ export const FormUtils = {
 	/**
 	 * Clear field error association
 	 */
-	clearFieldError(field: HTMLElement): void {
+	clearFieldError(field) {
 		field.removeAttribute('aria-describedby');
 		field.setAttribute('aria-invalid', 'false');
 	},
@@ -354,11 +327,7 @@ export const FormUtils = {
 	/**
 	 * Announce form validation results
 	 */
-	announceValidationResults(
-		announcer: ScreenReaderAnnouncer,
-		errors: string[],
-		fieldCount: number,
-	): void {
+	announceValidationResults(announcer, errors, fieldCount) {
 		if (errors.length === 0) {
 			announcer.announce('Form submitted successfully', 'polite');
 		} else {

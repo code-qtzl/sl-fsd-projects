@@ -1,71 +1,7 @@
 import React, { forwardRef, useId } from 'react';
 import styles from './FormField.module.css';
 
-export interface FormFieldProps
-	extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
-	label?: string;
-	type?:
-		| 'text'
-		| 'email'
-		| 'password'
-		| 'tel'
-		| 'url'
-		| 'search'
-		| 'number'
-		| 'date'
-		| 'time'
-		| 'datetime-local';
-	size?: 'small' | 'medium' | 'large';
-	error?: string;
-	success?: string;
-	helpText?: string;
-	icon?: React.ReactNode;
-	required?: boolean;
-	fullWidth?: boolean;
-}
-
-export interface TextareaFieldProps
-	extends Omit<React.TextareaHTMLAttributes<HTMLTextAreaElement>, 'size'> {
-	label?: string;
-	size?: 'small' | 'medium' | 'large';
-	error?: string;
-	success?: string;
-	helpText?: string;
-	required?: boolean;
-	fullWidth?: boolean;
-	rows?: number;
-}
-
-export interface SelectFieldProps
-	extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> {
-	label?: string;
-	size?: 'small' | 'medium' | 'large';
-	error?: string;
-	success?: string;
-	helpText?: string;
-	required?: boolean;
-	fullWidth?: boolean;
-	options: Array<{ value: string; label: string; disabled?: boolean }>;
-	placeholder?: string;
-}
-
-export interface CheckboxFieldProps
-	extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
-	label: string;
-	error?: string;
-	helpText?: string;
-}
-
-export interface RadioFieldProps
-	extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
-	label: string;
-	error?: string;
-	helpText?: string;
-	name: string;
-	value: string;
-}
-
-const FormField = forwardRef<HTMLInputElement, FormFieldProps>(
+const FormField = forwardRef(
 	(
 		{
 			label,
@@ -187,7 +123,7 @@ const FormField = forwardRef<HTMLInputElement, FormFieldProps>(
 	},
 );
 
-const TextareaField = forwardRef<HTMLTextAreaElement, TextareaFieldProps>(
+const TextareaField = forwardRef(
 	(
 		{
 			label,
@@ -301,7 +237,7 @@ const TextareaField = forwardRef<HTMLTextAreaElement, TextareaFieldProps>(
 	},
 );
 
-const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
+const SelectField = forwardRef(
 	(
 		{
 			label,
@@ -430,7 +366,7 @@ const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
 	},
 );
 
-const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>(
+const CheckboxField = forwardRef(
 	(
 		{
 			label,
@@ -500,7 +436,7 @@ const CheckboxField = forwardRef<HTMLInputElement, CheckboxFieldProps>(
 	},
 );
 
-const RadioField = forwardRef<HTMLInputElement, RadioFieldProps>(
+const RadioField = forwardRef(
 	(
 		{
 			label,

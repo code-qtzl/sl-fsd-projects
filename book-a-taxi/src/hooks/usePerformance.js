@@ -1,11 +1,11 @@
-import { useEffect, useCallback, useRef } from 'react';
+import { useEffect, useCallback, useRef, useState } from 'react';
 
 /**
  * Hook for measuring and optimizing component performance
  */
-export const usePerformance = (componentName: string) => {
-	const renderStartTime = useRef<number>(0);
-	const mountTime = useRef<number>(0);
+export const usePerformance = (componentName) => {
+	const renderStartTime = useRef(0);
+	const mountTime = useRef(0);
 
 	useEffect(() => {
 		mountTime.current = performance.now();
@@ -48,8 +48,8 @@ export const usePerformance = (componentName: string) => {
 /**
  * Hook for debouncing values to improve performance
  */
-export const useDebounce = <T>(value: T, delay: number): T => {
-	const [debouncedValue, setDebouncedValue] = useState<T>(value);
+export const useDebounce = (value, delay) => {
+	const [debouncedValue, setDebouncedValue] = useState(value);
 
 	useEffect(() => {
 		const handler = setTimeout(() => {
@@ -67,15 +67,12 @@ export const useDebounce = <T>(value: T, delay: number): T => {
 /**
  * Hook for throttling function calls
  */
-export const useThrottle = <T extends (...args: unknown[]) => unknown>(
-	callback: T,
-	delay: number,
-): T => {
-	const lastRun = useRef<number>(0);
-	const timeoutRef = useRef<number>(0);
+export const useThrottle = (callback, delay) => {
+	const lastRun = useRef(0);
+	const timeoutRef = useRef(0);
 
 	return useCallback(
-		((...args: Parameters<T>) => {
+		(...args) => {
 			const now = Date.now();
 
 			if (now - lastRun.current >= delay) {
@@ -88,7 +85,7 @@ export const useThrottle = <T extends (...args: unknown[]) => unknown>(
 					lastRun.current = Date.now();
 				}, delay - (now - lastRun.current));
 			}
-		}) as T,
+		},
 		[callback, delay],
 	);
 };
@@ -96,12 +93,10 @@ export const useThrottle = <T extends (...args: unknown[]) => unknown>(
 /**
  * Hook for intersection observer (lazy loading)
  */
-export const useIntersectionObserver = (
-	options: IntersectionObserverInit = {},
-) => {
+export const useIntersectionObserver = (options = {}) => {
 	const [isIntersecting, setIsIntersecting] = useState(false);
 	const [hasIntersected, setHasIntersected] = useState(false);
-	const elementRef = useRef<HTMLElement>(null);
+	const elementRef = useRef(null);
 
 	useEffect(() => {
 		const element = elementRef.current;
@@ -135,9 +130,9 @@ export const useIntersectionObserver = (
  * Hook for preloading resources
  */
 export const usePreload = () => {
-	const preloadedResources = useRef<Set<string>>(new Set());
+	const preloadedResources = useRef(new Set());
 
-	const preloadImage = useCallback((src: string): Promise<void> => {
+	const preloadImage = useCallback((src) => {
 		if (preloadedResources.current.has(src)) {
 			return Promise.resolve();
 		}
@@ -153,16 +148,13 @@ export const usePreload = () => {
 		});
 	}, []);
 
-	const preloadRoute = useCallback(
-		async (routeImport: () => Promise<unknown>) => {
-			try {
-				await routeImport();
-			} catch (error) {
-				console.warn('Failed to preload route:', error);
-			}
-		},
-		[],
-	);
+	const preloadRoute = useCallback(async (routeImport) => {
+		try {
+			await routeImport();
+		} catch (error) {
+			console.warn('Failed to preload route:', error);
+		}
+	}, []);
 
 	return { preloadImage, preloadRoute };
 };
@@ -182,12 +174,9 @@ export const useLazyRender = (threshold = 0.1) => {
 /**
  * Hook for optimizing re-renders with memoization
  */
-export const useStableCallback = <T extends (...args: unknown[]) => unknown>(
-	callback: T,
-	deps: React.DependencyList,
-): T => {
-	const callbackRef = useRef<T>(callback);
-	const depsRef = useRef<React.DependencyList>(deps);
+export const useStableCallback = (callback, deps) => {
+	const callbackRef = useRef(callback);
+	const depsRef = useRef(deps);
 
 	// Update callback if dependencies changed
 	useEffect(() => {
@@ -196,12 +185,9 @@ export const useStableCallback = <T extends (...args: unknown[]) => unknown>(
 	});
 
 	return useCallback(
-		((...args: Parameters<T>) => {
+		(...args) => {
 			return callbackRef.current(...args);
-		}) as T,
+		},
 		[], // Empty deps array since we manage updates manually
 	);
 };
-
-// Import useState for useDebounce
-import { useState } from 'react';

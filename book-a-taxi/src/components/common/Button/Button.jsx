@@ -1,20 +1,7 @@
 import React, { forwardRef } from 'react';
 import styles from './Button.module.css';
 
-export interface ButtonProps
-	extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-	variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
-	size?: 'small' | 'medium' | 'large';
-	shape?: 'rounded' | 'pill' | 'square';
-	fullWidth?: boolean;
-	loading?: boolean;
-	loadingText?: string;
-	icon?: React.ReactNode;
-	iconPosition?: 'left' | 'right';
-	children?: React.ReactNode;
-}
-
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+const Button = forwardRef(
 	(
 		{
 			variant = 'primary',

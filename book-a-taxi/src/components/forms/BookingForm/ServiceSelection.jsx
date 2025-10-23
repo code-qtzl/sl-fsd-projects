@@ -1,23 +1,7 @@
 import React from 'react';
 import styles from './BookingForm.module.css';
 
-export interface Service {
-	id: 'economy' | 'premium' | 'luxury';
-	name: string;
-	description: string;
-	basePrice: number;
-	pricePerMile: number;
-	features: string[];
-	vehicleType: string;
-	maxPassengers: number;
-}
-
-interface ServiceSelectionProps {
-	selectedService: string;
-	onServiceSelect: (serviceId: string) => void;
-}
-
-const services: Service[] = [
+const services = [
 	{
 		id: 'economy',
 		name: 'Economy',
@@ -65,10 +49,7 @@ const services: Service[] = [
 	},
 ];
 
-const ServiceSelection: React.FC<ServiceSelectionProps> = ({
-	selectedService,
-	onServiceSelect,
-}) => {
+const ServiceSelection = ({ selectedService, onServiceSelect }) => {
 	return (
 		<div className={styles.serviceSelection}>
 			<div className={styles.serviceGrid}>

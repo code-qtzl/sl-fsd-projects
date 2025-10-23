@@ -1,26 +1,16 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import ServiceSelection, { type Service } from './ServiceSelection';
+import { useNavigate } from 'react-router-dom';
+import ServiceSelection from './ServiceSelection';
 import LocationInput from './LocationInput';
 import DateTimeSelection from './DateTimeSelection';
 import CustomerInfo from './CustomerInfo';
 import styles from './BookingForm.module.css';
 
-interface BookingFormData {
-	serviceType: string;
-	pickupLocation: string;
-	destination: string;
-	date: string;
-	time: string;
-	passengers: number;
-	name: string;
-	phone: string;
-	email: string;
-	specialRequests: string;
-}
+const BookingForm = () => {
+	const navigate = useNavigate();
 
-const BookingForm: React.FC = () => {
-	const [formData, setFormData] = useState<BookingFormData>({
+	const [formData, setFormData] = useState({
 		serviceType: '',
 		pickupLocation: '',
 		destination: '',
@@ -40,13 +30,13 @@ const BookingForm: React.FC = () => {
 		handleSubmit,
 		setError,
 		clearErrors,
-	} = useForm<BookingFormData>({
+	} = useForm({
 		mode: 'onBlur',
 		defaultValues: formData,
 	});
 
 	// Services data for pricing calculation
-	const services: Service[] = [
+	const services = [
 		{
 			id: 'economy',
 			name: 'Economy',
@@ -97,7 +87,7 @@ const BookingForm: React.FC = () => {
 	const selectedService = services.find((s) => s.id === formData.serviceType);
 
 	// Calculate estimated fare (mock calculation - 10 miles average)
-	const calculateEstimatedFare = (): number => {
+	const calculateEstimatedFare = () => {
 		if (!selectedService) return 0;
 		const estimatedMiles = 10; // Mock distance
 		return (
@@ -106,7 +96,7 @@ const BookingForm: React.FC = () => {
 		);
 	};
 
-	const validateForm = async (): Promise<boolean> => {
+	const validateForm = async () => {
 		let isValid = true;
 
 		// Clear previous errors
@@ -207,9 +197,14 @@ const BookingForm: React.FC = () => {
 			...formData,
 			estimatedFare: calculateEstimatedFare(),
 		});
+
+		// Show success alert
 		alert(
 			'Booking submitted successfully! You will receive a confirmation email shortly.',
 		);
+
+		// Navigate to home page after successful booking
+		navigate('/');
 	};
 
 	const handleEditBooking = () => {

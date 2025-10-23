@@ -1,18 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useIntersectionObserver } from '../../../hooks/usePerformance';
+import PropTypes from 'prop-types';
+import { useIntersectionObserver } from '../../../hooks/usePerformance.js';
 import styles from './LazyImage.module.css';
 
-interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-	src: string;
-	alt: string;
-	placeholder?: string;
-	blurDataURL?: string;
-	priority?: boolean;
-	onLoad?: () => void;
-	onError?: () => void;
-}
-
-const LazyImage: React.FC<LazyImageProps> = ({
+const LazyImage = ({
 	src,
 	alt,
 	placeholder,
@@ -25,7 +16,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 }) => {
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [hasError, setHasError] = useState(false);
-	const [imageSrc, setImageSrc] = useState<string>(
+	const [imageSrc, setImageSrc] = useState(
 		priority ? src : placeholder || blurDataURL || '',
 	);
 
@@ -34,7 +25,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 		rootMargin: '50px',
 	});
 
-	const imgRef = useRef<HTMLImageElement>(null);
+	const imgRef = useRef(null);
 
 	// Load image when it intersects or if it's priority
 	useEffect(() => {
@@ -72,7 +63,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 	if (hasError) {
 		return (
 			<div
-				ref={elementRef as React.RefObject<HTMLDivElement>}
+				ref={elementRef}
 				className={`${styles.container} ${styles.errorContainer}`}
 				role='img'
 				aria-label={alt}
@@ -84,10 +75,7 @@ const LazyImage: React.FC<LazyImageProps> = ({
 	}
 
 	return (
-		<div
-			ref={elementRef as React.RefObject<HTMLDivElement>}
-			className={containerClasses}
-		>
+		<div ref={elementRef} className={containerClasses}>
 			{!isLoaded && (blurDataURL || placeholder) && (
 				<img
 					src={blurDataURL || placeholder}
@@ -118,6 +106,17 @@ const LazyImage: React.FC<LazyImageProps> = ({
 			)}
 		</div>
 	);
+};
+
+LazyImage.propTypes = {
+	src: PropTypes.string.isRequired,
+	alt: PropTypes.string.isRequired,
+	placeholder: PropTypes.string,
+	blurDataURL: PropTypes.string,
+	priority: PropTypes.bool,
+	onLoad: PropTypes.func,
+	onError: PropTypes.func,
+	className: PropTypes.string,
 };
 
 export default LazyImage;

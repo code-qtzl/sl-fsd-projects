@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
-const Navigation: React.FC = () => {
+const Navigation = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const location = useLocation();
-	const menuRef = useRef<HTMLUListElement>(null);
-	const toggleRef = useRef<HTMLButtonElement>(null);
+	const menuRef = useRef(null);
+	const toggleRef = useRef(null);
 
 	const navItems = [
 		{ path: '/', label: 'Home' },
@@ -24,7 +24,7 @@ const Navigation: React.FC = () => {
 		setIsMenuOpen(false);
 	};
 
-	const isActivePage = (path: string) => {
+	const isActivePage = (path) => {
 		if (path === '/') {
 			return location.pathname === '/';
 		}
@@ -33,13 +33,13 @@ const Navigation: React.FC = () => {
 
 	// Close menu when clicking outside
 	useEffect(() => {
-		const handleClickOutside = (event: MouseEvent) => {
+		const handleClickOutside = (event) => {
 			if (
 				isMenuOpen &&
 				menuRef.current &&
 				toggleRef.current &&
-				!menuRef.current.contains(event.target as Node) &&
-				!toggleRef.current.contains(event.target as Node)
+				!menuRef.current.contains(event.target) &&
+				!toggleRef.current.contains(event.target)
 			) {
 				closeMenu();
 			}
@@ -53,7 +53,7 @@ const Navigation: React.FC = () => {
 
 	// Close menu on escape key
 	useEffect(() => {
-		const handleEscapeKey = (event: KeyboardEvent) => {
+		const handleEscapeKey = (event) => {
 			if (event.key === 'Escape' && isMenuOpen) {
 				closeMenu();
 				toggleRef.current?.focus();

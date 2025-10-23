@@ -8,13 +8,13 @@ import './App.css';
 // Lazy load page components for code splitting
 const Home = React.lazy(() => import('./components/pages/Home/Home'));
 const About = React.lazy(() => import('./components/pages/About/About'));
-const Services = React.lazy(
-	() => import('./components/pages/Services/Services'),
+const Services = React.lazy(() =>
+	import('./components/pages/Services/Services'),
 );
 const Contact = React.lazy(() => import('./components/pages/Contact/Contact'));
 const Booking = React.lazy(() => import('./components/pages/Booking/Booking'));
-const NotFound = React.lazy(
-	() => import('./components/pages/NotFound/NotFound'),
+const NotFound = React.lazy(() =>
+	import('./components/pages/NotFound/NotFound'),
 );
 
 // Layout wrapper component for router

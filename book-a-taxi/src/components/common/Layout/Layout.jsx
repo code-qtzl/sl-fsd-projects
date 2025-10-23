@@ -3,15 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import styles from './Layout.module.css';
 
-interface LayoutProps {
-	children: React.ReactNode;
-	pageTitle?: string;
-	isLoading?: boolean;
-	error?: string | null;
-	onRetry?: () => void;
-}
-
-const Layout: React.FC<LayoutProps> = ({
+const Layout = ({
 	children,
 	pageTitle,
 	isLoading = false,

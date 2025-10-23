@@ -2,15 +2,6 @@
  * Service Worker registration and management utilities
  */
 
-// Type declaration for Background Sync API
-declare global {
-	interface ServiceWorkerRegistration {
-		sync?: {
-			register(tag: string): Promise<void>;
-		};
-	}
-}
-
 const isLocalhost = Boolean(
 	window.location.hostname === 'localhost' ||
 		window.location.hostname === '[::1]' ||
@@ -19,13 +10,7 @@ const isLocalhost = Boolean(
 		),
 );
 
-interface ServiceWorkerConfig {
-	onSuccess?: (registration: ServiceWorkerRegistration) => void;
-	onUpdate?: (registration: ServiceWorkerRegistration) => void;
-	onOfflineReady?: () => void;
-}
-
-export function registerSW(config?: ServiceWorkerConfig) {
+export function registerSW(config) {
 	if ('serviceWorker' in navigator) {
 		const publicUrl = new URL(
 			import.meta.env.BASE_URL || '/',
@@ -52,7 +37,7 @@ export function registerSW(config?: ServiceWorkerConfig) {
 	}
 }
 
-function registerValidSW(swUrl: string, config?: ServiceWorkerConfig) {
+function registerValidSW(swUrl, config) {
 	navigator.serviceWorker
 		.register(swUrl)
 		.then((registration) => {
@@ -94,7 +79,7 @@ function registerValidSW(swUrl: string, config?: ServiceWorkerConfig) {
 		});
 }
 
-function checkValidServiceWorker(swUrl: string, config?: ServiceWorkerConfig) {
+function checkValidServiceWorker(swUrl, config) {
 	fetch(swUrl, {
 		headers: { 'Service-Worker': 'script' },
 	})
@@ -136,17 +121,14 @@ export function unregisterSW() {
 /**
  * Check if the app is running offline
  */
-export function isOffline(): boolean {
+export function isOffline() {
 	return !navigator.onLine;
 }
 
 /**
  * Add offline/online event listeners
  */
-export function addNetworkListeners(
-	onOnline?: () => void,
-	onOffline?: () => void,
-) {
+export function addNetworkListeners(onOnline, onOffline) {
 	const handleOnline = () => {
 		console.log('App is back online');
 		onOnline?.();
@@ -169,7 +151,7 @@ export function addNetworkListeners(
 /**
  * Request persistent storage
  */
-export async function requestPersistentStorage(): Promise<boolean> {
+export async function requestPersistentStorage() {
 	if ('storage' in navigator && 'persist' in navigator.storage) {
 		try {
 			const persistent = await navigator.storage.persist();
@@ -186,11 +168,7 @@ export async function requestPersistentStorage(): Promise<boolean> {
 /**
  * Get storage usage information
  */
-export async function getStorageUsage(): Promise<{
-	usage: number;
-	quota: number;
-	usagePercentage: number;
-} | null> {
+export async function getStorageUsage() {
 	if ('storage' in navigator && 'estimate' in navigator.storage) {
 		try {
 			const estimate = await navigator.storage.estimate();
@@ -214,7 +192,7 @@ export async function getStorageUsage(): Promise<{
 /**
  * Clear all caches
  */
-export async function clearAllCaches(): Promise<void> {
+export async function clearAllCaches() {
 	if ('caches' in window) {
 		try {
 			const cacheNames = await caches.keys();
@@ -231,7 +209,7 @@ export async function clearAllCaches(): Promise<void> {
 /**
  * Update service worker
  */
-export async function updateServiceWorker(): Promise<void> {
+export async function updateServiceWorker() {
 	if ('serviceWorker' in navigator) {
 		try {
 			const registration = await navigator.serviceWorker.ready;
@@ -246,7 +224,7 @@ export async function updateServiceWorker(): Promise<void> {
 /**
  * Skip waiting and activate new service worker
  */
-export function skipWaitingAndReload(): void {
+export function skipWaitingAndReload() {
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker.ready.then((registration) => {
 			if (registration.waiting) {
@@ -260,7 +238,7 @@ export function skipWaitingAndReload(): void {
 /**
  * Background sync for offline form submissions
  */
-export function registerBackgroundSync(tag: string, data: unknown): void {
+export function registerBackgroundSync(tag, data) {
 	if (
 		'serviceWorker' in navigator &&
 		'sync' in window.ServiceWorkerRegistration.prototype
@@ -282,7 +260,7 @@ export function registerBackgroundSync(tag: string, data: unknown): void {
 /**
  * Store data for background sync (simplified implementation)
  */
-function storeForBackgroundSync(tag: string, data: unknown): void {
+function storeForBackgroundSync(tag, data) {
 	// In a real implementation, this would use IndexedDB
 	const pendingData = JSON.parse(localStorage.getItem('pendingSync') || '[]');
 	pendingData.push({ tag, data, timestamp: Date.now() });
@@ -292,14 +270,13 @@ function storeForBackgroundSync(tag: string, data: unknown): void {
 /**
  * Performance monitoring
  */
-export function monitorPerformance(): void {
+export function monitorPerformance() {
 	if ('performance' in window) {
 		// Monitor navigation timing
 		window.addEventListener('load', () => {
 			setTimeout(() => {
-				const navigation = performance.getEntriesByType(
-					'navigation',
-				)[0] as PerformanceNavigationTiming;
+				const navigation =
+					performance.getEntriesByType('navigation')[0];
 				if (navigation) {
 					console.log('Performance metrics:', {
 						domContentLoaded:

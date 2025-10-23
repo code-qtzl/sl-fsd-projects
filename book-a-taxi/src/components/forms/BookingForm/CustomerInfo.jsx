@@ -1,22 +1,7 @@
 import React from 'react';
 import styles from './CustomerInfo.module.css';
 
-interface CustomerInfoProps {
-	name: string;
-	phone: string;
-	email: string;
-	specialRequests: string;
-	onNameChange: (name: string) => void;
-	onPhoneChange: (phone: string) => void;
-	onEmailChange: (email: string) => void;
-	onSpecialRequestsChange: (requests: string) => void;
-	nameError?: string;
-	phoneError?: string;
-	emailError?: string;
-	specialRequestsError?: string;
-}
-
-const CustomerInfo: React.FC<CustomerInfoProps> = ({
+const CustomerInfo = ({
 	name,
 	phone,
 	email,
@@ -31,7 +16,7 @@ const CustomerInfo: React.FC<CustomerInfoProps> = ({
 	specialRequestsError,
 }) => {
 	// Format phone number as user types
-	const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+	const handlePhoneChange = (e) => {
 		let value = e.target.value.replace(/\D/g, ''); // Remove non-digits
 
 		// Format as (XXX) XXX-XXXX
@@ -48,13 +33,13 @@ const CustomerInfo: React.FC<CustomerInfoProps> = ({
 	};
 
 	// Validate email format
-	const isValidEmail = (email: string): boolean => {
+	const isValidEmail = (email) => {
 		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		return emailRegex.test(email);
 	};
 
 	// Validate phone format
-	const isValidPhone = (phone: string): boolean => {
+	const isValidPhone = (phone) => {
 		const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
 		return phoneRegex.test(phone);
 	};

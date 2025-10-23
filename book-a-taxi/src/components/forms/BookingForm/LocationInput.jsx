@@ -1,16 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './BookingForm.module.css';
 
-interface LocationInputProps {
-	label: string;
-	value: string;
-	onChange: (value: string) => void;
-	placeholder: string;
-	error?: string;
-	required?: boolean;
-	id: string;
-}
-
 // Mock location suggestions - in a real app, this would come from a geocoding API
 const mockLocationSuggestions = [
 	'123 Main Street, Downtown',
@@ -25,7 +15,7 @@ const mockLocationSuggestions = [
 	'741 Ash Avenue, Residential Area',
 ];
 
-const LocationInput: React.FC<LocationInputProps> = ({
+const LocationInput = ({
 	label,
 	value,
 	onChange,
@@ -34,11 +24,11 @@ const LocationInput: React.FC<LocationInputProps> = ({
 	required = false,
 	id,
 }) => {
-	const [suggestions, setSuggestions] = useState<string[]>([]);
+	const [suggestions, setSuggestions] = useState([]);
 	const [showSuggestions, setShowSuggestions] = useState(false);
 	const [activeSuggestionIndex, setActiveSuggestionIndex] = useState(-1);
-	const inputRef = useRef<HTMLInputElement>(null);
-	const suggestionsRef = useRef<HTMLUListElement>(null);
+	const inputRef = useRef(null);
+	const suggestionsRef = useRef(null);
 
 	// Filter suggestions based on input value
 	useEffect(() => {
@@ -46,13 +36,13 @@ const LocationInput: React.FC<LocationInputProps> = ({
 			const filtered = mockLocationSuggestions.filter((suggestion) =>
 				suggestion.toLowerCase().includes(value.toLowerCase()),
 			);
-			setSuggestions(filtered.slice(0, 5)); // Limit to 5 suggestions
+			setSuggestions(filtered);
 		} else {
 			setSuggestions([]);
 		}
 	}, [value]);
 
-	const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+	const handleInputChange = (e) => {
 		const newValue = e.target.value;
 		onChange(newValue);
 		setShowSuggestions(true);
@@ -73,14 +63,14 @@ const LocationInput: React.FC<LocationInputProps> = ({
 		}, 200);
 	};
 
-	const handleSuggestionClick = (suggestion: string) => {
+	const handleSuggestionClick = (suggestion) => {
 		onChange(suggestion);
 		setShowSuggestions(false);
 		setActiveSuggestionIndex(-1);
 		inputRef.current?.focus();
 	};
 
-	const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+	const handleKeyDown = (e) => {
 		if (!showSuggestions || suggestions.length === 0) return;
 
 		switch (e.key) {
@@ -110,7 +100,7 @@ const LocationInput: React.FC<LocationInputProps> = ({
 	};
 
 	// Validate address format
-	const isValidAddress = (address: string): boolean => {
+	const isValidAddress = (address) => {
 		// Basic validation: should contain at least a number and street name
 		const addressPattern = /\d+\s+\w+/;
 		return address.length >= 5 && addressPattern.test(address);
