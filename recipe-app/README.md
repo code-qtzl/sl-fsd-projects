@@ -13,7 +13,7 @@ A full-stack web application for managing and sharing recipes with user authenti
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/code-qtzl/sl-fsd-projects.git
     cd recipe-app
     ```
 
