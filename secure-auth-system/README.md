@@ -2,11 +2,6 @@
 
 A full-stack web application with React frontend and Express.js backend featuring secure user authentication, role-based access control, and bcrypt password hashing.
 
-📁 **Project Documentation:**
-
--   [Client (Frontend) README](./client/README.md) - React frontend setup and configuration
--   [Server (Backend) README](./server/README.md) - Express.js backend setup and API documentation
-
 ## Prerequisites
 
 -   Node.js (v16 or higher)
@@ -39,3 +34,8 @@ npm run dev
 ```
 
 3. Open your browser to `http://localhost:5173`
+
+📁 **Project Documentation:**
+
+-   [Client (Frontend) README](./client/README.md) - React frontend setup and configuration
+-   [Server (Backend) README](./server/README.md) - Express.js backend setup and API documentation
