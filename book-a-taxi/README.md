@@ -1,6 +1,6 @@
 # Book a Taxi
 
-A modern, responsive taxi booking application built with React, TypeScript, and Vite. The application allows users to book taxi services with an intuitive interface featuring location selection, service options, and customer information forms.
+A modern, responsive taxi booking application built with React, and Vite. The application allows users to book taxi services with an intuitive interface featuring location selection, service options, and customer information forms.
 
 ## Prerequisites
 
