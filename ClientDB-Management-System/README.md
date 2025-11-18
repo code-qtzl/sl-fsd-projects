@@ -6,7 +6,12 @@ This included applying relational database design principles and creating an ER 
 
 I also performed full CRUD operations and used SQL JOINs and complex queries to extract meaningful insights and relationships across multiple data sets.
 
-## Commands used to create the clientDB
+## Commands used for clientDB database and tables creation
+
+```
+-- Create a new database
+CREATE DATABASE clientDB;
+```
 
 ### Clients table creation
 
