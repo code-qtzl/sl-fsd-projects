@@ -73,3 +73,26 @@ SELECT
 FROM meetings
 JOIN clients ON meetings.client_id = clients.client_id;
 ```
+
+### ER Diagram Model
+
+```mermaid
+erDiagram
+direction LR
+    CLIENTS {
+        int client_id PK
+        varchar name
+        varchar email
+        varchar password
+    }
+
+    MEETINGS {
+        int meeting_id PK
+        varchar topic
+        int number_of_people
+        date meeting_date
+        int client_id FK
+    }
+
+    CLIENTS ||--o{ MEETINGS : "has many"
+```
