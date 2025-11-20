@@ -46,8 +46,6 @@ CREATE TABLE meetings (
 
     -- Set up foreign key relationship to clients table
     FOREIGN KEY (client_id) REFERENCES clients(client_id)
-        ON UPDATE CASCADE
-        ON DELETE CASCADE
 );
 
 -- Insert the meetings to table
