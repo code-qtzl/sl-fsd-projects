@@ -1,0 +1,949 @@
+/* 1950's Utopian Futuristic Diner CSS Styles */
+
+/* Import Atomic Age Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap');
+
+/* Global Reset and Base Styles */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Custom CSS Variables for Diner Theme */
+:root {
+	--diner-red: #db5535;
+	--diner-dark-red: #883726;
+	--diner-light-teal: #6db39d;
+	--diner-mid-teal: #0e8985;
+	--diner-dark-teal: #00414a;
+	--diner-light: #ead1b1;
+	--retro-dark: #00414a;
+	--retro-silver: #ead1b1;
+	--neon-yellow: #ead1b1;
+	--chrome: #ead1b1;
+}
+
+/* Enhanced Font Legibility Styles */
+body {
+	font-weight: 500;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	letter-spacing: 0.025em;
+	color: var(--diner-light); /* Ensure body text is light by default */
+}
+
+/* Main Heading Styles for Better Legibility */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.5);
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: var(--diner-light); /* Ensure headings are light */
+}
+
+/* Paragraph and Body Text Enhancement */
+p,
+span,
+div {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+	line-height: 1.6;
+	color: var(--diner-light); /* Ensure text is light on dark backgrounds */
+}
+
+/* Dark Background Text Enhancement */
+.bg-diner-dark-teal,
+.bg-diner-dark-red,
+[class*='bg-diner-dark'],
+.section-bg {
+	color: var(--diner-light) !important;
+}
+
+.bg-diner-dark-teal *,
+.bg-diner-dark-red *,
+[class*='bg-diner-dark'] *,
+.section-bg * {
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* Specific text lightening for navigation on dark backgrounds */
+.nav-link {
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+/* Button Text Enhancement */
+button,
+.btn {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	color: var(--diner-light) !important; /* Ensure buttons have light text */
+}
+
+/* Special handling for buttons with specific background colors */
+.text-diner-dark-teal {
+	color: var(--diner-dark-teal) !important;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Input Field Enhancement */
+input,
+textarea,
+select {
+	text-shadow: none;
+	font-weight: 500;
+	background: rgba(0, 65, 74, 0.9) !important;
+	color: var(--diner-light) !important;
+	border: 2px solid var(--diner-mid-teal) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: rgba(234, 209, 177, 0.8) !important; /* Lighter placeholder text */
+	text-shadow: none;
+}
+
+/* Ensure all text in forms is visible */
+form,
+form * {
+	color: var(--diner-light) !important;
+}
+
+/* Labels specifically */
+label {
+	color: var(--diner-light) !important;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	font-weight: 600;
+}
+
+/* Card and Menu Item Text Enhancement */
+.menu-card {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 65, 74, 0.95) 0%,
+		rgba(14, 137, 133, 0.9) 100%
+	);
+	backdrop-filter: blur(10px);
+	border: 2px solid rgba(109, 179, 157, 0.6);
+}
+
+.menu-card h3 {
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.menu-card p {
+	color: var(--diner-light) !important;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	opacity: 0.95;
+}
+
+.menu-card .price {
+	color: var(--diner-light-teal) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	font-weight: 700;
+}
+
+/* Custom Animations */
+@keyframes neon-pulse {
+	0%,
+	100% {
+		text-shadow: 0 0 5px currentColor, 0 0 10px currentColor,
+			0 0 15px currentColor;
+	}
+	50% {
+		text-shadow: 0 0 10px currentColor, 0 0 20px currentColor,
+			0 0 30px currentColor, 0 0 40px currentColor;
+	}
+}
+
+@keyframes atomic-spin {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(180deg) scale(1.1);
+	}
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+@keyframes hover-float {
+	0%,
+	100% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-20px) rotate(10deg);
+	}
+}
+
+@keyframes retro-glow {
+	0%,
+	100% {
+		box-shadow: 0 0 5px var(--atomic-blue), 0 0 10px var(--atomic-blue),
+			0 0 15px var(--atomic-blue);
+	}
+	50% {
+		box-shadow: 0 0 10px var(--atomic-mint), 0 0 20px var(--atomic-mint),
+			0 0 30px var(--atomic-mint);
+	}
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Navigation Styles */
+.neon-glow {
+	box-shadow: 0 0 20px rgba(109, 179, 157, 0.3);
+}
+
+/* Enhanced Contrast for Better Legibility */
+.enhanced-text {
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.6);
+	font-weight: 600;
+}
+
+.hero-text {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 65, 74, 0.8) 0%,
+		rgba(14, 137, 133, 0.7) 100%
+	);
+	backdrop-filter: blur(8px);
+	padding: 2rem;
+	border-radius: 1rem;
+	border: 2px solid rgba(109, 179, 157, 0.4);
+}
+
+.hero-text * {
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.section-bg {
+	background: linear-gradient(
+		135deg,
+		rgb(0 65 74 / 90%) 0%,
+		rgb(14 137 133 / 90%) 50%,
+		rgb(0 65 74 / 100%) 100%
+	);
+	backdrop-filter: blur(10px);
+}
+
+.section-bg * {
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Menu item descriptions and text */
+.menu-description {
+	color: rgba(234, 209, 177, 0.95) !important;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Price text enhancement */
+.price-text {
+	color: var(--diner-light-teal) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+	font-weight: 700;
+}
+
+/* Search Bar Enhancement */
+.search-container {
+	background: rgba(0, 65, 74, 0.9);
+	backdrop-filter: blur(10px);
+	border: 2px solid var(--diner-light-teal);
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+.search-container * {
+	color: var(--diner-light) !important;
+}
+
+.nav-link {
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.nav-link::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		transparent,
+		var(--diner-light-teal),
+		transparent
+	);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	border-radius: 8px;
+}
+
+.nav-link:hover::before {
+	opacity: 0.2;
+}
+
+.nav-link.active {
+	color: var(--diner-light-teal);
+	text-shadow: 0 0 10px currentColor;
+}
+
+/* Retro Button Styles */
+.retro-btn {
+	border: 1px solid transparent;
+	background-clip: padding-box;
+	position: relative;
+}
+
+.retro-btn::after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	bottom: -1px;
+	background: linear-gradient(
+		45deg,
+		var(--diner-dark-teal),
+		var(--diner-light-teal),
+		var(--diner-dark-teal)
+	);
+	border-radius: inherit;
+	z-index: -1;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.retro-btn:hover::after {
+	opacity: 1;
+}
+
+/* Neon Button Effect */
+.neon-button {
+	box-shadow: 0 0 20px rgba(219, 85, 53, 0.5);
+	transition: all 0.3s ease;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.neon-button:hover {
+	box-shadow: 0 0 30px rgba(109, 179, 157, 0.8),
+		0 0 60px rgba(109, 179, 157, 0.4);
+	transform: translateY(-2px) scale(1.05);
+}
+
+/* Enhanced Text Legibility for All Interactive Elements */
+.neon-button,
+.retro-btn,
+.filter-btn,
+button {
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Filter Button Enhanced Styles */
+.retro-filter-btn {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 65, 74, 0.9),
+		rgba(14, 137, 133, 0.8)
+	);
+	border: 2px solid var(--diner-light-teal);
+	color: var(--diner-light) !important;
+	backdrop-filter: blur(5px);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	padding: 12px 24px;
+	border-radius: 25px;
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.retro-filter-btn.active {
+	background: linear-gradient(
+		135deg,
+		var(--diner-red),
+		var(--diner-dark-red)
+	);
+	border-color: var(--diner-light);
+	color: var(--diner-light) !important;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.retro-filter-btn:hover {
+	background: linear-gradient(
+		135deg,
+		var(--diner-light-teal),
+		var(--diner-mid-teal)
+	);
+	color: var(--diner-dark-teal) !important;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.retro-filter-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		rgba(109, 179, 157, 0.4),
+		transparent
+	);
+	transition: left 0.5s ease;
+}
+
+.retro-filter-btn:hover::before {
+	left: 100%;
+}
+
+.retro-filter-btn:hover {
+	border-color: var(--diner-light-teal);
+	color: var(--diner-light-teal);
+	box-shadow: 0 0 20px rgba(109, 179, 157, 0.3);
+	transform: translateY(-2px);
+}
+
+.retro-filter-btn.active {
+	background: linear-gradient(
+		135deg,
+		var(--diner-red),
+		var(--diner-dark-red)
+	);
+	border-color: var(--diner-light-teal);
+	color: var(--diner-light);
+	box-shadow: 0 0 25px rgba(219, 85, 53, 0.6);
+}
+
+/* Menu Card Styles */
+.menu-card {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 65, 74, 0.9),
+		rgba(14, 137, 133, 0.1)
+	);
+	border: 2px solid var(--diner-light-teal);
+	border-radius: 20px;
+	overflow: hidden;
+	transition: all 0.4s ease;
+	position: relative;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	animation: fadeIn 0.6s ease forwards;
+}
+
+.menu-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		rgba(109, 179, 157, 0.1) 0%,
+		rgba(219, 85, 53, 0.1) 25%,
+		rgba(109, 179, 157, 0.1) 50%,
+		rgba(14, 137, 133, 0.1) 75%,
+		rgba(0, 65, 74, 0.1) 100%
+	);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.menu-card:hover::before {
+	opacity: 1;
+}
+
+.menu-card:hover {
+	transform: translateY(-10px) scale(1.02);
+	border-color: var(--diner-light-teal);
+	box-shadow: 0 20px 50px rgba(109, 179, 157, 0.2),
+		0 0 30px rgba(109, 179, 157, 0.3);
+}
+
+.menu-card img {
+	transition: transform 0.4s ease;
+	filter: brightness(1.1) contrast(1.2) saturate(1.3);
+}
+
+.menu-card:hover img {
+	transform: scale(1.1);
+}
+
+.menu-card-content {
+	padding: 1.5rem;
+	position: relative;
+	z-index: 2;
+}
+
+.menu-card-title {
+	font-family: 'Orbitron', monospace;
+	font-weight: 700;
+	font-size: 1.25rem;
+	color: var(--diner-light);
+	margin-bottom: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.menu-card-description {
+	color: var(--retro-silver);
+	font-family: 'Space Mono', monospace;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+.menu-card-price {
+	font-family: 'Orbitron', monospace;
+	font-weight: 900;
+	font-size: 1.5rem;
+	color: var(--diner-light-teal);
+	text-shadow: 0 0 10px currentColor;
+	margin-bottom: 1rem;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+	width: 100%;
+	background: linear-gradient(
+		135deg,
+		var(--diner-red),
+		var(--diner-dark-red)
+	);
+	color: var(--diner-light);
+	padding: 12px 16px;
+	border-radius: 15px;
+	font-family: 'Space Mono', monospace;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.add-to-cart-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		rgba(255, 255, 255, 0.3),
+		transparent
+	);
+	transition: left 0.5s ease;
+}
+
+.add-to-cart-btn:hover::before {
+	left: 100%;
+}
+
+.add-to-cart-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 25px rgba(255, 107, 0, 0.4);
+	background: linear-gradient(
+		135deg,
+		var(--atomic-pink),
+		var(--atomic-purple)
+	);
+}
+
+.add-to-cart-btn:active {
+	transform: translateY(0);
+}
+
+/* Cart Styles */
+.cart-item {
+	background: linear-gradient(
+		135deg,
+		rgba(26, 27, 58, 0.8),
+		rgba(139, 0, 255, 0.1)
+	);
+	border: 1px solid var(--atomic-blue);
+	border-radius: 15px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	transition: all 0.3s ease;
+	animation: slideIn 0.3s ease forwards;
+}
+
+.cart-item:hover {
+	border-color: var(--atomic-mint);
+	box-shadow: 0 5px 15px rgba(0, 255, 179, 0.2);
+}
+
+.quantity-controls {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.quantity-btn {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, var(--atomic-blue), var(--atomic-mint));
+	color: white;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.quantity-btn:hover {
+	transform: scale(1.1);
+	box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+.quantity-display {
+	font-family: 'Orbitron', monospace;
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: var(--atomic-mint);
+	min-width: 3rem;
+	text-align: center;
+}
+
+/* Form Styles */
+.form-input {
+	background: rgba(26, 27, 58, 0.8);
+	border: 2px solid var(--atomic-blue);
+	border-radius: 15px;
+	padding: 12px 16px;
+	color: var(--chrome);
+	font-family: 'Space Mono', monospace;
+	transition: all 0.3s ease;
+}
+
+.form-input:focus {
+	border-color: var(--atomic-mint);
+	box-shadow: 0 0 20px rgba(0, 255, 179, 0.3);
+	outline: none;
+}
+
+.form-input::placeholder {
+	color: var(--retro-silver);
+}
+
+/* Toast Notification Styles */
+.toast {
+	background: linear-gradient(
+		135deg,
+		rgba(26, 27, 58, 0.95),
+		rgba(139, 0, 255, 0.2)
+	);
+	border: 2px solid var(--atomic-mint);
+	border-radius: 15px;
+	color: var(--chrome);
+	font-family: 'Space Mono', monospace;
+	box-shadow: 0 10px 30px rgba(0, 255, 179, 0.3);
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	z-index: 1000;
+	padding: 1rem 1.5rem;
+	animation: slideIn 0.3s ease forwards;
+}
+
+.toast.success {
+	border-color: var(--atomic-mint);
+	box-shadow: 0 10px 30px rgba(0, 255, 179, 0.4);
+}
+
+.toast.error {
+	border-color: var(--atomic-pink);
+	box-shadow: 0 10px 30px rgba(255, 27, 141, 0.4);
+}
+
+.toast.info {
+	border-color: var(--atomic-blue);
+	box-shadow: 0 10px 30px rgba(0, 212, 255, 0.4);
+}
+
+/* Success Animation */
+.success-animation {
+	animation: neon-pulse 0.6s ease;
+}
+
+/* Cart badge animation */
+.cart-badge-animate {
+	animation: neon-pulse 0.5s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.menu-card {
+		margin-bottom: 1.5rem;
+	}
+
+	.atomic-logo i {
+		font-size: 3rem !important;
+	}
+
+	.hero-title {
+		font-size: 2.5rem !important;
+	}
+
+	.retro-filter-btn {
+		padding: 8px 16px;
+		font-size: 12px;
+	}
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 2px solid var(--atomic-mint);
+	outline-offset: 2px;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+	.menu-card {
+		border-width: 3px;
+	}
+
+	.retro-filter-btn {
+		border-width: 3px;
+	}
+
+	.neon-button {
+		border: 3px solid white;
+	}
+}
+
+/* Print Styles */
+@media print {
+	.neon-glow,
+	.neon-button,
+	.retro-filter-btn {
+		box-shadow: none !important;
+		background: white !important;
+		color: black !important;
+	}
+
+	.menu-card {
+		break-inside: avoid;
+		border: 1px solid black;
+	}
+}
+
+/* Login Page Specific Styles */
+.login-card {
+	background: linear-gradient(
+		135deg,
+		rgba(0, 65, 74, 0.9),
+		rgba(14, 137, 133, 0.1)
+	);
+	border: 2px solid var(--diner-light-teal);
+	backdrop-filter: blur(20px);
+	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3),
+		0 0 30px rgba(109, 179, 157, 0.2);
+	position: relative;
+	overflow: hidden;
+	/* Remove any floating animations */
+	animation: none !important;
+}
+
+.login-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		45deg,
+		rgba(109, 179, 157, 0.05) 0%,
+		rgba(219, 85, 53, 0.05) 25%,
+		rgba(109, 179, 157, 0.05) 50%,
+		rgba(14, 137, 133, 0.05) 75%,
+		rgba(0, 65, 74, 0.05) 100%
+	);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.login-card:hover::before {
+	opacity: 1;
+}
+
+.input-group {
+	position: relative;
+}
+
+.input-group input {
+	transition: all 0.3s ease;
+	font-family: 'Space Mono', monospace;
+}
+
+.input-group input:focus {
+	box-shadow: 0 0 20px rgba(109, 179, 157, 0.3);
+	transform: translateY(-2px);
+}
+
+.input-group label {
+	font-family: 'Orbitron', monospace;
+}
+
+/* Login Button States */
+.login-card button[type='submit']:disabled {
+	background: linear-gradient(135deg, #555, #777);
+	cursor: not-allowed;
+	transform: none !important;
+}
+
+.login-card button[type='submit']:not(:disabled):hover {
+	box-shadow: 0 0 30px rgba(219, 85, 53, 0.6);
+}
+
+/* Password Strength Indicators */
+.input-group .flex span {
+	transition: all 0.3s ease;
+	font-family: 'Space Mono', monospace;
+	font-size: 0.75rem;
+}
+
+.input-group .flex span.text-green-400 {
+	color: #4ade80 !important;
+}
+
+/* Success Message Animation */
+#successMessage {
+	background: linear-gradient(
+		135deg,
+		rgba(34, 197, 94, 0.2),
+		rgba(22, 163, 74, 0.1)
+	);
+	border: 2px solid #4ade80;
+	backdrop-filter: blur(10px);
+	animation: successPulse 0.5s ease forwards;
+}
+
+@keyframes successPulse {
+	0% {
+		opacity: 0;
+		transform: translateY(20px) scale(0.9);
+	}
+	50% {
+		transform: translateY(-5px) scale(1.05);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+/* Toggle Password Button */
+#togglePassword {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#togglePassword:hover {
+	transform: scale(1.1);
+}
+
+/* Remember Me Checkbox */
+input[type='checkbox'] {
+	accent-color: var(--diner-red);
+	border-radius: 4px;
+}
+
+/* Link Hover Effects */
+.login-card a:hover {
+	text-shadow: 0 0 10px currentColor;
+}
+
+/* Mobile Login Adjustments */
+@media (max-width: 640px) {
+	.login-card {
+		margin: 1rem;
+		padding: 1.5rem;
+	}
+
+	.atomic-logo i {
+		font-size: 4rem !important;
+	}
+
+	h1 {
+		font-size: 2rem !important;
+	}
+
+	h2 {
+		font-size: 1.25rem !important;
+	}
+}

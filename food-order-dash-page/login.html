@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Atomic Diner - Login Portal</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/css/styles.css" />
+		<link rel="stylesheet" href="src/css/atomic-diner.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<style>
+			/* Additional styles for better text legibility */
+			.login-text-shadow {
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+					0 0 8px rgba(0, 0, 0, 0.5);
+			}
+
+			.login-icon-shadow {
+				filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));
+			}
+
+			.enhanced-contrast {
+				background: linear-gradient(
+					135deg,
+					rgba(0, 65, 74, 0.95) 0%,
+					rgba(14, 137, 133, 0.9) 50%,
+					rgba(0, 65, 74, 0.95) 100%
+				);
+				backdrop-filter: blur(12px);
+				border: 2px solid rgba(109, 179, 157, 0.6);
+			}
+
+			/* Space theme animations */
+			@keyframes twinkle {
+				0% {
+					opacity: 0.3;
+					transform: scale(1);
+				}
+				50% {
+					opacity: 0.8;
+					transform: scale(1.1);
+				}
+				100% {
+					opacity: 0.3;
+					transform: scale(1);
+				}
+			}
+		</style>
+	</head>
+	<body class="min-h-screen font-retro text-diner-light overflow-hidden">
+		<!-- Split Container -->
+		<div class="flex min-h-screen">
+			<!-- Left Half - Hero Image -->
+			<div class="hidden lg:flex lg:w-1/2 relative overflow-hidden">
+				<!-- Hero Image -->
+				<div class="absolute inset-0">
+					<img
+						src="src/images/hero.png"
+						alt="Atomic Diner Future Feast"
+						class="w-full h-full object-cover object-center"
+					/>
+					<!-- Overlay for better contrast -->
+					<div
+						class="absolute inset-0 bg-gradient-to-l from-slate-900/90 via-transparent to-slate-900/10"
+					></div>
+					<div
+						class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-slate-900/90"
+					></div>
+				</div>
+
+				<!-- Content overlay on image -->
+				<div
+					class="relative z-10 flex flex-col justify-center items-center text-center p-12 bg-gradient-to-r from-slate-900/90 to-slate-100/0"
+				>
+					<div class="atomic-logo mb-8">
+						<i
+							class="fas fa-atom text-8xl text-diner-light-teal animate-atomic-spin"
+						></i>
+					</div>
+					<h1 class="text-6xl font-white mb-4 drop-shadow-lg">
+						ATOMIC DINER
+					</h1>
+					<h2
+						class="text-2xl font-retro font-bold text-diner-light uppercase tracking-widest mb-6"
+					>
+						Future Feast Portal
+					</h2>
+					<p
+						class="text-lg text-diner-light max-w-md leading-relaxed opacity-90"
+					>
+						Step into tomorrow's kitchen today! Experience
+						quantum-powered dining delivered at light speed.
+					</p>
+				</div>
+			</div>
+
+			<!-- Right Half - Login Form -->
+			<div
+				class="w-full lg:w-1/2 flex items-center justify-center relative overflow-hidden"
+				style="
+					background: linear-gradient(
+						135deg,
+						#0f0f23 0%,
+						#1a1a2e 50%,
+						#16213e 100%
+					);
+				"
+			>
+				<!-- Space stars background -->
+				<div
+					class="absolute inset-0"
+					style="
+						background-image: radial-gradient(
+								2px 2px at 20px 30px,
+								#ffffff,
+								transparent
+							),
+							radial-gradient(
+								2px 2px at 40px 70px,
+								rgba(255, 255, 255, 0.8),
+								transparent
+							),
+							radial-gradient(
+								1px 1px at 90px 40px,
+								rgba(255, 255, 255, 0.6),
+								transparent
+							),
+							radial-gradient(
+								1px 1px at 130px 80px,
+								rgba(255, 255, 255, 0.4),
+								transparent
+							),
+							radial-gradient(
+								2px 2px at 160px 30px,
+								rgba(255, 255, 255, 0.7),
+								transparent
+							);
+						background-repeat: repeat;
+						background-size: 200px 100px;
+						animation: twinkle 4s ease-in-out infinite alternate;
+					"
+				></div>
+
+				<!-- Subtle glow overlay -->
+				<div
+					class="absolute inset-0"
+					style="
+						background: radial-gradient(
+							ellipse at center,
+							rgba(0, 65, 74, 0.1) 0%,
+							transparent 70%
+						);
+					"
+				></div>
+				<!-- Background Decorative Elements for right side only -->
+				<div class="absolute inset-0">
+					<div
+						class="absolute top-20 right-10 w-24 h-24 border-4 border-diner-light-teal rounded-full animate-pulse"
+					></div>
+					<div
+						class="absolute bottom-20 right-1/4 w-16 h-16 border-4 border-diner-red rounded-full animate-bounce"
+					></div>
+					<div
+						class="absolute top-1/2 right-10 w-20 h-20 border-2 border-diner-mid-teal rounded-full animate-ping"
+					></div>
+				</div>
+
+				<!-- Login Container -->
+				<div class="relative z-10 w-full max-w-md mx-8">
+					<!-- Mobile Header (only visible on small screens) -->
+					<div class="text-center mb-8 lg:hidden">
+						<div class="atomic-logo mb-6">
+							<i
+								class="fas fa-atom text-6xl text-diner-light-teal animate-atomic-spin"
+							></i>
+						</div>
+						<h1
+							class="text-6xl font-atomic font-white mb-4 drop-shadow-lg"
+						>
+							ATOMIC DINER
+						</h1>
+						<h2
+							class="text-xl font-retro font-bold text-diner-red uppercase tracking-widest"
+						>
+							Login Portal
+						</h2>
+					</div>
+
+					<!-- Desktop Header -->
+					<div class="hidden lg:block text-center mb-8">
+						<h2
+							class="text-3xl font-bold text-diner-light mb-2 drop-shadow-lg"
+							style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)"
+						>
+							Access Portal
+						</h2>
+						<p
+							class="text-diner-light font-medium drop-shadow-md"
+							style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)"
+						>
+							Enter your credentials to begin
+						</p>
+					</div>
+
+					<!-- Login Form -->
+					<div
+						class="login-card bg-gradient-to-br from-diner-dark-teal via-diner-mid-teal to-diner-light-teal backdrop-blur-lg border-2 border-diner-light-teal rounded-2xl p-8 shadow-2xl"
+						style="
+							background: linear-gradient(
+								135deg,
+								rgba(0, 65, 74, 0.95) 0%,
+								rgba(14, 137, 133, 0.85) 100%
+							);
+							backdrop-filter: blur(10px);
+						"
+					>
+						<form id="loginForm" class="space-y-6">
+							<!-- Email Field -->
+							<div class="input-group">
+								<label
+									for="email"
+									class="block text-sm font-bold text-diner-light uppercase tracking-wider mb-2 drop-shadow-md"
+									style="
+										text-shadow: 1px 1px 2px
+											rgba(0, 0, 0, 0.8);
+									"
+								>
+									<i
+										class="fas fa-envelope mr-2 text-diner-light-teal drop-shadow-md"
+									></i>
+									Email Address
+								</label>
+								<div class="relative">
+									<input
+										type="email"
+										id="email"
+										name="email"
+										class="w-full px-4 py-3 bg-diner-dark-teal/50 border-2 border-diner-mid-teal rounded-lg text-diner-light placeholder:text-diner-light placeholder:opacity-50 focus:border-diner-light-teal focus:outline-none transition-all duration-300"
+										placeholder="commander@atomicdiner.space"
+										required
+									/>
+									<div
+										class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"
+									>
+										<i
+											class="fas fa-check-circle text-green-400 hidden"
+											id="emailValid"
+										></i>
+										<i
+											class="fas fa-exclamation-circle text-diner-red hidden"
+											id="emailInvalid"
+										></i>
+									</div>
+								</div>
+								<p
+									class="text-xs text-diner-red mt-1 hidden"
+									id="emailError"
+								>
+									Please enter a valid email address
+								</p>
+							</div>
+
+							<!-- Password Field -->
+							<div class="input-group">
+								<label
+									for="password"
+									class="block text-sm font-bold text-diner-light uppercase tracking-wider mb-2 drop-shadow-md"
+									style="
+										text-shadow: 1px 1px 2px
+											rgba(0, 0, 0, 0.8);
+									"
+								>
+									<i
+										class="fas fa-lock mr-2 text-diner-light-teal drop-shadow-md"
+									></i>
+									Access Code
+								</label>
+								<div class="relative">
+									<input
+										type="password"
+										id="password"
+										name="password"
+										class="w-full px-4 py-3 bg-diner-dark-teal/50 border-2 border-diner-mid-teal rounded-lg text-diner-light placeholder:text-diner-light placeholder:opacity-50 focus:border-diner-light-teal focus:outline-none transition-all duration-300"
+										placeholder="Enter your secret code"
+										required
+									/>
+									<div
+										class="absolute inset-y-0 right-0 pr-3 flex items-center"
+									>
+										<button
+											type="button"
+											id="togglePassword"
+											class="text-diner-light-teal hover:text-diner-light transition-colors duration-200"
+										>
+											<i
+												class="fas fa-eye"
+												id="eyeIcon"
+											></i>
+										</button>
+									</div>
+								</div>
+								<div class="mt-2 space-y-1">
+									<p
+										class="text-xs text-diner-light font-medium drop-shadow-md"
+										style="
+											text-shadow: 1px 1px 2px
+												rgba(0, 0, 0, 0.8);
+										"
+										id="passwordReq"
+									>
+										Requirements: Minimum 6 characters, 1
+										special character
+									</p>
+									<div class="flex space-x-4 text-xs">
+										<span
+											class="flex items-center font-medium drop-shadow-md"
+											style="
+												text-shadow: 1px 1px 2px
+													rgba(0, 0, 0, 0.8);
+											"
+											id="lengthCheck"
+										>
+											<i
+												class="fas fa-times text-diner-red mr-1"
+											></i>
+											<span>6+ characters</span>
+										</span>
+										<span
+											class="flex items-center font-medium drop-shadow-md"
+											style="
+												text-shadow: 1px 1px 2px
+													rgba(0, 0, 0, 0.8);
+											"
+											id="specialCheck"
+										>
+											<i
+												class="fas fa-times text-diner-red mr-1"
+											></i>
+											<span>1 special character</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- Submit Button -->
+							<button
+								type="submit"
+								id="submitBtn"
+								class="w-full bg-gradient-to-r from-diner-red to-diner-dark-red text-diner-light py-3 px-6 rounded-lg font-bold uppercase tracking-wider hover:from-diner-dark-red hover:to-diner-red transition-all duration-300 transform hover:scale-105 neon-button disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+								disabled
+							>
+								<i class="fas fa-rocket mr-2"></i>
+								Launch Access
+							</button>
+						</form>
+					</div>
+
+					<!-- Success Message (Hidden by default) -->
+					<div
+						id="successMessage"
+						class="hidden mt-6 p-4 bg-green-500/20 border-2 border-green-400 rounded-lg text-center"
+					>
+						<i
+							class="fas fa-check-circle text-green-400 text-2xl mb-2"
+						></i>
+						<p class="text-green-400 font-bold">Access Granted!</p>
+						<p class="text-sm text-diner-light">
+							Redirecting to your dining experience...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Login JavaScript -->
+		<script>
+			class AtomicLoginSystem {
+				constructor() {
+					this.emailInput = document.getElementById('email');
+					this.passwordInput = document.getElementById('password');
+					this.form = document.getElementById('loginForm');
+					this.submitBtn = document.getElementById('submitBtn');
+					this.togglePasswordBtn =
+						document.getElementById('togglePassword');
+					this.eyeIcon = document.getElementById('eyeIcon');
+
+					this.initializeEventListeners();
+				}
+
+				initializeEventListeners() {
+					// Email validation
+					this.emailInput.addEventListener('input', () => {
+						this.validateEmail();
+						this.updateSubmitButton();
+					});
+					this.emailInput.addEventListener('blur', () => {
+						this.validateEmail();
+						this.updateSubmitButton();
+					});
+
+					// Password validation
+					this.passwordInput.addEventListener('input', () => {
+						this.validatePassword();
+						this.updateSubmitButton();
+					});
+
+					// Toggle password visibility
+					this.togglePasswordBtn.addEventListener('click', () =>
+						this.togglePasswordVisibility(),
+					);
+
+					// Form submission
+					this.form.addEventListener('submit', (e) =>
+						this.handleSubmit(e),
+					);
+				}
+
+				validateEmail() {
+					const email = this.emailInput.value.trim();
+					const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+					const isValid = emailRegex.test(email);
+
+					const validIcon = document.getElementById('emailValid');
+					const invalidIcon = document.getElementById('emailInvalid');
+					const errorMsg = document.getElementById('emailError');
+
+					if (email === '') {
+						validIcon.classList.add('hidden');
+						invalidIcon.classList.add('hidden');
+						errorMsg.classList.add('hidden');
+						this.emailInput.classList.remove(
+							'border-green-400',
+							'border-diner-red',
+						);
+						this.emailInput.classList.add('border-diner-mid-teal');
+						return false; // Empty email is not valid
+					} else if (isValid) {
+						validIcon.classList.remove('hidden');
+						invalidIcon.classList.add('hidden');
+						errorMsg.classList.add('hidden');
+						this.emailInput.classList.remove(
+							'border-diner-red',
+							'border-diner-mid-teal',
+						);
+						this.emailInput.classList.add('border-green-400');
+					} else {
+						validIcon.classList.add('hidden');
+						invalidIcon.classList.remove('hidden');
+						errorMsg.classList.remove('hidden');
+						this.emailInput.classList.remove(
+							'border-green-400',
+							'border-diner-mid-teal',
+						);
+						this.emailInput.classList.add('border-diner-red');
+					}
+
+					return isValid;
+				}
+
+				validatePassword() {
+					const password = this.passwordInput.value;
+					const lengthValid = password.length >= 6;
+					const specialCharValid = /[!@#$%^&*(),.?":{}|<>]/.test(
+						password,
+					);
+
+					// Update length check
+					const lengthCheck = document.getElementById('lengthCheck');
+					const lengthIcon = lengthCheck.querySelector('i');
+					if (lengthValid) {
+						lengthIcon.className =
+							'fas fa-check text-green-400 mr-1';
+						lengthCheck.classList.add('text-green-400');
+						lengthCheck.classList.remove('text-diner-light');
+					} else {
+						lengthIcon.className =
+							'fas fa-times text-diner-red mr-1';
+						lengthCheck.classList.remove('text-green-400');
+						lengthCheck.classList.add('text-diner-light');
+					}
+
+					// Update special character check
+					const specialCheck =
+						document.getElementById('specialCheck');
+					const specialIcon = specialCheck.querySelector('i');
+					if (specialCharValid) {
+						specialIcon.className =
+							'fas fa-check text-green-400 mr-1';
+						specialCheck.classList.add('text-green-400');
+						specialCheck.classList.remove('text-diner-light');
+					} else {
+						specialIcon.className =
+							'fas fa-times text-diner-red mr-1';
+						specialCheck.classList.remove('text-green-400');
+						specialCheck.classList.add('text-diner-light');
+					}
+
+					// Update password field border
+					if (password === '') {
+						this.passwordInput.classList.remove(
+							'border-green-400',
+							'border-diner-red',
+						);
+						this.passwordInput.classList.add(
+							'border-diner-mid-teal',
+						);
+					} else if (lengthValid && specialCharValid) {
+						this.passwordInput.classList.remove(
+							'border-diner-red',
+							'border-diner-mid-teal',
+						);
+						this.passwordInput.classList.add('border-green-400');
+					} else {
+						this.passwordInput.classList.remove(
+							'border-green-400',
+							'border-diner-mid-teal',
+						);
+						this.passwordInput.classList.add('border-diner-red');
+					}
+
+					return lengthValid && specialCharValid;
+				}
+
+				updateSubmitButton() {
+					const emailValid = this.validateEmail();
+					const passwordValid = this.validatePassword();
+
+					if (emailValid && passwordValid) {
+						this.submitBtn.disabled = false;
+						this.submitBtn.classList.remove(
+							'opacity-50',
+							'cursor-not-allowed',
+						);
+						this.submitBtn.classList.add('hover:scale-105');
+					} else {
+						this.submitBtn.disabled = true;
+						this.submitBtn.classList.add(
+							'opacity-50',
+							'cursor-not-allowed',
+						);
+						this.submitBtn.classList.remove('hover:scale-105');
+					}
+				}
+
+				togglePasswordVisibility() {
+					const type =
+						this.passwordInput.getAttribute('type') === 'password'
+							? 'text'
+							: 'password';
+					this.passwordInput.setAttribute('type', type);
+
+					if (type === 'password') {
+						this.eyeIcon.className = 'fas fa-eye';
+					} else {
+						this.eyeIcon.className = 'fas fa-eye-slash';
+					}
+				}
+
+				handleSubmit(e) {
+					e.preventDefault();
+
+					const emailValid = this.validateEmail();
+					const passwordValid = this.validatePassword();
+
+					if (emailValid && passwordValid) {
+						this.showSuccess();
+					}
+				}
+
+				showSuccess() {
+					const successMessage =
+						document.getElementById('successMessage');
+					const form = document.querySelector('.login-card');
+
+					// Hide form and show success message
+					form.style.transform = 'translateY(-20px)';
+					form.style.opacity = '0.7';
+					successMessage.classList.remove('hidden');
+					successMessage.style.animation =
+						'fadeIn 0.5s ease forwards';
+
+					// Simulate redirect after 2 seconds
+					setTimeout(() => {
+						window.location.href = 'index.html';
+					}, 2000);
+				}
+			}
+
+			// Initialize login system when DOM is loaded
+			document.addEventListener('DOMContentLoaded', () => {
+				new AtomicLoginSystem();
+			});
+		</script>
+	</body>
+</html>

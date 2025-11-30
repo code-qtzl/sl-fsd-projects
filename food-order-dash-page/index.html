@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Atomic Diner - Futuristic Food Experience</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/css/styles.css" />
+		<link rel="stylesheet" href="src/css/atomic-diner.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<style>
+			/* Space theme animations */
+			@keyframes twinkle {
+				0% {
+					opacity: 0.3;
+					transform: scale(1);
+				}
+				50% {
+					opacity: 0.8;
+					transform: scale(1.1);
+				}
+				100% {
+					opacity: 0.3;
+					transform: scale(1);
+				}
+			}
+		</style>
+	</head>
+	<body
+		class="bg-gradient-to-br from-diner-dark-teal via-diner-mid-teal to-diner-dark-red min-h-screen font-retro text-diner-light"
+		style="
+			background-image: radial-gradient(
+					circle at 25% 25%,
+					rgba(109, 179, 157, 0.1) 0%,
+					transparent 50%
+				),
+				radial-gradient(
+					circle at 75% 75%,
+					rgba(219, 85, 53, 0.1) 0%,
+					transparent 50%
+				);
+		"
+	>
+		<!-- Navigation Header -->
+		<nav
+			class="backdrop-blur-lg border-b-2 border-diner-light-teal sticky top-0 z-50 neon-glow"
+			style="
+				background: linear-gradient(
+					135deg,
+					rgba(15, 15, 35, 0.95) 0%,
+					rgba(26, 26, 46, 0.95) 50%,
+					rgba(22, 33, 62, 0.95) 100%
+				);
+				border-bottom: 2px solid rgba(255, 90, 49, 0.8);
+			"
+		>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center h-20">
+					<div class="flex items-center">
+						<div class="atomic-logo mr-4">
+							<i
+								class="fas fa-atom text-3xl text-diner-light-teal animate-atomic-spin"
+							></i>
+						</div>
+						<h1 class="text-3xl font-atomic font-black">
+							ATOMIC DINER
+						</h1>
+					</div>
+
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-6">
+							<a
+								href="#home"
+								class="nav-link retro-btn text-diner-light hover:text-diner-light-teal px-4 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all duration-300"
+								>Home</a
+							>
+							<a
+								href="#menu"
+								class="nav-link retro-btn text-diner-light hover:text-diner-mid-teal px-4 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all duration-300"
+								>Menu</a
+							>
+							<a
+								href="#contact"
+								class="nav-link retro-btn text-diner-light hover:text-diner-light-teal px-4 py-2 rounded-lg text-sm font-bold uppercase tracking-wider transition-all duration-300"
+								>Contact</a
+							>
+						</div>
+					</div>
+
+					<div class="flex items-center space-x-4">
+						<button
+							id="cartBtn"
+							class="relative bg-gradient-to-r from-diner-red to-diner-dark-red text-diner-light px-6 py-3 rounded-full hover:from-diner-dark-red hover:to-diner-red transition-all duration-300 transform hover:scale-105 neon-button font-bold uppercase tracking-wide"
+						>
+							<i class="fas fa-shopping-cart mr-2 text-lg"></i>
+							CART
+							<span
+								id="cartCount"
+								class="absolute -top-2 -right-2 bg-red-100 bg-diner-light px-2.5 py-0.5 dark:bg-red-900 rounded-full w-7 h-7 flex items-center justify-center text-xs"
+								>0</span
+							>
+						</button>
+						<a
+							href="login.html"
+							class="text-diner-light hover:text-diner-light-teal transition-all duration-300 transform hover:scale-110 flex items-center px-3 py-2 rounded-lg border-2 border-transparent hover:border-diner-light-teal"
+							title="Login Portal"
+						>
+							<i class="fas fa-user-astronaut text-xl mr-2"></i>
+							<span
+								class="hidden lg:inline font-bold uppercase tracking-wider text-sm"
+								>Login</span
+							>
+						</a>
+					</div>
+
+					<!-- Mobile menu button -->
+					<div class="md:hidden">
+						<button
+							id="mobileMenuBtn"
+							class="text-diner-light hover:text-diner-light-teal transition-all duration-300"
+						>
+							<i class="fas fa-bars text-2xl"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mobile Navigation -->
+			<div
+				id="mobileMenu"
+				class="md:hidden hidden bg-diner-dark-teal/95 border-t border-diner-light-teal"
+			>
+				<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+					<a
+						href="#home"
+						class="nav-link mobile-nav block px-4 py-3 text-base font-bold text-diner-light hover:text-diner-light-teal uppercase tracking-wider"
+						>Home</a
+					>
+					<a
+						href="#menu"
+						class="nav-link mobile-nav block px-4 py-3 text-base font-bold text-diner-light hover:text-diner-mid-teal uppercase tracking-wider"
+						>Menu</a
+					>
+					<a
+						href="#contact"
+						class="nav-link mobile-nav block px-4 py-3 text-base font-bold text-diner-light hover:text-diner-light-teal uppercase tracking-wider"
+						>Contact</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section
+			id="home"
+			class="relative py-32 overflow-hidden"
+			style="
+				background: linear-gradient(
+					135deg,
+					#0f0f23 0%,
+					#1a1a2e 50%,
+					#16213e 100%
+				);
+			"
+		>
+			<!-- Space stars background -->
+			<div
+				class="absolute inset-0"
+				style="
+					background-image: radial-gradient(
+							2px 2px at 20px 30px,
+							#ffffff,
+							transparent
+						),
+						radial-gradient(
+							2px 2px at 40px 70px,
+							rgba(255, 255, 255, 0.8),
+							transparent
+						),
+						radial-gradient(
+							1px 1px at 90px 40px,
+							rgba(255, 255, 255, 0.6),
+							transparent
+						),
+						radial-gradient(
+							1px 1px at 130px 80px,
+							rgba(255, 255, 255, 0.4),
+							transparent
+						),
+						radial-gradient(
+							2px 2px at 160px 30px,
+							rgba(255, 255, 255, 0.7),
+							transparent
+						);
+					background-repeat: repeat;
+					background-size: 200px 100px;
+					animation: twinkle 4s ease-in-out infinite alternate;
+				"
+			></div>
+
+			<!-- Subtle glow overlay -->
+			<div
+				class="absolute inset-0"
+				style="
+					background: radial-gradient(
+						ellipse at center,
+						rgba(0, 65, 74, 0.1) 0%,
+						transparent 70%
+					);
+				"
+			></div>
+			<!-- Animated Background Elements -->
+			<div class="absolute inset-0 opacity-20">
+				<div
+					class="absolute top-20 left-10 w-32 h-32 border-4 border-diner-light-teal rounded-full animate-pulse"
+				></div>
+				<div
+					class="absolute top-40 right-20 w-24 h-24 border-4 border-diner-red rounded-full animate-ping"
+				></div>
+				<div
+					class="absolute bottom-20 left-1/4 w-16 h-16 border-4 border-diner-light-teal rounded-full animate-bounce"
+				></div>
+				<div
+					class="absolute bottom-40 right-1/3 w-20 h-20 border-4 border-diner-red rounded-full animate-spin"
+				></div>
+			</div>
+
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="grid lg:grid-cols-2 gap-12 items-center">
+					<!-- Left side: Hero content -->
+					<div class="space-y-8 text-center lg:text-left">
+						<div class="atomic-logo mb-8 lg:hidden">
+							<i
+								class="fas fa-rocket text-8xl text-diner-light-teal animate-hover-float"
+								style="
+									filter: drop-shadow(
+										2px 2px 4px rgba(0, 0, 0, 0.8)
+									);
+								"
+							></i>
+						</div>
+						<h2
+							class="text-5xl md:text-8xl leading-tight"
+							style="
+								text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9),
+									0 0 12px rgba(0, 0, 0, 0.7);
+							"
+						>
+							FUTURE FEAST
+						</h2>
+						<h3
+							class="text-2xl md:text-4xl font-retro font-bold text-diner-red uppercase tracking-widest animate-neon-pulse"
+							style="
+								text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9),
+									0 0 8px rgba(0, 0, 0, 0.6);
+							"
+						>
+							Atomic Age Dining Experience
+						</h3>
+						<p
+							class="text-lg md:text-xl text-diner-light max-w-3xl mx-auto lg:mx-0 font-retro leading-relaxed font-medium"
+							style="
+								text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+								background: rgba(0, 65, 74, 0.7);
+								padding: 1.5rem;
+								border-radius: 1rem;
+								backdrop-filter: blur(5px);
+							"
+						>
+							Step into tomorrow's kitchen today! Our
+							quantum-powered chefs craft meals from the space
+							age, delivered faster than light to your home base.
+						</p>
+						<div
+							class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center mt-12"
+						>
+							<button
+								onclick="scrollToMenu()"
+								class="text-diner-light px-12 py-4 rounded-full text-xl font-bold uppercase hover:from-diner-mid-teal hover:to-diner-light-teal transition-all duration-300 transform hover:scale-105"
+								style="border: 2px solid #ead1b1"
+							>
+								<i class="fas fa-utensils mr-3"></i>
+								LAUNCH ORDER
+							</button>
+						</div>
+					</div>
+
+					<!-- Right side: Hero image -->
+					<div class="relative lg:block">
+						<div class="relative z-10">
+							<img
+								src="src/images/hero.png"
+								alt="Atomic Diner Future Feast"
+								class="w-full h-auto max-w-lg mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 animate-hover-float"
+							/>
+						</div>
+						<!-- Decorative elements around the image -->
+						<div
+							class="absolute -top-4 -left-4 w-32 h-32 border-4 border-diner-light-teal rounded-full opacity-30 animate-pulse"
+						></div>
+						<div
+							class="absolute -bottom-4 -right-4 w-24 h-24 border-4 border-diner-red rounded-full opacity-30 animate-ping"
+						></div>
+						<div
+							class="hidden lg:block absolute top-1/2 -left-12 transform -translate-y-1/2"
+						>
+							<i
+								class="fas fa-rocket text-6xl text-diner-light-teal animate-hover-float opacity-20"
+							></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Search and Filter Section -->
+		<section
+			class="py-12 backdrop-blur-sm border-y-2 border-diner-light-teal"
+			style="
+				background: linear-gradient(
+					135deg,
+					rgba(15, 15, 35, 0.95) 0%,
+					rgba(26, 26, 46, 0.95) 50%,
+					rgba(22, 33, 62, 0.95) 100%
+				);
+			"
+		>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div
+					class="flex flex-col md:flex-row gap-6 items-center justify-between"
+				>
+					<div class="relative flex-1 max-w-md">
+						<input
+							type="text"
+							id="searchInput"
+							placeholder="Search quantum cuisine..."
+							class="w-full pl-12 pr-4 py-4 bg-diner-dark-teal/90 border-2 border-diner-light-teal rounded-full text-diner-light placeholder:text-diner-light/70 focus:ring-2 focus:ring-diner-light-teal focus:border-diner-light-teal font-retro text-lg transition-all duration-300 backdrop-blur-lg"
+							style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8)"
+						/>
+						<i
+							class="fas fa-search absolute left-4 top-4 text-diner-light-teal text-xl"
+							style="
+								filter: drop-shadow(
+									1px 1px 2px rgba(0, 0, 0, 0.8)
+								);
+							"
+						></i>
+					</div>
+
+					<div class="flex gap-3 flex-wrap justify-center">
+						<button
+							class="retro-filter-btn active"
+							data-category="all"
+						>
+							<i class="fas fa-star mr-2"></i>ALL ITEMS
+						</button>
+						<button
+							class="retro-filter-btn"
+							data-category="appetizers"
+						>
+							<i class="fas fa-fire mr-2"></i>STARTERS
+						</button>
+						<button
+							class="retro-filter-btn"
+							data-category="main-course"
+						>
+							<i class="fas fa-rocket mr-2"></i>MAIN FUEL
+						</button>
+						<button
+							class="retro-filter-btn"
+							data-category="desserts"
+						>
+							<i class="fas fa-ice-cream mr-2"></i>SWEET ATOMS
+						</button>
+						<button
+							class="retro-filter-btn"
+							data-category="beverages"
+						>
+							<i class="fas fa-cocktail mr-2"></i>ELIXIRS
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Menu Section -->
+		<section id="menu" class="py-20 relative section-bg">
+			<!-- Enhanced Cosmic Background -->
+			<div class="absolute inset-0 overflow-hidden">
+				<!-- Starfield background -->
+				<div
+					class="absolute inset-0"
+					style="
+						background-image: radial-gradient(
+								2px 2px at 20px 30px,
+								rgba(255, 255, 255, 0.9),
+								transparent
+							),
+							radial-gradient(
+								2px 2px at 40px 70px,
+								rgba(109, 179, 157, 0.8),
+								transparent
+							),
+							radial-gradient(
+								1px 1px at 90px 40px,
+								rgba(219, 85, 53, 0.6),
+								transparent
+							),
+							radial-gradient(
+								1px 1px at 130px 80px,
+								rgba(255, 255, 255, 0.4),
+								transparent
+							),
+							radial-gradient(
+								2px 2px at 160px 30px,
+								rgba(109, 179, 157, 0.7),
+								transparent
+							),
+							radial-gradient(
+								1px 1px at 200px 100px,
+								rgba(255, 255, 255, 0.5),
+								transparent
+							),
+							radial-gradient(
+								3px 3px at 280px 150px,
+								rgba(219, 85, 53, 0.3),
+								transparent
+							),
+							radial-gradient(
+								1px 1px at 320px 50px,
+								rgba(109, 179, 157, 0.6),
+								transparent
+							);
+						background-repeat: repeat;
+						background-size: 400px 200px;
+						animation: twinkle 6s ease-in-out infinite alternate;
+					"
+				></div>
+
+				<!-- Nebula effects -->
+				<div
+					class="absolute inset-0 opacity-30"
+					style="
+						background: radial-gradient(
+								ellipse 800px 600px at 20% 30%,
+								rgba(109, 179, 157, 0.15) 0%,
+								transparent 60%
+							),
+							radial-gradient(
+								ellipse 600px 800px at 80% 70%,
+								rgba(219, 85, 53, 0.1) 0%,
+								transparent 60%
+							),
+							radial-gradient(
+								ellipse 400px 400px at 60% 40%,
+								rgba(15, 15, 35, 0.8) 0%,
+								transparent 70%
+							);
+					"
+				></div>
+
+				<!-- Animated cosmic elements -->
+				<div class="absolute inset-0 opacity-40">
+					<div
+						class="absolute top-1/4 left-1/4 w-3 h-3 bg-diner-light-teal rounded-full animate-ping shadow-lg"
+						style="box-shadow: 0 0 20px rgba(109, 179, 157, 0.8)"
+					></div>
+					<div
+						class="absolute top-1/3 right-1/4 w-2 h-2 bg-diner-red rounded-full animate-pulse shadow-lg"
+						style="box-shadow: 0 0 15px rgba(219, 85, 53, 0.8)"
+					></div>
+					<div
+						class="absolute bottom-1/4 left-1/3 w-4 h-4 bg-diner-mid-teal rounded-full animate-bounce shadow-lg"
+						style="box-shadow: 0 0 25px rgba(109, 179, 157, 0.6)"
+					></div>
+					<div
+						class="absolute top-1/2 right-1/3 w-2 h-2 bg-white rounded-full animate-pulse shadow-lg"
+						style="box-shadow: 0 0 18px rgba(255, 255, 255, 0.9)"
+					></div>
+					<div
+						class="absolute bottom-1/3 right-1/5 w-3 h-3 bg-diner-red rounded-full animate-ping shadow-lg"
+						style="box-shadow: 0 0 22px rgba(219, 85, 53, 0.7)"
+					></div>
+					<div
+						class="absolute top-3/4 left-1/5 w-1.5 h-1.5 bg-diner-light-teal rounded-full animate-bounce shadow-lg"
+						style="box-shadow: 0 0 12px rgba(109, 179, 157, 0.9)"
+					></div>
+				</div>
+
+				<!-- Floating cosmic debris -->
+				<div class="absolute inset-0 opacity-20">
+					<div
+						class="absolute top-20 left-10 w-8 h-8 border-2 border-diner-light-teal rounded-full animate-spin"
+						style="animation-duration: 15s"
+					></div>
+					<div
+						class="absolute top-40 right-20 w-6 h-6 border-2 border-diner-red rounded-full animate-spin"
+						style="
+							animation-duration: 12s;
+							animation-direction: reverse;
+						"
+					></div>
+					<div
+						class="absolute bottom-20 left-1/4 w-10 h-10 border border-diner-mid-teal rounded-full animate-pulse"
+						style="animation-duration: 8s"
+					></div>
+					<div
+						class="absolute bottom-40 right-1/3 w-12 h-12 border border-white rounded-full animate-ping"
+						style="animation-duration: 10s"
+					></div>
+				</div>
+			</div>
+
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="text-center mb-16">
+					<h2
+						class="text-4xl md:text-6xl font-atomic font-black text-transparent bg-clip-text bg-gradient-to-r from-diner-red via-diner-dark-red to-diner-mid-teal mb-6"
+						style="
+							text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9),
+								0 0 12px rgba(0, 0, 0, 0.7);
+						"
+					>
+						QUANTUM MENU
+					</h2>
+					<p
+						class="text-xl md:text-2xl text-diner-light font-retro max-w-3xl mx-auto leading-relaxed font-medium"
+						style="
+							text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+							background: rgba(0, 65, 74, 0.7);
+							padding: 1.5rem;
+							border-radius: 1rem;
+							backdrop-filter: blur(5px);
+						"
+					>
+						Scientifically crafted cuisine from the space age
+						kitchens of tomorrow. Each dish is molecularly
+						engineered for maximum flavor impact!
+					</p>
+				</div>
+
+				<div id="loadingSpinner" class="text-center py-12">
+					<div class="flex justify-center items-center space-x-4">
+						<i
+							class="fas fa-atom text-6xl text-diner-light-teal animate-atomic-spin"
+							style="
+								filter: drop-shadow(
+									2px 2px 4px rgba(0, 0, 0, 0.8)
+								);
+							"
+						></i>
+						<i
+							class="fas fa-rocket text-4xl text-diner-red animate-bounce"
+							style="
+								filter: drop-shadow(
+									2px 2px 4px rgba(0, 0, 0, 0.8)
+								);
+							"
+						></i>
+						<i
+							class="fas fa-satellite text-5xl text-diner-mid-teal animate-pulse"
+							style="
+								filter: drop-shadow(
+									2px 2px 4px rgba(0, 0, 0, 0.8)
+								);
+							"
+						></i>
+					</div>
+					<p
+						class="mt-6 text-xl text-atomic-orange font-retro font-bold animate-neon-pulse"
+					>
+						QUANTUM LOADING SEQUENCE INITIATED...
+					</p>
+				</div>
+
+				<div
+					id="menuGrid"
+					class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+				>
+					<!-- Menu items will be dynamically loaded here -->
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section
+			id="contact"
+			class="py-20 relative overflow-hidden border-t-2 border-diner-light-teal"
+			style="
+				background: linear-gradient(
+					135deg,
+					#0f0f23 0%,
+					#1a1a2e 50%,
+					#16213e 100%
+				);
+			"
+		>
+			<!-- Space stars background -->
+			<div
+				class="absolute inset-0"
+				style="
+					background-image: radial-gradient(
+							2px 2px at 20px 30px,
+							#ffffff,
+							transparent
+						),
+						radial-gradient(
+							2px 2px at 40px 70px,
+							rgba(255, 255, 255, 0.8),
+							transparent
+						),
+						radial-gradient(
+							1px 1px at 90px 40px,
+							rgba(255, 255, 255, 0.6),
+							transparent
+						),
+						radial-gradient(
+							1px 1px at 130px 80px,
+							rgba(255, 255, 255, 0.4),
+							transparent
+						),
+						radial-gradient(
+							2px 2px at 160px 30px,
+							rgba(255, 255, 255, 0.7),
+							transparent
+						);
+					background-repeat: repeat;
+					background-size: 200px 100px;
+					animation: twinkle 4s ease-in-out infinite alternate;
+				"
+			></div>
+
+			<!-- Subtle glow overlay -->
+			<div
+				class="absolute inset-0"
+				style="
+					background: radial-gradient(
+						ellipse at center,
+						rgba(0, 65, 74, 0.1) 0%,
+						transparent 70%
+					);
+				"
+			></div>
+
+			<!-- Animated Background Elements -->
+			<div class="absolute inset-0 opacity-20">
+				<div
+					class="absolute top-20 left-10 w-32 h-32 border-4 border-diner-light-teal rounded-full animate-pulse"
+				></div>
+				<div
+					class="absolute top-40 right-20 w-24 h-24 border-4 border-diner-red rounded-full animate-ping"
+				></div>
+				<div
+					class="absolute bottom-20 left-1/4 w-16 h-16 border-4 border-diner-light-teal rounded-full animate-bounce"
+				></div>
+				<div
+					class="absolute bottom-40 right-1/3 w-20 h-20 border-4 border-diner-red rounded-full animate-spin"
+				></div>
+			</div>
+
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+				<div class="text-center mb-16">
+					<h2
+						class="text-4xl md:text-6xl font-atomic font-black text-transparent bg-clip-text bg-gradient-to-r from-atomic-mint via-atomic-blue to-atomic-purple mb-6"
+					>
+						COMMUNICATION PORTAL
+					</h2>
+					<p
+						class="text-xl md:text-2xl text-retro-silver font-retro max-w-3xl mx-auto"
+					>
+						Establish quantum communication with our space station
+						crew for any inquiries about your atomic dining
+						experience
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+					<div class="space-y-8">
+						<h3
+							class="text-3xl font-atomic font-bold mb-8 text-atomic-mint"
+						>
+							TRANSMISSION FORM
+						</h3>
+						<form id="contactForm" class="space-y-6">
+							<div>
+								<label
+									for="name"
+									class="block text-sm font-medium text-gray-700 mb-1"
+									>Name</label
+								>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									required
+									class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+								/>
+							</div>
+
+							<div>
+								<label
+									for="email"
+									class="block text-sm font-medium text-gray-700 mb-1"
+									>Email</label
+								>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									required
+									class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+								/>
+							</div>
+
+							<div>
+								<label
+									for="message"
+									class="block text-sm font-medium text-gray-700 mb-1"
+									>Message</label
+								>
+								<textarea
+									id="message"
+									name="message"
+									rows="4"
+									required
+									class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+								></textarea>
+							</div>
+
+							<button
+								type="submit"
+								class="w-full bg-orange-600 text-white py-2 px-4 rounded-lg hover:bg-orange-700 transition duration-300"
+							>
+								Send Message
+							</button>
+						</form>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-semibold mb-6">
+							Contact Information
+						</h3>
+						<div class="space-y-4">
+							<div class="flex items-center">
+								<i
+									class="fas fa-map-marker-alt text-orange-600 w-6"
+								></i>
+								<span class="ml-3"
+									>123 Food Street, Culinary City, FC
+									12345</span
+								>
+							</div>
+							<div class="flex items-center">
+								<i class="fas fa-phone text-orange-600 w-6"></i>
+								<span class="ml-3">+1 (555) 123-4567</span>
+							</div>
+							<div class="flex items-center">
+								<i
+									class="fas fa-envelope text-orange-600 w-6"
+								></i>
+								<span class="ml-3"
+									>hello@foodiedelight.com</span
+								>
+							</div>
+							<div class="flex items-center">
+								<i class="fas fa-clock text-orange-600 w-6"></i>
+								<span class="ml-3"
+									>Daily: 9:00 AM - 11:00 PM</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Cart Modal -->
+		<div id="cartModal" class="fixed inset-0 bg-black/50 hidden z-50">
+			<div class="flex items-center justify-center min-h-screen p-4">
+				<div
+					class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+				>
+					<div class="p-6">
+						<div class="flex justify-between items-center mb-6">
+							<h2 class="text-2xl font-bold">Your Cart</h2>
+							<button
+								id="closeCartModal"
+								class="text-gray-500 hover:text-gray-700"
+							>
+								<i class="fas fa-times text-xl"></i>
+							</button>
+						</div>
+
+						<div id="cartItems">
+							<!-- Cart items will be displayed here -->
+						</div>
+
+						<div id="cartEmpty" class="text-center py-8 hidden">
+							<i
+								class="fas fa-shopping-cart text-4xl text-gray-300 mb-4"
+							></i>
+							<p class="text-gray-600">Your cart is empty</p>
+						</div>
+
+						<div id="cartFooter" class="border-t pt-4 hidden">
+							<div class="flex justify-between items-center mb-4">
+								<span class="text-xl font-semibold"
+									>Total: $<span id="cartTotal"
+										>0.00</span
+									></span
+								>
+							</div>
+							<button
+								id="checkoutBtn"
+								class="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition duration-300"
+							>
+								Proceed to Checkout
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="bg-gray-900 text-white py-12">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+					<div>
+						<h3 class="text-xl font-bold mb-4">FoodieDelight</h3>
+						<p class="text-gray-400">
+							Bringing delicious food to your doorstep with
+							convenience and quality.
+						</p>
+					</div>
+
+					<div>
+						<h4 class="font-semibold mb-4">Quick Links</h4>
+						<ul class="space-y-2 text-gray-400">
+							<li>
+								<a href="#home" class="hover:text-white"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a href="#menu" class="hover:text-white"
+									>Menu</a
+								>
+							</li>
+							<li>
+								<a href="#contact" class="hover:text-white"
+									>Contact</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="font-semibold mb-4">Follow Us</h4>
+						<div class="flex space-x-4">
+							<a href="#" class="text-gray-400 hover:text-white">
+								<i class="fab fa-facebook text-xl"></i>
+							</a>
+							<a href="#" class="text-gray-400 hover:text-white">
+								<i class="fab fa-twitter text-xl"></i>
+							</a>
+							<a href="#" class="text-gray-400 hover:text-white">
+								<i class="fab fa-instagram text-xl"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+				>
+					<p>&copy; 2025 FoodieDelight. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="src/js/app.js"></script>
+	</body>
+</html>

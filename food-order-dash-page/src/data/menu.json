@@ -1,0 +1,232 @@
+[
+	{
+		"id": 1,
+		"name": "Classic Caesar Salad",
+		"description": "Fresh romaine lettuce, parmesan cheese, croutons, and our signature Caesar dressing",
+		"price": 12.99,
+		"category": "appetizers",
+		"image": "https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"romaine lettuce",
+			"parmesan cheese",
+			"croutons",
+			"caesar dressing"
+		],
+		"nutrition": {
+			"calories": 180,
+			"protein": "8g",
+			"carbs": "12g",
+			"fat": "12g"
+		}
+	},
+	{
+		"id": 2,
+		"name": "Buffalo Wings",
+		"description": "Crispy chicken wings tossed in spicy buffalo sauce, served with ranch dipping sauce",
+		"price": 15.99,
+		"category": "appetizers",
+		"image": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"chicken wings",
+			"buffalo sauce",
+			"ranch dressing",
+			"celery"
+		],
+		"nutrition": {
+			"calories": 320,
+			"protein": "22g",
+			"carbs": "8g",
+			"fat": "24g"
+		}
+	},
+	{
+		"id": 4,
+		"name": "Grilled Chicken Burger",
+		"description": "Juicy grilled chicken breast with lettuce, tomato, and mayo on a brioche bun",
+		"price": 18.99,
+		"category": "main-course",
+		"image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"chicken breast",
+			"brioche bun",
+			"lettuce",
+			"tomato",
+			"mayo"
+		],
+		"nutrition": {
+			"calories": 520,
+			"protein": "35g",
+			"carbs": "45g",
+			"fat": "22g"
+		}
+	},
+	{
+		"id": 5,
+		"name": "Margherita Pizza",
+		"description": "Traditional pizza with fresh mozzarella, tomato sauce, and basil leaves",
+		"price": 22.99,
+		"category": "main-course",
+		"image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"pizza dough",
+			"mozzarella",
+			"tomato sauce",
+			"basil",
+			"olive oil"
+		],
+		"nutrition": {
+			"calories": 680,
+			"protein": "28g",
+			"carbs": "72g",
+			"fat": "32g"
+		}
+	},
+	{
+		"id": 6,
+		"name": "Beef Steak",
+		"description": "Premium ribeye steak grilled to perfection, served with roasted vegetables",
+		"price": 34.99,
+		"category": "main-course",
+		"image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"ribeye steak",
+			"roasted vegetables",
+			"herbs",
+			"butter"
+		],
+		"nutrition": {
+			"calories": 750,
+			"protein": "52g",
+			"carbs": "15g",
+			"fat": "55g"
+		}
+	},
+	{
+		"id": 7,
+		"name": "Salmon Teriyaki",
+		"description": "Fresh salmon fillet glazed with teriyaki sauce, served with steamed rice",
+		"price": 26.99,
+		"category": "main-course",
+		"image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"salmon fillet",
+			"teriyaki sauce",
+			"steamed rice",
+			"vegetables"
+		],
+		"nutrition": {
+			"calories": 580,
+			"protein": "42g",
+			"carbs": "48g",
+			"fat": "24g"
+		}
+	},
+	{
+		"id": 9,
+		"name": "Chocolate Lava Cake",
+		"description": "Warm chocolate cake with a molten chocolate center, served with vanilla ice cream",
+		"price": 9.99,
+		"category": "desserts",
+		"image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"dark chocolate",
+			"butter",
+			"eggs",
+			"flour",
+			"vanilla ice cream"
+		],
+		"nutrition": {
+			"calories": 420,
+			"protein": "8g",
+			"carbs": "45g",
+			"fat": "24g"
+		}
+	},
+	{
+		"id": 10,
+		"name": "Tiramisu",
+		"description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream",
+		"price": 8.99,
+		"category": "desserts",
+		"image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"ladyfingers",
+			"mascarpone",
+			"coffee",
+			"cocoa powder",
+			"eggs"
+		],
+		"nutrition": {
+			"calories": 380,
+			"protein": "6g",
+			"carbs": "32g",
+			"fat": "26g"
+		}
+	},
+	{
+		"id": 11,
+		"name": "Cheesecake",
+		"description": "Creamy New York style cheesecake with graham cracker crust and berry compote",
+		"price": 10.99,
+		"category": "desserts",
+		"image": "https://images.unsplash.com/photo-1519864600364-7e1e6c8e0c8a?w=400&h=300&fit=crop&crop=center",
+		"ingredients": [
+			"cream cheese",
+			"graham crackers",
+			"berries",
+			"sugar",
+			"vanilla"
+		],
+		"nutrition": {
+			"calories": 450,
+			"protein": "7g",
+			"carbs": "38g",
+			"fat": "30g"
+		}
+	},
+	{
+		"id": 12,
+		"name": "Fresh Orange Juice",
+		"description": "Freshly squeezed orange juice, no additives or preservatives",
+		"price": 4.99,
+		"category": "beverages",
+		"image": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop&crop=center",
+		"ingredients": ["fresh oranges"],
+		"nutrition": {
+			"calories": 120,
+			"protein": "2g",
+			"carbs": "28g",
+			"fat": "0g"
+		}
+	},
+	{
+		"id": 14,
+		"name": "Green Smoothie",
+		"description": "Healthy blend of spinach, banana, apple, and coconut water",
+		"price": 7.99,
+		"category": "beverages",
+		"image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=400&h=300&fit=crop&crop=center",
+		"ingredients": ["spinach", "banana", "apple", "coconut water", "honey"],
+		"nutrition": {
+			"calories": 150,
+			"protein": "3g",
+			"carbs": "35g",
+			"fat": "1g"
+		}
+	},
+	{
+		"id": 15,
+		"name": "Craft Beer",
+		"description": "Local craft beer selection - IPA, Lager, or Wheat beer",
+		"price": 6.99,
+		"category": "beverages",
+		"image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400&h=300&fit=crop&crop=center",
+		"ingredients": ["hops", "malt", "yeast", "water"],
+		"nutrition": {
+			"calories": 180,
+			"protein": "1g",
+			"carbs": "15g",
+			"fat": "0g"
+		}
+	}
+]

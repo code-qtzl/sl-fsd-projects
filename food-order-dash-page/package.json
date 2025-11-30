@@ -1,0 +1,38 @@
+{
+	"name": "foodie-delight-ordering-app",
+	"version": "1.0.0",
+	"description": "Online Food Ordering Application with responsive design and interactive features",
+	"main": "index.html",
+	"scripts": {
+		"start": "live-server --port=3000 --open=/login.html",
+		"dev": "live-server --port=3000 --open=/login.html --watch=src/"
+	},
+	"keywords": [
+		"food",
+		"ordering",
+		"restaurant",
+		"javascript",
+		"tailwindcss",
+		"responsive",
+		"web-app"
+	],
+	"author": "Andres Zepeda",
+	"license": "MIT",
+	"devDependencies": {
+		"clean-css-cli": "^5.6.1",
+		"live-server": "^1.2.2",
+		"uglify-js": "^3.17.4"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/your-username/foodie-delight-ordering-app.git"
+	},
+	"bugs": {
+		"url": "https://github.com/your-username/foodie-delight-ordering-app/issues"
+	},
+	"homepage": "https://github.com/your-username/foodie-delight-ordering-app#readme",
+	"dependencies": {
+		"@tailwindcss/cli": "^4.1.12",
+		"tailwindcss": "^4.1.12"
+	}
+}
