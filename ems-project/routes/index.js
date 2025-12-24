@@ -21,12 +21,6 @@ router.get('/', function (req, res, next) {
 		employees: employeesData,
 	});
 });
-let skillInfo = ['java', 'python', 'react js', 'html'];
-
-// display array data skillSet
-router.get('/skill', (request, response) => {
-	response.render('skillView.ejs', { skillInfo });
-});
 
 // open the login page
 router.get('/login', (request, response) => {
