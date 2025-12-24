@@ -98,5 +98,15 @@
 		"department": "Human Resources",
 		"joiningDate": "2019-10-22",
 		"location": "Boston, MA, USA"
+	},
+	{
+		"id": "12",
+		"name": "John Doe",
+		"designation": "Software Engineer",
+		"email": "john.doe@example.com",
+		"contact": "+1-555-999-8888",
+		"department": "Engineering",
+		"joiningDate": "2025-12-24",
+		"location": "Austin, TX, USA"
 	}
 ]
