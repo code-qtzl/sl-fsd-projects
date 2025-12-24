@@ -79,7 +79,7 @@ ems-project/
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/code-qtzl/sl-fsd-projects.git
 cd ems-project
 ```
 
