@@ -47,7 +47,9 @@ ems-project/
 │   └── loginController.js
 ├── cypress/
 │   └── e2e/
-│       └── 0-login/
+│       └── 0-flow/
+│	       ├── account-workflow.cy.js
+│	       └── login.cy.js
 ├── data/
 │   └── employees.json
 ├── model/
