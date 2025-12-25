@@ -69,8 +69,7 @@ ems-project/
 │   ├── dashboard.ejs
 │   ├── index.ejs
 │   ├── login.ejs
-│   ├── signUp.ejs
-│   └── success.ejs
+│   └── signUp.ejs
 ├── app.js
 ├── package.json
 └── README.md
