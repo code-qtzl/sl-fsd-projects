@@ -22,7 +22,10 @@ techspark-solutions/
 │   └── rtm.test.js             # RTM generation tests
 ├── data/                        # Generated test data
 │   ├── kyc-test-data.json      # KYC synthetic data
-│   └── aml-test-data.json      # AML synthetic data
+│   ├── aml-test-data.json      # AML synthetic data
+│   └── kyc-aml-data.xlsx       # Excel test data spreadsheet
+├── AndresZepeda-Overview.docx   # Project overview documentation
+├── AndresZepeda-PROJECT_REPORT.docx # Comprehensive project report
 └── package.json                 # Project configuration
 ```
 
