@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "2e279fb5-067a-4f77-9405-441c3d691af9",
+    "firstName": "Gillian",
+    "lastName": "Jenkins-Johns",
+    "dateOfBirth": "1953-09-29T17:06:21.368Z",
+    "ssn": "179864895",
+    "email": "Jaylon.Veum@hotmail.com",
+    "phone": "378-513-2984",
+    "address": {
+      "street": "31150 Luella Union",
+      "city": "Alysontown",
+      "state": "Virginia",
+      "zipCode": "27017-6647",
+      "country": "Zimbabwe"
+    },
+    "documents": {
+      "passport": "6a2803c7-92b7-43a3-8c44-5ad697f9704b",
+      "drivingLicense": "1d440e06-effb-49ad-9e87-916ab1e00da5",
+      "utilityBill": "51080227-a19f-4d09-9bf3-44c840839398"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T14:00:41.174Z"
+  },
+  {
+    "id": "5684c827-76ec-4685-bf0a-40735ad77d05",
+    "firstName": "Ida",
+    "lastName": "Kris",
+    "dateOfBirth": "1980-07-16T08:03:50.060Z",
+    "ssn": "535246754",
+    "email": "Leopoldo_Cronin35@yahoo.com",
+    "phone": "(706) 950-9536 x6520",
+    "address": {
+      "street": "4431 Kingfisher Close",
+      "city": "Hahnville",
+      "state": "Tennessee",
+      "zipCode": "08517-0206",
+      "country": "Qatar"
+    },
+    "documents": {
+      "passport": "7e2defaf-31da-4523-8a48-98c27f5b7c8c",
+      "drivingLicense": "8b2a98c3-e2c0-462b-9df6-1a9081f7ea2f",
+      "utilityBill": "a7759b85-1c1b-4dfc-a5b2-6ccd6ce3466f"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T00:36:28.223Z"
+  },
+  {
+    "id": "cc03082c-f1b7-4c00-a243-8a91eac7d9d1",
+    "firstName": "Fleta",
+    "lastName": "Marvin",
+    "dateOfBirth": "1989-04-04T16:06:34.758Z",
+    "ssn": "289954975",
+    "email": "Pink_Paucek37@gmail.com",
+    "phone": "(794) 670-4149 x28773",
+    "address": {
+      "street": "3575 Derek Throughway",
+      "city": "Pacochastead",
+      "state": "Louisiana",
+      "zipCode": "53061",
+      "country": "Zambia"
+    },
+    "documents": {
+      "passport": "d1cbe545-ff6a-4bb8-bf74-8572bd6dc64a",
+      "drivingLicense": "88e9e225-df92-498c-bb04-d273425b89d3",
+      "utilityBill": "fb79bafd-1a29-4850-881d-2b7aac6e633b"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-30T11:12:39.220Z"
+  },
+  {
+    "id": "a6b4803c-295b-4a98-99d0-2ca56d339b90",
+    "firstName": "Jaida",
+    "lastName": "Von",
+    "dateOfBirth": "1967-08-20T10:39:01.950Z",
+    "ssn": "742061541",
+    "email": "Sim.Gutkowski-Rodriguez@hotmail.com",
+    "phone": "(229) 392-5904 x0622",
+    "address": {
+      "street": "97575 N Water Street",
+      "city": "Morissettebury",
+      "state": "Michigan",
+      "zipCode": "31610-5063",
+      "country": "Sint Maarten"
+    },
+    "documents": {
+      "passport": "e0e8ea58-15ba-4320-8903-3fc985b79a05",
+      "drivingLicense": "8ef1d872-24a1-4011-b9a0-ab2a6ea57e68",
+      "utilityBill": "a606626a-4c8a-40cd-9d51-4e0d688b089b"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T20:22:29.809Z"
+  },
+  {
+    "id": "2b3fe17b-fa44-4490-ae8e-c27aa92264c0",
+    "firstName": "Lauretta",
+    "lastName": "Bradtke",
+    "dateOfBirth": "1981-01-22T06:12:28.279Z",
+    "ssn": "278763957",
+    "email": "Lexi_Tromp@yahoo.com",
+    "phone": "661.371.8069 x830",
+    "address": {
+      "street": "2385 Cummerata Ports",
+      "city": "New Erikachester",
+      "state": "Texas",
+      "zipCode": "15227",
+      "country": "Russian Federation"
+    },
+    "documents": {
+      "passport": "c581637c-f49a-4cdf-ab6f-cdb85aea9eb0",
+      "drivingLicense": "2ef1328e-996a-4890-a56d-254504d07906",
+      "utilityBill": "62451448-c666-464d-9f47-9155336d5236"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T13:09:32.315Z"
+  },
+  {
+    "id": "fb66718e-d6c6-49e2-b44a-347929368a30",
+    "firstName": "Jerrold",
+    "lastName": "Reichel",
+    "dateOfBirth": "1972-08-05T18:12:07.515Z",
+    "ssn": "588542110",
+    "email": "Jillian16@hotmail.com",
+    "phone": "815.888.2782",
+    "address": {
+      "street": "481 Mraz Track",
+      "city": "South Lorenzabury",
+      "state": "Maryland",
+      "zipCode": "40453",
+      "country": "Lebanon"
+    },
+    "documents": {
+      "passport": "965f3c2b-e804-42ca-b112-4f8b1dc6fcaf",
+      "drivingLicense": "ff309b11-3c15-494d-98c0-55d04b711773",
+      "utilityBill": "8de6d09a-86f0-4947-8f98-9fbb058ed9ae"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T09:06:00.488Z"
+  },
+  {
+    "id": "f6cc0a24-b06d-4616-bc7c-ae77af27d4c1",
+    "firstName": "Tara",
+    "lastName": "Schaden",
+    "dateOfBirth": "1975-03-07T14:34:58.074Z",
+    "ssn": "633364682",
+    "email": "Hanna_Kohler53@hotmail.com",
+    "phone": "1-865-355-3283",
+    "address": {
+      "street": "66528 Kacey Corner",
+      "city": "Arvada",
+      "state": "Wyoming",
+      "zipCode": "51496-4829",
+      "country": "Trinidad and Tobago"
+    },
+    "documents": {
+      "passport": "bfc73cef-47a3-4c41-8470-a95842f71491",
+      "drivingLicense": "e3712789-0f97-4be7-9161-2034132a32bb",
+      "utilityBill": "fe6400ee-c665-432f-85b1-3a233fdcf3d5"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T09:21:35.903Z"
+  },
+  {
+    "id": "a6f9b0b2-8b6f-4328-9c68-5efabe820838",
+    "firstName": "Damien",
+    "lastName": "O'Keefe",
+    "dateOfBirth": "1994-01-31T00:26:59.029Z",
+    "ssn": "556171129",
+    "email": "Frederick.Runolfsdottir23@yahoo.com",
+    "phone": "(873) 791-9323 x7965",
+    "address": {
+      "street": "33485 Park Street",
+      "city": "Mount Prospect",
+      "state": "Connecticut",
+      "zipCode": "90809",
+      "country": "Ethiopia"
+    },
+    "documents": {
+      "passport": "9ded47ae-c64d-4fee-81b1-6ce559122a2b",
+      "drivingLicense": "add7eb04-5e51-45ae-a805-e5b8afdb1e78",
+      "utilityBill": "a72d6d51-e149-4a76-bfa9-ac2e75b0cdf9"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-30T11:19:09.542Z"
+  },
+  {
+    "id": "fb1fa3b5-0ccf-4988-833a-bdef2b6b7775",
+    "firstName": "Isac",
+    "lastName": "Hettinger",
+    "dateOfBirth": "1968-04-10T19:13:01.702Z",
+    "ssn": "164823329",
+    "email": "Kelsi.Kessler83@yahoo.com",
+    "phone": "783.291.6134 x0319",
+    "address": {
+      "street": "301 Metz Stream",
+      "city": "Kanetown",
+      "state": "Maine",
+      "zipCode": "04004-2923",
+      "country": "Christmas Island"
+    },
+    "documents": {
+      "passport": "af477522-8379-4c25-b7bb-a00152a0ee81",
+      "drivingLicense": "a6412819-3fa6-42c6-9c1c-f7fa569c333d",
+      "utilityBill": "992d4b74-192b-433c-a389-d69c0987a00f"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T17:07:20.686Z"
+  },
+  {
+    "id": "41c41bfb-dfdd-424f-9cde-e31e645a35ec",
+    "firstName": "Emelia",
+    "lastName": "Hermiston",
+    "dateOfBirth": "2005-03-24T20:41:28.847Z",
+    "ssn": "746759541",
+    "email": "Kaycee_Reynolds@yahoo.com",
+    "phone": "(920) 790-2033 x577",
+    "address": {
+      "street": "6873 Skiles Point",
+      "city": "New Loushire",
+      "state": "Rhode Island",
+      "zipCode": "77570-0318",
+      "country": "Angola"
+    },
+    "documents": {
+      "passport": "33ab0db0-01da-4cdc-995e-d4a924e3a623",
+      "drivingLicense": "ab826bed-0305-4da1-a85f-f3942631c2e2",
+      "utilityBill": "3015c87e-e818-43ed-a22c-89a5c5fc7f17"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-30T01:31:10.352Z"
+  },
+  {
+    "id": "a9969d15-ee3e-46aa-b31e-ee6133c84450",
+    "firstName": "Jacklyn",
+    "lastName": "VonRueden",
+    "dateOfBirth": "1965-12-23T17:53:02.718Z",
+    "ssn": "604386271",
+    "email": "Anya.Gibson17@hotmail.com",
+    "phone": "788.734.1855 x39433",
+    "address": {
+      "street": "3253 N 8th Street",
+      "city": "West Simoneburgh",
+      "state": "Georgia",
+      "zipCode": "31982-8173",
+      "country": "Israel"
+    },
+    "documents": {
+      "passport": "96c0663b-6e42-4f33-a093-21992ea43c5f",
+      "drivingLicense": "6a5350fa-3987-42d4-ae22-2f08b83a6ac8",
+      "utilityBill": "e32ab065-2f78-403c-9425-038d96ed2d57"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T22:13:37.999Z"
+  },
+  {
+    "id": "e158fc6c-9d01-4b0e-86c5-8eebd73e2364",
+    "firstName": "Nichole",
+    "lastName": "Blick",
+    "dateOfBirth": "1960-12-15T17:48:49.575Z",
+    "ssn": "393508297",
+    "email": "Arch29@hotmail.com",
+    "phone": "(836) 458-3097 x1357",
+    "address": {
+      "street": "6000 Arnoldo Haven",
+      "city": "Euclid",
+      "state": "New Hampshire",
+      "zipCode": "67538-5154",
+      "country": "Turks and Caicos Islands"
+    },
+    "documents": {
+      "passport": "94aecaa3-89f9-4e9b-a0e1-07c787a5d820",
+      "drivingLicense": "d8f815d9-d75f-4355-a816-272eebadb763",
+      "utilityBill": "196d37a3-a1d3-4906-aea0-59d6626324ee"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-30T22:03:47.355Z"
+  },
+  {
+    "id": "b64f6c13-9b85-41b4-8603-a5b4281ce48b",
+    "firstName": "Terence",
+    "lastName": "Grady",
+    "dateOfBirth": "1969-06-22T03:58:12.928Z",
+    "ssn": "815811294",
+    "email": "Willa_Leuschke97@hotmail.com",
+    "phone": "509-691-2622",
+    "address": {
+      "street": "64843 6th Street",
+      "city": "Hermanburgh",
+      "state": "Louisiana",
+      "zipCode": "86110",
+      "country": "South Georgia and the South Sandwich Islands"
+    },
+    "documents": {
+      "passport": "06fcca50-9df6-4bd4-94ce-b689cd068864",
+      "drivingLicense": "8c8a710e-d8c8-4c15-af7e-e894cfb883ef",
+      "utilityBill": "055a2802-9a0c-488d-9725-212a6f64172d"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T03:44:31.636Z"
+  },
+  {
+    "id": "e258de53-ce7b-4330-9583-ee1951a8b34d",
+    "firstName": "Nova",
+    "lastName": "Johnston",
+    "dateOfBirth": "1972-06-25T22:25:38.609Z",
+    "ssn": "994697928",
+    "email": "Albert.Pollich@gmail.com",
+    "phone": "(891) 319-5170 x62397",
+    "address": {
+      "street": "362 Deckow Trafficway",
+      "city": "West Melodycester",
+      "state": "Delaware",
+      "zipCode": "04812-6541",
+      "country": "Guam"
+    },
+    "documents": {
+      "passport": "f4430532-f0fd-4788-bda4-18530665e913",
+      "drivingLicense": "30bca70e-2048-470f-a635-fce594ce418d",
+      "utilityBill": "b500f197-f3a9-4796-8923-a6e1362dae74"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T04:58:55.943Z"
+  },
+  {
+    "id": "7ed567c2-8f61-4a97-8ab4-13f42786e7f0",
+    "firstName": "Polly",
+    "lastName": "Kirlin",
+    "dateOfBirth": "1983-02-26T21:15:39.093Z",
+    "ssn": "620649703",
+    "email": "Estrella_Lindgren21@gmail.com",
+    "phone": "826.937.4174",
+    "address": {
+      "street": "34661 Lonie Grove",
+      "city": "Carrollfield",
+      "state": "Minnesota",
+      "zipCode": "26728-9734",
+      "country": "Canada"
+    },
+    "documents": {
+      "passport": "f44ccd8c-304f-490a-88bc-7b7d446fa717",
+      "drivingLicense": "8db12f8f-3a44-4aa1-bef1-ac427e8e3a88",
+      "utilityBill": "c1fd7e99-fb61-447d-a258-6e3ffce13393"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T10:05:35.828Z"
+  },
+  {
+    "id": "0f107579-b62c-4b57-ad1f-f24b2f5bb509",
+    "firstName": "Bill",
+    "lastName": "Hackett",
+    "dateOfBirth": "1978-01-22T15:45:26.836Z",
+    "ssn": "688959484",
+    "email": "Aryanna78@yahoo.com",
+    "phone": "918-357-4996 x5418",
+    "address": {
+      "street": "93269 Hawthorn Avenue",
+      "city": "Valentinaport",
+      "state": "Illinois",
+      "zipCode": "57040-6972",
+      "country": "Kiribati"
+    },
+    "documents": {
+      "passport": "19030b9b-2c4f-4f9e-9eff-9bef07fe7e0d",
+      "drivingLicense": "54ecd4fc-2fbd-468a-86dd-49e0f871a5d6",
+      "utilityBill": "e605c047-a91e-4dd7-97dc-a72f92060609"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T20:22:45.986Z"
+  },
+  {
+    "id": "d21428f5-3a04-4587-b85c-917554909e06",
+    "firstName": "Roderick",
+    "lastName": "Harber",
+    "dateOfBirth": "1968-10-03T10:42:15.004Z",
+    "ssn": "893619449",
+    "email": "Ana.Klein@yahoo.com",
+    "phone": "800-461-4484",
+    "address": {
+      "street": "848 Reinger Spring",
+      "city": "Fort Kipville",
+      "state": "Illinois",
+      "zipCode": "09840-3535",
+      "country": "Aruba"
+    },
+    "documents": {
+      "passport": "b188aa9c-a876-4ef2-bfe4-e4e7d9e5c54c",
+      "drivingLicense": "3a39bc57-f018-41f9-9806-63b6e0c46546",
+      "utilityBill": "7e77df90-e44a-4d39-86e3-a376ad7269b3"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T03:19:51.396Z"
+  },
+  {
+    "id": "00415d40-3eee-4173-bb2c-81c5e9155c15",
+    "firstName": "Damien",
+    "lastName": "Dooley",
+    "dateOfBirth": "1988-02-04T05:46:33.951Z",
+    "ssn": "498690288",
+    "email": "Ubaldo.Little@hotmail.com",
+    "phone": "(686) 890-1863",
+    "address": {
+      "street": "565 9th Street",
+      "city": "Antoniettafort",
+      "state": "Colorado",
+      "zipCode": "57685-3265",
+      "country": "Guam"
+    },
+    "documents": {
+      "passport": "69626b4e-aa8c-447c-aa96-f71545ba1c9e",
+      "drivingLicense": "4e1c7a06-c15a-4416-967c-f69e2a34b656",
+      "utilityBill": "b4874190-f5c1-4df4-8121-fc3a8e4fad0a"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T00:11:50.575Z"
+  },
+  {
+    "id": "d901e64f-f53a-400f-af00-d32f1fcde0aa",
+    "firstName": "Virginia",
+    "lastName": "Howe",
+    "dateOfBirth": "1948-06-20T10:18:34.614Z",
+    "ssn": "887034935",
+    "email": "Lela.Gerhold-Leannon@hotmail.com",
+    "phone": "1-498-461-6520 x80882",
+    "address": {
+      "street": "8973 Shaniya Row",
+      "city": "Grimesbury",
+      "state": "Indiana",
+      "zipCode": "63817",
+      "country": "Turkey"
+    },
+    "documents": {
+      "passport": "aee2b353-77eb-4ef3-8777-00d20144e19e",
+      "drivingLicense": "453f128e-2a5d-4570-8b39-38ff9a4dad55",
+      "utilityBill": "c2477905-e4bb-4339-8636-93767db47bb8"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T17:31:31.508Z"
+  },
+  {
+    "id": "10ba818b-3872-4cca-9a27-ba2c488e6948",
+    "firstName": "Carlos",
+    "lastName": "Quigley",
+    "dateOfBirth": "1950-08-14T16:22:09.098Z",
+    "ssn": "979458885",
+    "email": "Cornell38@hotmail.com",
+    "phone": "871-258-1484 x142",
+    "address": {
+      "street": "3880 Arvid Manor",
+      "city": "Elmorebury",
+      "state": "Iowa",
+      "zipCode": "08184-1810",
+      "country": "Brunei Darussalam"
+    },
+    "documents": {
+      "passport": "ecd26474-ef7d-48e5-a4dc-4c8fabc0ca0f",
+      "drivingLicense": "e7eb9aa7-d3ca-4079-a1b1-93a1c77876a3",
+      "utilityBill": "62c07163-2faf-492f-8a95-e94056813e61"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T16:54:53.180Z"
+  },
+  {
+    "id": "5793758f-fdfb-476b-9089-3798ddaeec7d",
+    "firstName": "Ada",
+    "lastName": "Connelly",
+    "dateOfBirth": "1987-04-17T06:00:10.556Z",
+    "ssn": "443972402",
+    "email": "Carmen_Parker@hotmail.com",
+    "phone": "477.202.7143 x45308",
+    "address": {
+      "street": "526 Market Place",
+      "city": "North Zoey",
+      "state": "New York",
+      "zipCode": "00245-2352",
+      "country": "Sweden"
+    },
+    "documents": {
+      "passport": "8b854654-24e3-41c2-a669-684b0bd4f928",
+      "drivingLicense": "7d4dcb28-ffe4-456f-85f4-26e40347fd11",
+      "utilityBill": "f72698da-97b7-4dab-b0bc-8b426b629c9f"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-29T23:58:45.034Z"
+  },
+  {
+    "id": "ed46831c-a1c0-49e3-9112-7c5fa8a658e0",
+    "firstName": "Ernestine",
+    "lastName": "Rau",
+    "dateOfBirth": "1949-01-15T09:53:35.949Z",
+    "ssn": "974896370",
+    "email": "Robb_MacGyver-Schumm57@yahoo.com",
+    "phone": "422.741.6025",
+    "address": {
+      "street": "22413 Brandi Prairie",
+      "city": "Boylebury",
+      "state": "West Virginia",
+      "zipCode": "55699-6755",
+      "country": "Cocos (Keeling) Islands"
+    },
+    "documents": {
+      "passport": "39af90e0-6cd9-42a3-a232-e5a7c1779257",
+      "drivingLicense": "4636184f-ad48-413a-8ced-c5c4d20f4c50",
+      "utilityBill": "54c857ad-96dc-4000-9cd1-ba915f0c70f4"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T13:24:57.569Z"
+  },
+  {
+    "id": "f3b3094a-805c-4ed0-b194-de08bc1c2d50",
+    "firstName": "Jamarcus",
+    "lastName": "Kshlerin",
+    "dateOfBirth": "1978-07-07T12:31:25.866Z",
+    "ssn": "651126024",
+    "email": "Amina78@gmail.com",
+    "phone": "(322) 946-1093",
+    "address": {
+      "street": "68468 N Front Street",
+      "city": "Port Nestor",
+      "state": "Mississippi",
+      "zipCode": "11909",
+      "country": "Christmas Island"
+    },
+    "documents": {
+      "passport": "aebbf20f-bc07-438c-b100-62f1a1e45aa5",
+      "drivingLicense": "92275deb-9e19-4311-bba1-2a6ad6f84e0a",
+      "utilityBill": "2a090f6a-595a-4e47-b8ad-d425011277c8"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T21:30:20.673Z"
+  },
+  {
+    "id": "ecdba6a0-5505-4a8c-bdd4-896fdc4113e4",
+    "firstName": "Kallie",
+    "lastName": "Batz",
+    "dateOfBirth": "1968-08-13T01:31:01.250Z",
+    "ssn": "843589509",
+    "email": "Carmelo11@yahoo.com",
+    "phone": "1-616-895-7030 x7401",
+    "address": {
+      "street": "998 Brakus Club",
+      "city": "Billiemouth",
+      "state": "Tennessee",
+      "zipCode": "95092",
+      "country": "Macao"
+    },
+    "documents": {
+      "passport": "ee7a6b81-fb84-47a8-a7f8-e9e3f6ff6eaa",
+      "drivingLicense": "a0d7b0de-0e3c-4f4f-87c5-e41eb3659cb2",
+      "utilityBill": "cc6e9ac4-b87f-464d-9e1d-f12b02451bbb"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-30T14:16:43.571Z"
+  },
+  {
+    "id": "2ea89e23-7b45-4c31-a1f3-bdc0ff04c325",
+    "firstName": "Selmer",
+    "lastName": "Daugherty",
+    "dateOfBirth": "1959-01-18T10:52:23.558Z",
+    "ssn": "522073091",
+    "email": "Milan_Ortiz@hotmail.com",
+    "phone": "1-416-479-1196 x0096",
+    "address": {
+      "street": "12590 Larch Close",
+      "city": "New Ryanview",
+      "state": "Louisiana",
+      "zipCode": "83113",
+      "country": "France"
+    },
+    "documents": {
+      "passport": "3e4180f0-7381-403c-9f35-0ee9fdb8d9b1",
+      "drivingLicense": "48941c81-f198-4f37-b436-f381e6723498",
+      "utilityBill": "c48acd34-eff0-4675-90c1-8cdcb4436c3f"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T21:59:49.616Z"
+  },
+  {
+    "id": "1fdd4a50-55b9-4f83-83ff-9344521b15c0",
+    "firstName": "Eula",
+    "lastName": "Moen",
+    "dateOfBirth": "1945-07-02T21:47:32.308Z",
+    "ssn": "494091472",
+    "email": "Antonina98@yahoo.com",
+    "phone": "987-964-8234 x893",
+    "address": {
+      "street": "69959 Deron Lakes",
+      "city": "Council Bluffs",
+      "state": "Florida",
+      "zipCode": "48186-7295",
+      "country": "Zimbabwe"
+    },
+    "documents": {
+      "passport": "c8c69c12-f45b-4583-9b13-f11d22907d78",
+      "drivingLicense": "41326226-4e36-4137-8d04-a6d41bd915d0",
+      "utilityBill": "c713544b-c656-4da9-9416-b73d66c113cc"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T07:39:43.639Z"
+  },
+  {
+    "id": "1741fd50-b935-41b2-8812-81c257fc3338",
+    "firstName": "Elody",
+    "lastName": "Durgan",
+    "dateOfBirth": "2001-03-25T16:58:13.086Z",
+    "ssn": "324575372",
+    "email": "Tyra74@gmail.com",
+    "phone": "930-976-1868 x4756",
+    "address": {
+      "street": "8926 Larkin Brook",
+      "city": "North Amanda",
+      "state": "Kansas",
+      "zipCode": "98029-0792",
+      "country": "Falkland Islands (Malvinas)"
+    },
+    "documents": {
+      "passport": "3c2c06ff-cca8-406f-830a-bc6e5080a383",
+      "drivingLicense": "5973d2b5-8a20-4cff-9b24-7068f427315a",
+      "utilityBill": "6fe35ae3-e6c6-41ff-848a-cbe595b308b8"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T11:01:35.418Z"
+  },
+  {
+    "id": "f73656b7-c90e-44f2-91fd-73906fdbb8c7",
+    "firstName": "Dalton",
+    "lastName": "DuBuque",
+    "dateOfBirth": "1970-11-28T14:19:25.116Z",
+    "ssn": "483751593",
+    "email": "Wanda_Ondricka54@gmail.com",
+    "phone": "1-970-639-0899 x09038",
+    "address": {
+      "street": "41790 Ken Pike",
+      "city": "Kokomo",
+      "state": "Missouri",
+      "zipCode": "22711-1184",
+      "country": "Cayman Islands"
+    },
+    "documents": {
+      "passport": "7ffd998f-48f0-42d2-9e6b-5705c9d6912b",
+      "drivingLicense": "87406cc0-2378-4ea3-ba6e-23012cb768af",
+      "utilityBill": "16775910-4afe-4f5a-ae55-0c41640af5a0"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T08:27:34.876Z"
+  },
+  {
+    "id": "53e1b731-470e-422f-95ce-028afc3e3582",
+    "firstName": "Jacklyn",
+    "lastName": "Mertz",
+    "dateOfBirth": "1977-02-01T07:48:23.817Z",
+    "ssn": "321964721",
+    "email": "Allie_Gibson26@hotmail.com",
+    "phone": "227-729-4681 x9446",
+    "address": {
+      "street": "48294 Wyman Village",
+      "city": "Sheridanboro",
+      "state": "West Virginia",
+      "zipCode": "78487",
+      "country": "Andorra"
+    },
+    "documents": {
+      "passport": "6645cd76-6500-49a2-aa5f-5b2905d42502",
+      "drivingLicense": "d7be9d66-007d-4e74-9ac6-856bd8c6a613",
+      "utilityBill": "a187e388-1aaa-4394-a82f-43fc2c4a83bc"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T09:59:25.478Z"
+  },
+  {
+    "id": "29ade29c-ff74-44a2-a82f-3c5830af0a14",
+    "firstName": "Isaac",
+    "lastName": "Hintz",
+    "dateOfBirth": "2000-01-03T00:20:39.367Z",
+    "ssn": "161007068",
+    "email": "Trace64@gmail.com",
+    "phone": "(626) 863-3723",
+    "address": {
+      "street": "83819 Becker Bridge",
+      "city": "New Luigitown",
+      "state": "Texas",
+      "zipCode": "63608",
+      "country": "Monaco"
+    },
+    "documents": {
+      "passport": "1e0613b5-901e-4d0c-bf7f-2751eeb2fc7d",
+      "drivingLicense": "0f06b8f5-2881-47b5-97c0-59ecd786196e",
+      "utilityBill": "8ed0e3ba-befa-4590-bbed-b1c81243cdc9"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T07:44:04.894Z"
+  },
+  {
+    "id": "2b13421f-5247-4073-9987-24c15586ddfe",
+    "firstName": "Sophia",
+    "lastName": "Jast",
+    "dateOfBirth": "1945-10-14T09:06:19.458Z",
+    "ssn": "184907268",
+    "email": "Brooke53@yahoo.com",
+    "phone": "712.986.7049 x2403",
+    "address": {
+      "street": "149 Bayer Shores",
+      "city": "Walnut Creek",
+      "state": "Utah",
+      "zipCode": "98892-6377",
+      "country": "Zambia"
+    },
+    "documents": {
+      "passport": "4f0939a7-2f7c-402a-89b5-563b848160f3",
+      "drivingLicense": "bc422a49-b1d1-4147-bbf5-f4189d92ba9c",
+      "utilityBill": "6427ca6b-133f-4205-b600-979ae52512ab"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T03:34:04.381Z"
+  },
+  {
+    "id": "2f77c5c6-ab16-4cb6-a7d8-7d1ed91342aa",
+    "firstName": "Natasha",
+    "lastName": "Stiedemann",
+    "dateOfBirth": "1975-11-17T05:11:15.668Z",
+    "ssn": "283219402",
+    "email": "Ryann43@yahoo.com",
+    "phone": "1-377-460-3141 x0978",
+    "address": {
+      "street": "381 Jaunita Oval",
+      "city": "Pflugerville",
+      "state": "California",
+      "zipCode": "70162",
+      "country": "Canada"
+    },
+    "documents": {
+      "passport": "edde8301-d5ac-4205-81f7-a0a1bcf5490b",
+      "drivingLicense": "6e14af70-2421-44fd-a79d-ed78db55837a",
+      "utilityBill": "c7b6ecf5-41e3-4216-9866-1697dc6964a1"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T01:49:41.352Z"
+  },
+  {
+    "id": "2d10da0e-f396-4f19-a92c-380365f5c101",
+    "firstName": "Aric",
+    "lastName": "Turcotte",
+    "dateOfBirth": "1984-11-21T04:31:21.587Z",
+    "ssn": "645012831",
+    "email": "Lynn_Parisian@gmail.com",
+    "phone": "472.519.5782 x279",
+    "address": {
+      "street": "330 Jaunita Falls",
+      "city": "East Emmaton",
+      "state": "New York",
+      "zipCode": "61742",
+      "country": "Argentina"
+    },
+    "documents": {
+      "passport": "f7ef7e0b-0944-4038-9d82-3390a0e9fdbe",
+      "drivingLicense": "c1ea159b-85f8-4023-bbe5-9353b703bcc8",
+      "utilityBill": "8ce72abd-01f2-46a0-978a-1ca2f6cdc8c8"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T20:23:34.746Z"
+  },
+  {
+    "id": "d0e4fc7e-8ded-4962-9d5d-f4c290b8f4ca",
+    "firstName": "Alf",
+    "lastName": "Prohaska",
+    "dateOfBirth": "1963-04-11T15:26:47.075Z",
+    "ssn": "208164256",
+    "email": "Tia78@hotmail.com",
+    "phone": "(737) 261-2249",
+    "address": {
+      "street": "42898 Greenway",
+      "city": "Fort Felicitystad",
+      "state": "Connecticut",
+      "zipCode": "96373-1505",
+      "country": "Virgin Islands, British"
+    },
+    "documents": {
+      "passport": "d4e97f91-3473-4d04-bdff-5aa05d5b8f12",
+      "drivingLicense": "9878bc36-1ae7-4755-aecb-132c4fcbf380",
+      "utilityBill": "16a90077-549f-4bd2-b72d-d6fe10396205"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-29T23:28:36.160Z"
+  },
+  {
+    "id": "b58c4dba-266a-4d07-9a0e-71df3147531b",
+    "firstName": "Lisa",
+    "lastName": "Tremblay",
+    "dateOfBirth": "1954-12-03T16:58:46.354Z",
+    "ssn": "128287280",
+    "email": "Rosa.Willms@hotmail.com",
+    "phone": "1-232-952-9005 x4174",
+    "address": {
+      "street": "2192 Abernathy Rue",
+      "city": "Hageneshaven",
+      "state": "Arizona",
+      "zipCode": "49997-5622",
+      "country": "United States Minor Outlying Islands"
+    },
+    "documents": {
+      "passport": "3e0537e7-3dde-44fa-8e43-9c723d7e7094",
+      "drivingLicense": "88acd19b-cb2a-4ccd-bb37-234141543e9d",
+      "utilityBill": "e5c57c14-ac60-442b-91b9-8db06ae3b94a"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T06:23:26.495Z"
+  },
+  {
+    "id": "de9887b9-5d39-4005-9bd3-2c6d4f91de73",
+    "firstName": "Zora",
+    "lastName": "Bashirian-Corkery",
+    "dateOfBirth": "1968-06-28T17:46:44.492Z",
+    "ssn": "502413571",
+    "email": "Mercedes64@hotmail.com",
+    "phone": "(819) 690-2805",
+    "address": {
+      "street": "86469 Moore Mews",
+      "city": "Fort Hubertbury",
+      "state": "North Dakota",
+      "zipCode": "15443",
+      "country": "Sierra Leone"
+    },
+    "documents": {
+      "passport": "4227af2c-a8bb-45e9-81be-622cc6f12d4e",
+      "drivingLicense": "94ce9388-fb5f-4b49-93ae-2b3595b85791",
+      "utilityBill": "83735ac2-7d20-4c1f-b442-fbf4a9c8b1dc"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T09:32:27.437Z"
+  },
+  {
+    "id": "b5466653-462b-48e6-b464-72bb4a664c1b",
+    "firstName": "Paolo",
+    "lastName": "Collins",
+    "dateOfBirth": "1964-01-21T18:02:02.697Z",
+    "ssn": "671697382",
+    "email": "Roscoe.Reinger80@yahoo.com",
+    "phone": "1-972-458-3671",
+    "address": {
+      "street": "5474 Hill Road",
+      "city": "Osvaldoworth",
+      "state": "Missouri",
+      "zipCode": "39466",
+      "country": "Guadeloupe"
+    },
+    "documents": {
+      "passport": "b8546df5-6102-4f47-baef-303d68934843",
+      "drivingLicense": "8559e241-30cf-48d9-9d34-0cc16d025f56",
+      "utilityBill": "668eced0-4dc7-4d01-9f9d-7babb7b899a2"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T09:44:09.897Z"
+  },
+  {
+    "id": "3e2148ca-04c0-4d2e-a992-776fe2f96c76",
+    "firstName": "Rick",
+    "lastName": "Hackett",
+    "dateOfBirth": "1973-08-10T13:53:29.022Z",
+    "ssn": "481190271",
+    "email": "Chyna.Jaskolski9@gmail.com",
+    "phone": "(676) 884-3834",
+    "address": {
+      "street": "50307 Jeanie Creek",
+      "city": "West Zane",
+      "state": "South Dakota",
+      "zipCode": "94716-6691",
+      "country": "United Kingdom"
+    },
+    "documents": {
+      "passport": "559a4e7f-b561-428d-a956-2e7d8cbae82b",
+      "drivingLicense": "fd3aef71-6c1c-45c7-949a-a2182b21da68",
+      "utilityBill": "05a6eb7f-feea-4100-a868-d19ccb54513a"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T13:12:28.106Z"
+  },
+  {
+    "id": "ac1ffba6-f77d-4575-8fca-a42557980582",
+    "firstName": "Imogene",
+    "lastName": "Braun",
+    "dateOfBirth": "1984-02-04T21:40:29.644Z",
+    "ssn": "726391001",
+    "email": "Robbie.Spencer98@yahoo.com",
+    "phone": "(615) 400-5114 x016",
+    "address": {
+      "street": "3244 The Avenue",
+      "city": "New Providenciton",
+      "state": "Maine",
+      "zipCode": "87919-3436",
+      "country": "Botswana"
+    },
+    "documents": {
+      "passport": "82ebbf26-c213-4cb6-acc3-a7224b724549",
+      "drivingLicense": "29b64fa5-88b3-47d3-8951-e68a181c5f6c",
+      "utilityBill": "dc2a9071-1993-4a52-b23c-8fc4f1fbceb0"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T10:06:59.374Z"
+  },
+  {
+    "id": "9cdfd6e0-9483-4bd1-bfd1-621b983e5e7e",
+    "firstName": "Coleman",
+    "lastName": "Rempel",
+    "dateOfBirth": "1985-10-10T22:20:44.571Z",
+    "ssn": "723091626",
+    "email": "Greyson_Welch40@hotmail.com",
+    "phone": "(583) 734-6968 x740",
+    "address": {
+      "street": "5191 Fisher Extension",
+      "city": "Tamiami",
+      "state": "Pennsylvania",
+      "zipCode": "82038-2775",
+      "country": "Falkland Islands (Malvinas)"
+    },
+    "documents": {
+      "passport": "c39712f4-2ffb-4f7d-80b3-9aea142b8700",
+      "drivingLicense": "8ea12577-2b5f-4afd-b876-b72b606cae0f",
+      "utilityBill": "bfa8f56b-d4c6-4139-8a2c-633b2adf9ecb"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T04:33:31.390Z"
+  },
+  {
+    "id": "c9a99fca-8738-4d80-906f-311c68acc18a",
+    "firstName": "Erin",
+    "lastName": "Dooley",
+    "dateOfBirth": "1953-05-22T18:34:41.350Z",
+    "ssn": "959264848",
+    "email": "Alia74@hotmail.com",
+    "phone": "1-489-693-7764 x54008",
+    "address": {
+      "street": "57294 Weimann Vista",
+      "city": "Fort Alexanne",
+      "state": "New Mexico",
+      "zipCode": "41763-6092",
+      "country": "Niger"
+    },
+    "documents": {
+      "passport": "ec35b731-2162-45b4-be1c-c8b65f6ed86e",
+      "drivingLicense": "3634543e-4b2b-40a4-b5d9-acde1cff146b",
+      "utilityBill": "a2f167e6-2630-4fe6-8943-bfdacb4cc45c"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T19:44:36.979Z"
+  },
+  {
+    "id": "57a4b5a0-bcfb-454a-bca1-e46d3bd52382",
+    "firstName": "Charlie",
+    "lastName": "Aufderhar",
+    "dateOfBirth": "1994-11-02T18:09:09.482Z",
+    "ssn": "907855891",
+    "email": "Keyshawn74@yahoo.com",
+    "phone": "1-274-977-9853",
+    "address": {
+      "street": "3203 York Road",
+      "city": "Brennastad",
+      "state": "North Dakota",
+      "zipCode": "98206-1370",
+      "country": "Fiji"
+    },
+    "documents": {
+      "passport": "ed815bad-0309-4f82-8038-609d2d9b4c9a",
+      "drivingLicense": "05ef1cfa-2a05-4491-b074-69e386df4a96",
+      "utilityBill": "8e078082-7aa7-40e5-84f6-58deaf9aaa55"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T12:54:24.938Z"
+  },
+  {
+    "id": "9f12f0b3-4b66-4c07-a6dc-b22ca7b8ccea",
+    "firstName": "Sarah",
+    "lastName": "Weimann",
+    "dateOfBirth": "1995-12-02T08:53:39.355Z",
+    "ssn": "583465123",
+    "email": "Una_Zulauf@yahoo.com",
+    "phone": "316.645.1452 x30210",
+    "address": {
+      "street": "842 W 12th Street",
+      "city": "West Brendenmouth",
+      "state": "Wyoming",
+      "zipCode": "27901",
+      "country": "Gambia"
+    },
+    "documents": {
+      "passport": "8c15c459-ebfb-4676-b16b-8cf3d8a58bda",
+      "drivingLicense": "8874e9ef-c092-433e-a69f-e687f093f92b",
+      "utilityBill": "7ef13648-7a87-410c-a633-7b154520269f"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T17:43:49.128Z"
+  },
+  {
+    "id": "ec8b94f4-f095-4fda-8574-53a15cc7a17b",
+    "firstName": "Reese",
+    "lastName": "Okuneva",
+    "dateOfBirth": "1988-07-07T23:06:35.456Z",
+    "ssn": "535633997",
+    "email": "Valentine1@hotmail.com",
+    "phone": "1-985-245-8282 x35759",
+    "address": {
+      "street": "5762 Gibson Spur",
+      "city": "Port Jailyn",
+      "state": "Washington",
+      "zipCode": "24299-3168",
+      "country": "Guam"
+    },
+    "documents": {
+      "passport": "3a635a2b-df4e-41ec-8b2c-3433d3eac919",
+      "drivingLicense": "7233549a-2120-42ab-bc89-160b1554a30b",
+      "utilityBill": "08508d1d-37f8-412b-bc4b-89a312ccb0c4"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "APPROVED",
+    "createdAt": "2025-12-30T21:51:38.845Z"
+  },
+  {
+    "id": "9f2b6339-7a4d-4cf7-90fe-2c3ee8f88b42",
+    "firstName": "Herman",
+    "lastName": "Stracke",
+    "dateOfBirth": "1973-02-10T05:53:29.501Z",
+    "ssn": "194438544",
+    "email": "Aric45@hotmail.com",
+    "phone": "1-916-364-9938 x7419",
+    "address": {
+      "street": "73035 Castle Road",
+      "city": "South Garryberg",
+      "state": "North Carolina",
+      "zipCode": "41246-4507",
+      "country": "Nauru"
+    },
+    "documents": {
+      "passport": "033e4233-352f-4b0f-b96d-98d866f2e75b",
+      "drivingLicense": "86904776-830f-4dff-9eb4-9f10126a3c30",
+      "utilityBill": "e4cbc923-c33c-4d89-b94d-35bbff63ca3b"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T22:30:06.155Z"
+  },
+  {
+    "id": "b7931072-3b3d-4c2b-8c51-c5484367c390",
+    "firstName": "Kylie",
+    "lastName": "Altenwerth",
+    "dateOfBirth": "1992-06-10T13:11:43.202Z",
+    "ssn": "885868608",
+    "email": "Ivory54@yahoo.com",
+    "phone": "583-211-6081",
+    "address": {
+      "street": "869 Hudson Rapid",
+      "city": "Pascaleshire",
+      "state": "Colorado",
+      "zipCode": "42849-6806",
+      "country": "Latvia"
+    },
+    "documents": {
+      "passport": "b5052882-d5d2-493d-be4a-4beb13c1ccd5",
+      "drivingLicense": "204c98b8-8910-4106-90b3-4185bd0737c4",
+      "utilityBill": "a07af866-c59f-4cb5-8a5b-0a73a62a8be8"
+    },
+    "riskLevel": "LOW",
+    "kycStatus": "REJECTED",
+    "createdAt": "2025-12-30T12:46:40.416Z"
+  },
+  {
+    "id": "aa55325b-451f-4f78-aa5f-f835a4d7b63f",
+    "firstName": "Karlee",
+    "lastName": "McKenzie",
+    "dateOfBirth": "1970-11-03T18:59:01.281Z",
+    "ssn": "853338585",
+    "email": "Gregorio.Corwin57@yahoo.com",
+    "phone": "(664) 735-2240 x2845",
+    "address": {
+      "street": "5815 Madison Street",
+      "city": "Fort Kory",
+      "state": "New Hampshire",
+      "zipCode": "92677-0027",
+      "country": "Nicaragua"
+    },
+    "documents": {
+      "passport": "3094ce69-ae02-4329-aaa9-20b640be30e3",
+      "drivingLicense": "9eeabb03-c11d-43b8-9adc-be734629cb0d",
+      "utilityBill": "41520052-c998-4222-a5a0-e2e6a12fa21e"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T14:42:20.607Z"
+  },
+  {
+    "id": "aa102381-70d4-4106-9d0b-40c9075e461c",
+    "firstName": "Winona",
+    "lastName": "Cremin",
+    "dateOfBirth": "1977-08-07T03:55:18.986Z",
+    "ssn": "906400926",
+    "email": "Rasheed.Conroy@gmail.com",
+    "phone": "(524) 625-2963 x30467",
+    "address": {
+      "street": "1371 E Walnut Street",
+      "city": "East Janaestad",
+      "state": "Hawaii",
+      "zipCode": "21178-6265",
+      "country": "Ghana"
+    },
+    "documents": {
+      "passport": "ef4fe4bf-8671-4d7d-9340-dc616201a991",
+      "drivingLicense": "84945b05-06cd-406f-a66e-f66c58b7333f",
+      "utilityBill": "94046d7d-6860-41fa-a5ea-0a1efd2c0879"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "PENDING",
+    "createdAt": "2025-12-30T21:07:35.686Z"
+  },
+  {
+    "id": "ec6d4b9f-ef28-4185-8cf0-d3ef43fac8fd",
+    "firstName": "Carley",
+    "lastName": "Dooley",
+    "dateOfBirth": "1996-01-17T09:10:04.619Z",
+    "ssn": "278107755",
+    "email": "Orlo98@gmail.com",
+    "phone": "(946) 353-1533 x8358",
+    "address": {
+      "street": "5865 Ayden Union",
+      "city": "Minneapolis",
+      "state": "Texas",
+      "zipCode": "15580-2279",
+      "country": "Kazakhstan"
+    },
+    "documents": {
+      "passport": "cf6fa0c5-ac7b-4179-9f9a-88b944b2d504",
+      "drivingLicense": "46546d50-bdd1-4aa7-886e-663c8d5aca13",
+      "utilityBill": "4bfc61f2-bb61-4fb5-8475-bc2c8cf0e388"
+    },
+    "riskLevel": "MEDIUM",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T17:25:41.148Z"
+  },
+  {
+    "id": "4b69aa44-bae7-4fad-9af4-c45755a82ce3",
+    "firstName": "Makenzie",
+    "lastName": "Grimes",
+    "dateOfBirth": "1992-09-12T09:16:11.858Z",
+    "ssn": "848039577",
+    "email": "Pink78@gmail.com",
+    "phone": "1-500-542-3814 x97396",
+    "address": {
+      "street": "6968 Adrian Flat",
+      "city": "Hertatown",
+      "state": "Alabama",
+      "zipCode": "10444-7859",
+      "country": "Pitcairn Islands"
+    },
+    "documents": {
+      "passport": "9a28a1f7-3001-41b0-9768-665670ea06a9",
+      "drivingLicense": "47fa04aa-407f-425e-944c-269769a38f01",
+      "utilityBill": "abb26c00-149f-4181-877e-075751b3d8ba"
+    },
+    "riskLevel": "HIGH",
+    "kycStatus": "UNDER_REVIEW",
+    "createdAt": "2025-12-30T07:37:32.883Z"
+  }
+]

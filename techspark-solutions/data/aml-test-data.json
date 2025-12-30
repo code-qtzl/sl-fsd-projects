@@ -1,0 +1,2195 @@
+{
+  "transactions": [
+    {
+      "id": "c1e382d8-8d5e-4e42-ad44-8689768474d5",
+      "fromAccount": "02043323",
+      "toAccount": "00489772",
+      "amount": 494088.78,
+      "currency": "CHF",
+      "transactionType": "ACH",
+      "description": "payment transaction at West - Spencer using card ending with ***(...4068) for GYD 57.08 in account ***16500855",
+      "timestamp": "2025-12-30T15:02:01.327Z",
+      "location": {
+        "country": "Denmark",
+        "city": "West Brendanchester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 51,
+      "status": "CLEARED"
+    },
+    {
+      "id": "4701e656-23e8-47c9-b25f-3e7c69807610",
+      "fromAccount": "94541632",
+      "toAccount": "77814561",
+      "amount": 64111.91,
+      "currency": "NPR",
+      "transactionType": "WIRE",
+      "description": "deposit transaction at Wiza, Stanton and Kuvalis using card ending with ***(...2065) for KHR 600.41 in account ***85954853",
+      "timestamp": "2025-12-30T01:55:57.958Z",
+      "location": {
+        "country": "Antarctica",
+        "city": "Port Genoveva"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 53,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "dce1cd7b-b294-4648-8363-5e4f6441d4e5",
+      "fromAccount": "58140229",
+      "toAccount": "43617320",
+      "amount": 569268.32,
+      "currency": "CVE",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Howell Inc using card ending with ***(...1108) for KHR 316.15 in account ***32222337",
+      "timestamp": "2025-12-30T08:29:20.198Z",
+      "location": {
+        "country": "Costa Rica",
+        "city": "Bergnaumstead"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 7,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "69bc25d2-8ce8-4b62-a947-5d7fd0b4804e",
+      "fromAccount": "11424382",
+      "toAccount": "12477714",
+      "amount": 131667.07,
+      "currency": "BRL",
+      "transactionType": "CHECK",
+      "description": "invoice transaction at Kutch - VonRueden using card ending with ***(...4587) for LAK 250.37 in account ***86979309",
+      "timestamp": "2025-12-30T18:33:23.071Z",
+      "location": {
+        "country": "Estonia",
+        "city": "West Jane"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 83,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "3745ad67-157d-4f9b-a1d5-e10b7ef5c6e0",
+      "fromAccount": "01464396",
+      "toAccount": "50002859",
+      "amount": 215873.42,
+      "currency": "EUR",
+      "transactionType": "CASH",
+      "description": "payment transaction at Nikolaus - Schuppe using card ending with ***(...7665) for KPW 783.73 in account ***77314589",
+      "timestamp": "2025-12-30T00:34:15.067Z",
+      "location": {
+        "country": "Venezuela",
+        "city": "Reidton"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 0,
+      "status": "CLEARED"
+    },
+    {
+      "id": "a3e85ef0-a144-43d8-bc70-00d4731d7666",
+      "fromAccount": "96794944",
+      "toAccount": "54912119",
+      "amount": 273592.04,
+      "currency": "BDT",
+      "transactionType": "ACH",
+      "description": "withdrawal transaction at Reinger, King and Hintz using card ending with ***(...4257) for MDL 594.10 in account ***03402173",
+      "timestamp": "2025-12-30T21:19:21.821Z",
+      "location": {
+        "country": "Spain",
+        "city": "Janickshire"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 32,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "ee06a713-0b59-4d64-a166-c4bbb8ca06c6",
+      "fromAccount": "94647007",
+      "toAccount": "82560802",
+      "amount": 115861.44,
+      "currency": "RSD",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Kutch, Kessler and Daniel using card ending with ***(...9349) for TTD 795.07 in account ***35571737",
+      "timestamp": "2025-12-30T04:17:26.247Z",
+      "location": {
+        "country": "Romania",
+        "city": "Joshhaven"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 21,
+      "status": "CLEARED"
+    },
+    {
+      "id": "9a376f42-1453-4039-a887-f09155f9b5b6",
+      "fromAccount": "29443508",
+      "toAccount": "68736132",
+      "amount": 273926.11,
+      "currency": "NPR",
+      "transactionType": "CHECK",
+      "description": "invoice transaction at Nicolas - Tromp using card ending with ***(...3534) for EUR 272.60 in account ***60347241",
+      "timestamp": "2025-12-30T03:39:43.109Z",
+      "location": {
+        "country": "France",
+        "city": "Glendora"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 69,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "7c2f2e11-19eb-4ba3-a2a5-fefad72a0b63",
+      "fromAccount": "17951355",
+      "toAccount": "45372261",
+      "amount": 661987.73,
+      "currency": "SOS",
+      "transactionType": "CASH",
+      "description": "invoice transaction at Bergnaum, Smitham and Lang using card ending with ***(...1818) for SDG 293.74 in account ***04977683",
+      "timestamp": "2025-12-30T18:54:32.370Z",
+      "location": {
+        "country": "Bonaire, Sint Eustatius and Saba",
+        "city": "Port Enrico"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 89,
+      "status": "CLEARED"
+    },
+    {
+      "id": "1f58f087-e764-4d43-9665-ce3e0af5305c",
+      "fromAccount": "87734668",
+      "toAccount": "09122486",
+      "amount": 636772.61,
+      "currency": "BZD",
+      "transactionType": "CASH",
+      "description": "payment transaction at Braun LLC using card ending with ***(...0327) for BOB 349.16 in account ***64253331",
+      "timestamp": "2025-12-30T00:47:22.181Z",
+      "location": {
+        "country": "Sint Maarten",
+        "city": "Jaynechester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 76,
+      "status": "CLEARED"
+    },
+    {
+      "id": "84da729b-9b8f-4b00-85da-ac31f34bcd55",
+      "fromAccount": "82221018",
+      "toAccount": "82890282",
+      "amount": 781682.52,
+      "currency": "KES",
+      "transactionType": "WIRE",
+      "description": "invoice transaction at Cummerata, Labadie and Mitchell using card ending with ***(...8655) for MUR 633.46 in account ***38154222",
+      "timestamp": "2025-12-30T10:38:27.022Z",
+      "location": {
+        "country": "Virgin Islands, British",
+        "city": "North Jamel"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 11,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "a6eb74ad-2ba8-4017-bea3-020bbee6bd14",
+      "fromAccount": "34557881",
+      "toAccount": "94505088",
+      "amount": 811880.21,
+      "currency": "SLE",
+      "transactionType": "CASH",
+      "description": "payment transaction at Gislason Group using card ending with ***(...3075) for RWF 854.81 in account ***69650479",
+      "timestamp": "2025-12-30T07:51:20.132Z",
+      "location": {
+        "country": "Singapore",
+        "city": "Johnstonville"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 40,
+      "status": "CLEARED"
+    },
+    {
+      "id": "bbdf48c8-ab11-433a-bef6-9f3ef29567fd",
+      "fromAccount": "46664601",
+      "toAccount": "12209686",
+      "amount": 439979.08,
+      "currency": "MAD",
+      "transactionType": "CASH",
+      "description": "withdrawal transaction at Lemke Inc using card ending with ***(...4690) for AUD 420.57 in account ***87668949",
+      "timestamp": "2025-12-30T07:42:53.654Z",
+      "location": {
+        "country": "Sao Tome and Principe",
+        "city": "New Clara"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 10,
+      "status": "CLEARED"
+    },
+    {
+      "id": "85e547d5-a93f-4a59-9599-53f34d5cf582",
+      "fromAccount": "63009223",
+      "toAccount": "66765566",
+      "amount": 918250.38,
+      "currency": "SLE",
+      "transactionType": "WIRE",
+      "description": "withdrawal transaction at Greenholt, Padberg and Dach using card ending with ***(...4901) for DKK 610.86 in account ***10147503",
+      "timestamp": "2025-12-30T17:48:25.721Z",
+      "location": {
+        "country": "China",
+        "city": "Hackettfield"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 80,
+      "status": "CLEARED"
+    },
+    {
+      "id": "d11770d8-2c8b-45fb-84c1-42d7394f9664",
+      "fromAccount": "33178273",
+      "toAccount": "89164155",
+      "amount": 732532.81,
+      "currency": "LAK",
+      "transactionType": "CARD",
+      "description": "payment transaction at Beier, Harber and D'Amore using card ending with ***(...3418) for IQD 628.08 in account ***09935670",
+      "timestamp": "2025-12-30T22:47:56.356Z",
+      "location": {
+        "country": "Monaco",
+        "city": "Lake Madilynton"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 53,
+      "status": "CLEARED"
+    },
+    {
+      "id": "a99edf41-0e9c-4ff2-9081-76340da05df1",
+      "fromAccount": "54570415",
+      "toAccount": "76285789",
+      "amount": 784883.81,
+      "currency": "KES",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Kovacek - Becker using card ending with ***(...9839) for MMK 618.02 in account ***91363191",
+      "timestamp": "2025-12-30T05:40:00.444Z",
+      "location": {
+        "country": "Argentina",
+        "city": "Boulder"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 28,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "3ff844f9-82be-4634-a2ae-cc09d951d3b4",
+      "fromAccount": "00968027",
+      "toAccount": "96605027",
+      "amount": 829612.66,
+      "currency": "BDT",
+      "transactionType": "CASH",
+      "description": "withdrawal transaction at Boyle Inc using card ending with ***(...7587) for QAR 30.03 in account ***42767720",
+      "timestamp": "2025-12-30T04:20:51.089Z",
+      "location": {
+        "country": "Zimbabwe",
+        "city": "Minot"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 37,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "9002dd8b-528c-459c-b86c-75be26af7f5b",
+      "fromAccount": "25480270",
+      "toAccount": "79310013",
+      "amount": 463686.24,
+      "currency": "XPF",
+      "transactionType": "WIRE",
+      "description": "deposit transaction at Bauch LLC using card ending with ***(...4439) for SEK 847.12 in account ***32011828",
+      "timestamp": "2025-12-30T02:58:25.390Z",
+      "location": {
+        "country": "United States of America",
+        "city": "Syblefurt"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 57,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "7840fb10-9ece-418d-a6c5-bdea1942151c",
+      "fromAccount": "69336161",
+      "toAccount": "95737179",
+      "amount": 212382.47,
+      "currency": "AWG",
+      "transactionType": "CARD",
+      "description": "payment transaction at Kessler - Lehner using card ending with ***(...3973) for MOP 535.95 in account ***32712211",
+      "timestamp": "2025-12-30T02:56:03.616Z",
+      "location": {
+        "country": "Denmark",
+        "city": "Hilmaside"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 24,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "b60ddbbb-e690-4cfc-833a-05a201c6f56d",
+      "fromAccount": "59074115",
+      "toAccount": "82377062",
+      "amount": 847999.6,
+      "currency": "PLN",
+      "transactionType": "WIRE",
+      "description": "payment transaction at Funk - Welch using card ending with ***(...0389) for MKD 439.25 in account ***70162151",
+      "timestamp": "2025-12-30T13:57:52.671Z",
+      "location": {
+        "country": "Cayman Islands",
+        "city": "Kettering"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 1,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "14735736-91c5-46cd-94b2-10622e230e4e",
+      "fromAccount": "74290723",
+      "toAccount": "44078390",
+      "amount": 648654.41,
+      "currency": "VES",
+      "transactionType": "ACH",
+      "description": "payment transaction at Quigley and Sons using card ending with ***(...0315) for BBD 86.64 in account ***29563605",
+      "timestamp": "2025-12-30T22:50:27.882Z",
+      "location": {
+        "country": "Netherlands",
+        "city": "Lake Adeline"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 41,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "b117c720-7b25-4cef-b45c-89be76ee000f",
+      "fromAccount": "74829809",
+      "toAccount": "55104053",
+      "amount": 494702.31,
+      "currency": "IRR",
+      "transactionType": "CARD",
+      "description": "deposit transaction at Ullrich - Haley using card ending with ***(...3897) for XPF 320.05 in account ***93593010",
+      "timestamp": "2025-12-30T17:49:53.974Z",
+      "location": {
+        "country": "New Caledonia",
+        "city": "East Rexport"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 68,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "3847e06b-e1bb-4d7a-a253-62fab0bde145",
+      "fromAccount": "40590419",
+      "toAccount": "45571190",
+      "amount": 736430.52,
+      "currency": "CUP",
+      "transactionType": "ACH",
+      "description": "withdrawal transaction at Herzog and Sons using card ending with ***(...5570) for HUF 368.19 in account ***60338352",
+      "timestamp": "2025-12-30T21:18:05.853Z",
+      "location": {
+        "country": "Ghana",
+        "city": "Kimfield"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 75,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "4ef43d69-4b5d-48d8-843b-e3d42ebb2fde",
+      "fromAccount": "72295967",
+      "toAccount": "86382673",
+      "amount": 388081.08,
+      "currency": "TOP",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Weber, Rodriguez and Von using card ending with ***(...2790) for BSD 301.03 in account ***74411014",
+      "timestamp": "2025-12-30T01:23:06.552Z",
+      "location": {
+        "country": "Croatia",
+        "city": "Fort Lonnieworth"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 18,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "18f40643-8cf4-4f11-b73b-97df447042c3",
+      "fromAccount": "95940287",
+      "toAccount": "86264942",
+      "amount": 82165.81,
+      "currency": "SZL",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Huels - Bradtke using card ending with ***(...7799) for MDL 132.30 in account ***36370343",
+      "timestamp": "2025-12-30T06:38:51.243Z",
+      "location": {
+        "country": "Nepal",
+        "city": "West Estell"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 39,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "3f66304b-2f2d-4471-9ecb-12fc35d9764c",
+      "fromAccount": "15989983",
+      "toAccount": "05393747",
+      "amount": 758084.48,
+      "currency": "NIO",
+      "transactionType": "CHECK",
+      "description": "payment transaction at Langworth Group using card ending with ***(...0501) for AWG 571.49 in account ***66902544",
+      "timestamp": "2025-12-30T13:35:19.175Z",
+      "location": {
+        "country": "Samoa",
+        "city": "Port Afton"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 63,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "b8b2bc45-72e0-480c-87ad-3ac67a04e587",
+      "fromAccount": "49737193",
+      "toAccount": "83939251",
+      "amount": 43317.24,
+      "currency": "BAM",
+      "transactionType": "WIRE",
+      "description": "deposit transaction at Ortiz, Pfannerstill and Hahn using card ending with ***(...0084) for RWF 449.31 in account ***60959411",
+      "timestamp": "2025-12-30T21:02:47.256Z",
+      "location": {
+        "country": "Ireland",
+        "city": "Pfannerstillfurt"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 10,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "f4d4cce5-ee46-4190-a63c-6cb31a7ede40",
+      "fromAccount": "35521182",
+      "toAccount": "50186041",
+      "amount": 699001.54,
+      "currency": "LAK",
+      "transactionType": "WIRE",
+      "description": "deposit transaction at Wolf and Sons using card ending with ***(...3037) for SOS 682.29 in account ***95247060",
+      "timestamp": "2025-12-30T08:29:57.577Z",
+      "location": {
+        "country": "Algeria",
+        "city": "Bradtkeberg"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 51,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "e6494524-04bc-4054-b948-b6ac76b842f7",
+      "fromAccount": "90351335",
+      "toAccount": "42128289",
+      "amount": 705869.2,
+      "currency": "MGA",
+      "transactionType": "CHECK",
+      "description": "withdrawal transaction at Kuhlman - Runolfsson using card ending with ***(...0620) for SRD 29.53 in account ***19796506",
+      "timestamp": "2025-12-30T04:24:39.073Z",
+      "location": {
+        "country": "Spain",
+        "city": "Walterfield"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 94,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "3dff7cd5-3d73-4dff-a32c-cd3dedf5c5bc",
+      "fromAccount": "17674603",
+      "toAccount": "78277668",
+      "amount": 944861.42,
+      "currency": "UAH",
+      "transactionType": "CHECK",
+      "description": "payment transaction at Langworth, Stoltenberg and Rau using card ending with ***(...9011) for SYP 857.86 in account ***95054458",
+      "timestamp": "2025-12-30T09:28:44.694Z",
+      "location": {
+        "country": "Faroe Islands",
+        "city": "Midland"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 41,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "19942afe-52f3-4af5-9b2e-fc78604f0162",
+      "fromAccount": "84195485",
+      "toAccount": "39846128",
+      "amount": 751223.04,
+      "currency": "ERN",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Heathcote, Becker and Runte using card ending with ***(...4473) for NOK 863.86 in account ***44241165",
+      "timestamp": "2025-12-30T10:31:16.401Z",
+      "location": {
+        "country": "Marshall Islands",
+        "city": "Schummview"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 95,
+      "status": "CLEARED"
+    },
+    {
+      "id": "744d5cbe-0ecf-4793-af38-721886edb2b5",
+      "fromAccount": "46412457",
+      "toAccount": "76302806",
+      "amount": 645215.52,
+      "currency": "DKK",
+      "transactionType": "CASH",
+      "description": "payment transaction at Zboncak - Upton using card ending with ***(...2476) for XAF 139.10 in account ***81653080",
+      "timestamp": "2025-12-30T11:05:49.389Z",
+      "location": {
+        "country": "Jordan",
+        "city": "Samantaview"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 18,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "7c7bd963-040f-4e8a-9cf6-0470ce5a6443",
+      "fromAccount": "57785057",
+      "toAccount": "75758209",
+      "amount": 516230.36,
+      "currency": "MDL",
+      "transactionType": "CHECK",
+      "description": "withdrawal transaction at Barton Group using card ending with ***(...8743) for CLP 182.73 in account ***74454793",
+      "timestamp": "2025-12-30T00:57:09.498Z",
+      "location": {
+        "country": "Iceland",
+        "city": "West Jakobview"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 94,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "bf54fa8f-bd40-4786-8f09-06f34fe40535",
+      "fromAccount": "19811506",
+      "toAccount": "28361708",
+      "amount": 561861.2,
+      "currency": "GYD",
+      "transactionType": "WIRE",
+      "description": "invoice transaction at Heaney Group using card ending with ***(...6496) for MYR 141.35 in account ***86374527",
+      "timestamp": "2025-12-30T08:02:59.489Z",
+      "location": {
+        "country": "Iraq",
+        "city": "Elishafort"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 73,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "7bc0cc25-d1c1-4056-a3fe-5b45869cf543",
+      "fromAccount": "09600183",
+      "toAccount": "13806873",
+      "amount": 429808.49,
+      "currency": "DZD",
+      "transactionType": "CASH",
+      "description": "withdrawal transaction at Bahringer - Okuneva using card ending with ***(...7589) for LRD 119.53 in account ***95048731",
+      "timestamp": "2025-12-30T08:42:16.744Z",
+      "location": {
+        "country": "Netherlands",
+        "city": "Fort Trever"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 99,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "417025ed-6531-41c7-9884-38ce6474f0bd",
+      "fromAccount": "10624336",
+      "toAccount": "77980521",
+      "amount": 997400.01,
+      "currency": "TND",
+      "transactionType": "CARD",
+      "description": "withdrawal transaction at Parker, Rogahn and Bahringer using card ending with ***(...0091) for VND 285.93 in account ***15362908",
+      "timestamp": "2025-12-30T11:53:57.463Z",
+      "location": {
+        "country": "United Kingdom",
+        "city": "Dakotachester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 89,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "ab2d174a-af6d-4fc6-8d9c-1e892d53c2b7",
+      "fromAccount": "01794583",
+      "toAccount": "68494238",
+      "amount": 652012.74,
+      "currency": "LKR",
+      "transactionType": "CASH",
+      "description": "invoice transaction at Stanton, Schultz and Hansen using card ending with ***(...8584) for BND 53.10 in account ***24335376",
+      "timestamp": "2025-12-30T05:09:47.579Z",
+      "location": {
+        "country": "Saudi Arabia",
+        "city": "O'Connellboro"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 24,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "33750c97-fcb5-4913-a272-472c1839c734",
+      "fromAccount": "45159061",
+      "toAccount": "12610920",
+      "amount": 397746.8,
+      "currency": "BND",
+      "transactionType": "WIRE",
+      "description": "invoice transaction at Hand LLC using card ending with ***(...4524) for INR 660.96 in account ***27694507",
+      "timestamp": "2025-12-30T01:28:07.910Z",
+      "location": {
+        "country": "Poland",
+        "city": "New Armandburgh"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 4,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "b5750062-e6ef-415b-9164-e90a3ce4a9df",
+      "fromAccount": "08556162",
+      "toAccount": "23433587",
+      "amount": 440270.07,
+      "currency": "SBD",
+      "transactionType": "CHECK",
+      "description": "deposit transaction at Gutmann Inc using card ending with ***(...5102) for MRU 290.26 in account ***99583963",
+      "timestamp": "2025-12-30T02:36:02.158Z",
+      "location": {
+        "country": "Guernsey",
+        "city": "Grand Rapids"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 67,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "e087f9cf-114a-4e4f-a956-481fc62b43ab",
+      "fromAccount": "05393938",
+      "toAccount": "90937891",
+      "amount": 561546.41,
+      "currency": "BBD",
+      "transactionType": "CASH",
+      "description": "invoice transaction at Carter Inc using card ending with ***(...5927) for BGN 90.27 in account ***11032264",
+      "timestamp": "2025-12-30T22:57:16.499Z",
+      "location": {
+        "country": "Romania",
+        "city": "Willshire"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 54,
+      "status": "CLEARED"
+    },
+    {
+      "id": "95b7038a-9a80-4d8d-908a-708a0e3cd61a",
+      "fromAccount": "28932404",
+      "toAccount": "31014987",
+      "amount": 828750.77,
+      "currency": "TTD",
+      "transactionType": "CARD",
+      "description": "invoice transaction at Hermiston - Green using card ending with ***(...9728) for NIO 988.27 in account ***84591228",
+      "timestamp": "2025-12-30T04:26:32.630Z",
+      "location": {
+        "country": "Russian Federation",
+        "city": "Chaseboro"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 50,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "74086b1f-1d0d-4756-8126-eca2713f194f",
+      "fromAccount": "68304388",
+      "toAccount": "66519834",
+      "amount": 27682.4,
+      "currency": "MVR",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Willms, Batz and Parker using card ending with ***(...5221) for AFN 297.86 in account ***12611807",
+      "timestamp": "2025-12-30T20:59:27.561Z",
+      "location": {
+        "country": "Democratic Republic of the Congo",
+        "city": "East Maidacester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 15,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "380358c4-824e-46c4-a13a-67cf3bd8ba32",
+      "fromAccount": "08326940",
+      "toAccount": "19878797",
+      "amount": 536528.63,
+      "currency": "SSP",
+      "transactionType": "WIRE",
+      "description": "payment transaction at Zieme, Nikolaus and Hettinger using card ending with ***(...6704) for TJS 534.91 in account ***79270983",
+      "timestamp": "2025-12-30T17:42:59.618Z",
+      "location": {
+        "country": "Spain",
+        "city": "East Rolando"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 92,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "3e8b4186-cd5c-4163-8c55-c0ed92fd7cac",
+      "fromAccount": "80235642",
+      "toAccount": "16048396",
+      "amount": 66222.44,
+      "currency": "MWK",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Swift, Goldner and Schmidt using card ending with ***(...5296) for COP 499.13 in account ***14537320",
+      "timestamp": "2025-12-30T07:03:51.741Z",
+      "location": {
+        "country": "Mozambique",
+        "city": "Palatine"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 24,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "32f55196-eb09-4d22-970d-1c9728f92782",
+      "fromAccount": "12931886",
+      "toAccount": "01925301",
+      "amount": 105613.84,
+      "currency": "ALL",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Ferry Group using card ending with ***(...1519) for MUR 629.13 in account ***64129213",
+      "timestamp": "2025-12-30T17:24:21.127Z",
+      "location": {
+        "country": "British Indian Ocean Territory (Chagos Archipelago)",
+        "city": "Fort Manuelberg"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 79,
+      "status": "CLEARED"
+    },
+    {
+      "id": "aaebcccd-1f6f-4d6a-8a90-72384da532ee",
+      "fromAccount": "35770674",
+      "toAccount": "13363319",
+      "amount": 566111.54,
+      "currency": "AFN",
+      "transactionType": "CHECK",
+      "description": "invoice transaction at Lebsack - Witting using card ending with ***(...3038) for RUB 740.68 in account ***46486910",
+      "timestamp": "2025-12-30T03:46:15.553Z",
+      "location": {
+        "country": "Maldives",
+        "city": "Towson"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 80,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "ba29fa06-14fc-44b8-a36f-296f49800fe1",
+      "fromAccount": "38387623",
+      "toAccount": "66813214",
+      "amount": 408571.38,
+      "currency": "IDR",
+      "transactionType": "WIRE",
+      "description": "invoice transaction at O'Conner Group using card ending with ***(...9832) for JOD 641.41 in account ***23727255",
+      "timestamp": "2025-12-30T11:52:38.601Z",
+      "location": {
+        "country": "Moldova",
+        "city": "West Darren"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 63,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "7ab6c65d-45f4-4267-870d-56b3171463b5",
+      "fromAccount": "35032029",
+      "toAccount": "08729430",
+      "amount": 61285.21,
+      "currency": "UAH",
+      "transactionType": "CARD",
+      "description": "payment transaction at Walter and Sons using card ending with ***(...9224) for JMD 121.30 in account ***39535611",
+      "timestamp": "2025-12-30T13:48:59.124Z",
+      "location": {
+        "country": "Indonesia",
+        "city": "Earleneland"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 71,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "2ddc3344-2af2-4c26-8d7d-3716ffb3d0b1",
+      "fromAccount": "20116338",
+      "toAccount": "54061800",
+      "amount": 397523.65,
+      "currency": "XOF",
+      "transactionType": "WIRE",
+      "description": "withdrawal transaction at Gleichner, Bradtke and Dickinson using card ending with ***(...5846) for MNT 670.36 in account ***65688965",
+      "timestamp": "2025-12-30T19:20:20.203Z",
+      "location": {
+        "country": "Jamaica",
+        "city": "South Samanthaberg"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 72,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "83855217-0fcc-4e95-8bad-9b6895acffc3",
+      "fromAccount": "75982241",
+      "toAccount": "50689347",
+      "amount": 538699.33,
+      "currency": "GNF",
+      "transactionType": "CARD",
+      "description": "deposit transaction at Hilpert - Rolfson using card ending with ***(...6415) for JOD 405.80 in account ***53293195",
+      "timestamp": "2025-12-30T12:29:08.652Z",
+      "location": {
+        "country": "Marshall Islands",
+        "city": "North Scarlett"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 31,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "45a3c795-a803-4a52-8f4a-ce36e3f4fbba",
+      "fromAccount": "03918538",
+      "toAccount": "36573519",
+      "amount": 271718.89,
+      "currency": "ARS",
+      "transactionType": "WIRE",
+      "description": "payment transaction at Harvey - Dickinson using card ending with ***(...3672) for HUF 547.33 in account ***48819536",
+      "timestamp": "2025-12-30T09:19:25.203Z",
+      "location": {
+        "country": "Lithuania",
+        "city": "Bogisichmouth"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 50,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "38be55b5-282a-454c-8266-6aac7d07e619",
+      "fromAccount": "83928800",
+      "toAccount": "45875880",
+      "amount": 265823.73,
+      "currency": "ZMW",
+      "transactionType": "CASH",
+      "description": "withdrawal transaction at Dickens Inc using card ending with ***(...7797) for XCD 346.52 in account ***83033450",
+      "timestamp": "2025-12-30T08:57:14.720Z",
+      "location": {
+        "country": "Croatia",
+        "city": "Velvabury"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 60,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "aba51896-f7aa-4326-b84f-1c96c8b2968a",
+      "fromAccount": "74035521",
+      "toAccount": "87094889",
+      "amount": 792282.71,
+      "currency": "CUP",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Schinner Inc using card ending with ***(...4053) for FJD 615.97 in account ***08886583",
+      "timestamp": "2025-12-30T12:50:09.924Z",
+      "location": {
+        "country": "Netherlands",
+        "city": "South Fermin"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 70,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "7932a739-b275-4789-b794-533fd6d8d4be",
+      "fromAccount": "09384169",
+      "toAccount": "60940219",
+      "amount": 853030.22,
+      "currency": "WST",
+      "transactionType": "WIRE",
+      "description": "invoice transaction at Ritchie Inc using card ending with ***(...0786) for JMD 706.19 in account ***64142162",
+      "timestamp": "2025-12-30T20:21:01.774Z",
+      "location": {
+        "country": "Albania",
+        "city": "Kaciefurt"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 87,
+      "status": "CLEARED"
+    },
+    {
+      "id": "1137f2d9-279b-4882-9f21-696ad5cb3946",
+      "fromAccount": "16639516",
+      "toAccount": "12012988",
+      "amount": 708804.3,
+      "currency": "BND",
+      "transactionType": "CASH",
+      "description": "invoice transaction at Hirthe, Howell and Pacocha using card ending with ***(...1897) for GEL 220.49 in account ***50227987",
+      "timestamp": "2025-12-30T15:46:22.925Z",
+      "location": {
+        "country": "Haiti",
+        "city": "Eusebiofurt"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 81,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "bcd84524-abe9-498e-865d-22cfbd22495e",
+      "fromAccount": "58941214",
+      "toAccount": "78525800",
+      "amount": 238267,
+      "currency": "TJS",
+      "transactionType": "CHECK",
+      "description": "withdrawal transaction at Mayer, Borer and Mayert using card ending with ***(...7518) for SEK 101.09 in account ***61590864",
+      "timestamp": "2025-12-30T06:29:59.742Z",
+      "location": {
+        "country": "Holy See (Vatican City State)",
+        "city": "North Nathanialtown"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 8,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "e23689f5-0fc3-484a-91a7-23df93540fc9",
+      "fromAccount": "60132780",
+      "toAccount": "85449796",
+      "amount": 964876.29,
+      "currency": "UAH",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Collier - Daugherty using card ending with ***(...3122) for BBD 36.35 in account ***88655774",
+      "timestamp": "2025-12-30T01:11:15.316Z",
+      "location": {
+        "country": "Singapore",
+        "city": "Norwoodhaven"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 65,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "4e965100-22fe-4cd2-97e1-01c6b3a0996a",
+      "fromAccount": "35758293",
+      "toAccount": "73909452",
+      "amount": 36520.22,
+      "currency": "RUB",
+      "transactionType": "WIRE",
+      "description": "withdrawal transaction at Sauer and Sons using card ending with ***(...6904) for PAB 201.95 in account ***69903892",
+      "timestamp": "2025-12-30T09:48:51.881Z",
+      "location": {
+        "country": "New Zealand",
+        "city": "Lake Jedcester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 72,
+      "status": "CLEARED"
+    },
+    {
+      "id": "3bdae175-d29d-400e-b1a6-4514ca2a5336",
+      "fromAccount": "93216330",
+      "toAccount": "57873829",
+      "amount": 312370.31,
+      "currency": "NOK",
+      "transactionType": "WIRE",
+      "description": "withdrawal transaction at Nikolaus, Volkman and Brakus using card ending with ***(...1898) for CLP 295.06 in account ***23557252",
+      "timestamp": "2025-12-30T02:08:01.786Z",
+      "location": {
+        "country": "Ethiopia",
+        "city": "Tessiecester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 97,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "7a91f8f5-6159-482c-a1c4-3835ee636fc7",
+      "fromAccount": "62897121",
+      "toAccount": "06119603",
+      "amount": 989254.72,
+      "currency": "MNT",
+      "transactionType": "CASH",
+      "description": "invoice transaction at Mueller, Flatley and Schulist using card ending with ***(...1229) for DJF 975.38 in account ***70137370",
+      "timestamp": "2025-12-30T17:39:10.534Z",
+      "location": {
+        "country": "Ethiopia",
+        "city": "East Leonorafield"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 78,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "10adbb4a-13d5-466a-bf99-39710323d202",
+      "fromAccount": "69204175",
+      "toAccount": "14037811",
+      "amount": 611887.64,
+      "currency": "SCR",
+      "transactionType": "CARD",
+      "description": "withdrawal transaction at Koepp - Goldner using card ending with ***(...4698) for AZN 406.55 in account ***57651687",
+      "timestamp": "2025-12-30T15:22:39.305Z",
+      "location": {
+        "country": "Norfolk Island",
+        "city": "New Kiana"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 81,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "669e9a18-96ea-4c30-8ca6-c0c21d3a2aa4",
+      "fromAccount": "75243297",
+      "toAccount": "48997097",
+      "amount": 915807.61,
+      "currency": "MOP",
+      "transactionType": "CHECK",
+      "description": "deposit transaction at Emard - Rippin using card ending with ***(...9500) for CDF 886.35 in account ***54271550",
+      "timestamp": "2025-12-30T04:38:25.967Z",
+      "location": {
+        "country": "El Salvador",
+        "city": "Santa Fe"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 91,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "0336bea6-1b1d-4bbb-a6df-fd2ab8468cd9",
+      "fromAccount": "06636818",
+      "toAccount": "97599843",
+      "amount": 995689.04,
+      "currency": "TOP",
+      "transactionType": "CARD",
+      "description": "payment transaction at Cronin - Nikolaus using card ending with ***(...1934) for BIF 29.63 in account ***71847676",
+      "timestamp": "2025-12-30T06:00:55.667Z",
+      "location": {
+        "country": "Republic of Korea",
+        "city": "Lake Judge"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 94,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "6b14ef2d-cdc3-4f0d-bfd0-74db7c2eba48",
+      "fromAccount": "62303232",
+      "toAccount": "07902401",
+      "amount": 32343.19,
+      "currency": "KES",
+      "transactionType": "WIRE",
+      "description": "payment transaction at Spinka Inc using card ending with ***(...2962) for ALL 353.47 in account ***33444908",
+      "timestamp": "2025-12-30T09:51:25.415Z",
+      "location": {
+        "country": "Timor-Leste",
+        "city": "East Fritz"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 99,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "a87264ac-36d8-48f2-85c8-07a13258b1e4",
+      "fromAccount": "72902054",
+      "toAccount": "51667197",
+      "amount": 931695.58,
+      "currency": "XAF",
+      "transactionType": "CARD",
+      "description": "payment transaction at Erdman - Dare using card ending with ***(...7109) for PLN 778.67 in account ***18439575",
+      "timestamp": "2025-12-30T05:56:06.645Z",
+      "location": {
+        "country": "Gibraltar",
+        "city": "Lake Joshuaworth"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 79,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "c358497e-d27d-4552-9612-83ff13fbeb6e",
+      "fromAccount": "13884034",
+      "toAccount": "44665345",
+      "amount": 861632.95,
+      "currency": "HNL",
+      "transactionType": "ACH",
+      "description": "withdrawal transaction at Reichert LLC using card ending with ***(...8498) for BYN 983.91 in account ***90338255",
+      "timestamp": "2025-12-30T15:40:55.985Z",
+      "location": {
+        "country": "Senegal",
+        "city": "Tucson"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 26,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "26f021f1-f086-4163-87fd-03b3911122b1",
+      "fromAccount": "88832617",
+      "toAccount": "35395732",
+      "amount": 90331.81,
+      "currency": "TTD",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Steuber Inc using card ending with ***(...6370) for VUV 306.98 in account ***64692838",
+      "timestamp": "2025-12-30T00:34:00.805Z",
+      "location": {
+        "country": "Saint Vincent and the Grenadines",
+        "city": "North Hulda"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 52,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "b37140df-2bb1-4065-9a90-777be9ce0cc9",
+      "fromAccount": "72312280",
+      "toAccount": "23576408",
+      "amount": 186317.24,
+      "currency": "RUB",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Dicki, Stiedemann and Will using card ending with ***(...6158) for KZT 87.67 in account ***56992888",
+      "timestamp": "2025-12-30T09:36:11.317Z",
+      "location": {
+        "country": "Tanzania",
+        "city": "Hollieland"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 100,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "77e5d357-13c2-4526-b223-de48aa1274a8",
+      "fromAccount": "32216242",
+      "toAccount": "36110832",
+      "amount": 233018.04,
+      "currency": "DJF",
+      "transactionType": "CASH",
+      "description": "withdrawal transaction at Gleason and Sons using card ending with ***(...4155) for BWP 591.67 in account ***05251112",
+      "timestamp": "2025-12-30T20:41:00.912Z",
+      "location": {
+        "country": "New Zealand",
+        "city": "Placentia"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 88,
+      "status": "CLEARED"
+    },
+    {
+      "id": "1c824b71-5ae6-4674-8fe8-dacc5fd9225e",
+      "fromAccount": "24169327",
+      "toAccount": "16072875",
+      "amount": 435243.78,
+      "currency": "BMD",
+      "transactionType": "ACH",
+      "description": "withdrawal transaction at Kuhlman - Macejkovic using card ending with ***(...1804) for USD 288.45 in account ***12186308",
+      "timestamp": "2025-12-30T16:58:17.365Z",
+      "location": {
+        "country": "Aland Islands",
+        "city": "New Velda"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 58,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "47cb70ec-79df-45fa-a70e-cfd172d70409",
+      "fromAccount": "63313380",
+      "toAccount": "25283574",
+      "amount": 150803.93,
+      "currency": "MUR",
+      "transactionType": "WIRE",
+      "description": "withdrawal transaction at Grant - Blanda using card ending with ***(...5289) for CNY 627.67 in account ***88377537",
+      "timestamp": "2025-12-30T12:17:13.341Z",
+      "location": {
+        "country": "Pitcairn Islands",
+        "city": "Dale City"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 92,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "2ef0c3d5-5146-4579-ab3c-e0d42a51c9ba",
+      "fromAccount": "66400729",
+      "toAccount": "22807145",
+      "amount": 380276.65,
+      "currency": "KES",
+      "transactionType": "CHECK",
+      "description": "withdrawal transaction at MacGyver, Erdman and Keeling using card ending with ***(...5989) for MWK 302.94 in account ***68584806",
+      "timestamp": "2025-12-30T05:01:57.278Z",
+      "location": {
+        "country": "Croatia",
+        "city": "Pasco"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 46,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "f98abc77-4d72-46bb-b6af-249a03fb9ddc",
+      "fromAccount": "83486586",
+      "toAccount": "45241979",
+      "amount": 689375.45,
+      "currency": "CAD",
+      "transactionType": "CHECK",
+      "description": "invoice transaction at Abernathy - Nikolaus using card ending with ***(...0719) for BRL 704.18 in account ***52980314",
+      "timestamp": "2025-12-30T16:43:31.614Z",
+      "location": {
+        "country": "Liberia",
+        "city": "Kendall"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 30,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "ed579254-d79c-433f-80a4-8c4791d17867",
+      "fromAccount": "16315304",
+      "toAccount": "52811271",
+      "amount": 722301.46,
+      "currency": "KRW",
+      "transactionType": "CARD",
+      "description": "deposit transaction at Hirthe - Wiza using card ending with ***(...9597) for SAR 574.46 in account ***53013114",
+      "timestamp": "2025-12-30T06:00:30.139Z",
+      "location": {
+        "country": "Jordan",
+        "city": "Fatimamouth"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 22,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "574df445-d0a7-460f-8e99-b88ba7006fb0",
+      "fromAccount": "42433149",
+      "toAccount": "22294773",
+      "amount": 350425.03,
+      "currency": "ILS",
+      "transactionType": "CHECK",
+      "description": "deposit transaction at Hermiston and Sons using card ending with ***(...9645) for HNL 722.21 in account ***78884465",
+      "timestamp": "2025-12-30T20:06:28.950Z",
+      "location": {
+        "country": "Montenegro",
+        "city": "East Nicholasville"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 72,
+      "status": "CLEARED"
+    },
+    {
+      "id": "6eee9ab1-55c1-4f71-b36e-9cc8b19b342e",
+      "fromAccount": "03023504",
+      "toAccount": "90388524",
+      "amount": 670063.74,
+      "currency": "BRL",
+      "transactionType": "CARD",
+      "description": "invoice transaction at Wilderman, Mosciski and Powlowski using card ending with ***(...4631) for MVR 718.76 in account ***05923433",
+      "timestamp": "2025-12-30T21:02:28.018Z",
+      "location": {
+        "country": "Virgin Islands, British",
+        "city": "Kulasburgh"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 40,
+      "status": "CLEARED"
+    },
+    {
+      "id": "a73208a2-b93b-4394-9941-ea64d7370ee5",
+      "fromAccount": "55577433",
+      "toAccount": "35756105",
+      "amount": 259063.91,
+      "currency": "NAD",
+      "transactionType": "CHECK",
+      "description": "payment transaction at Brakus - Gerhold using card ending with ***(...8789) for KPW 331.94 in account ***19231149",
+      "timestamp": "2025-12-30T19:39:34.269Z",
+      "location": {
+        "country": "Andorra",
+        "city": "Aftonhaven"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 83,
+      "status": "CLEARED"
+    },
+    {
+      "id": "be2f528e-963d-497b-9ff0-873e28586991",
+      "fromAccount": "27135583",
+      "toAccount": "11416127",
+      "amount": 611539.23,
+      "currency": "MGA",
+      "transactionType": "ACH",
+      "description": "invoice transaction at Heidenreich Group using card ending with ***(...4071) for AUD 714.49 in account ***64189375",
+      "timestamp": "2025-12-30T09:19:36.646Z",
+      "location": {
+        "country": "Austria",
+        "city": "Garden Grove"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 32,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "69eec569-754e-47c3-a004-2279ae903b2b",
+      "fromAccount": "65183958",
+      "toAccount": "50967230",
+      "amount": 171774.45,
+      "currency": "USD",
+      "transactionType": "CASH",
+      "description": "payment transaction at Torp LLC using card ending with ***(...4506) for BIF 355.96 in account ***77233519",
+      "timestamp": "2025-12-30T07:51:11.825Z",
+      "location": {
+        "country": "Cuba",
+        "city": "Lake Chadrick"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 31,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "05e2877a-b8a1-495e-9b15-b7a46b446066",
+      "fromAccount": "28875058",
+      "toAccount": "13244829",
+      "amount": 809106.42,
+      "currency": "CDF",
+      "transactionType": "CHECK",
+      "description": "payment transaction at Maggio LLC using card ending with ***(...8645) for XPF 930.67 in account ***08591142",
+      "timestamp": "2025-12-30T07:28:55.979Z",
+      "location": {
+        "country": "Netherlands",
+        "city": "Binsview"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 76,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "0067d948-733c-4433-8a40-9d3e0d19086b",
+      "fromAccount": "59835117",
+      "toAccount": "75321589",
+      "amount": 340161.04,
+      "currency": "BBD",
+      "transactionType": "CHECK",
+      "description": "deposit transaction at Thompson Inc using card ending with ***(...2389) for CAD 755.13 in account ***70076596",
+      "timestamp": "2025-12-30T07:05:29.057Z",
+      "location": {
+        "country": "Grenada",
+        "city": "Fort Rexborough"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 55,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "0a0d42f4-a2e1-4901-a853-f3dff82976bc",
+      "fromAccount": "45233154",
+      "toAccount": "81901425",
+      "amount": 689391.72,
+      "currency": "GHS",
+      "transactionType": "ACH",
+      "description": "invoice transaction at Bartoletti - Watsica using card ending with ***(...7262) for LKR 25.22 in account ***25829004",
+      "timestamp": "2025-12-30T01:28:46.662Z",
+      "location": {
+        "country": "Mali",
+        "city": "Fort Javonte"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 28,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "b7650b25-7547-49a4-84d1-60fa9e610d8a",
+      "fromAccount": "71520517",
+      "toAccount": "01414696",
+      "amount": 455364.46,
+      "currency": "BND",
+      "transactionType": "ACH",
+      "description": "invoice transaction at Feest - McDermott using card ending with ***(...6251) for SCR 265.99 in account ***93892420",
+      "timestamp": "2025-12-30T13:04:39.598Z",
+      "location": {
+        "country": "Ecuador",
+        "city": "Selenahaven"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 29,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "8da13cf0-b9f3-4e7e-8161-9dbce528a21d",
+      "fromAccount": "42646343",
+      "toAccount": "62709913",
+      "amount": 245646.03,
+      "currency": "CNY",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Hudson, Moen and Beier using card ending with ***(...9825) for SEK 844.64 in account ***17485533",
+      "timestamp": "2025-12-30T16:11:57.388Z",
+      "location": {
+        "country": "India",
+        "city": "South Cloyd"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 100,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "d0c890b8-7b40-4f7f-a734-6cd27bd67e3d",
+      "fromAccount": "63346893",
+      "toAccount": "76680788",
+      "amount": 892698.84,
+      "currency": "NPR",
+      "transactionType": "ACH",
+      "description": "withdrawal transaction at Nikolaus, Moen and Zemlak using card ending with ***(...2446) for SDG 17.90 in account ***04309181",
+      "timestamp": "2025-12-30T16:36:15.959Z",
+      "location": {
+        "country": "Mexico",
+        "city": "Janetton"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 78,
+      "status": "CLEARED"
+    },
+    {
+      "id": "9988b7d2-dde7-4500-befb-198827736310",
+      "fromAccount": "65307266",
+      "toAccount": "36489188",
+      "amount": 565850.71,
+      "currency": "MUR",
+      "transactionType": "CASH",
+      "description": "deposit transaction at Turcotte - Senger using card ending with ***(...9971) for TOP 132.37 in account ***13076638",
+      "timestamp": "2025-12-30T04:41:01.092Z",
+      "location": {
+        "country": "Russian Federation",
+        "city": "Lake Dustinchester"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 76,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "694a76cb-5e53-4a46-b7a5-38565f1175a7",
+      "fromAccount": "67883811",
+      "toAccount": "44418924",
+      "amount": 348741.1,
+      "currency": "MXN",
+      "transactionType": "CHECK",
+      "description": "payment transaction at Jakubowski - Gerlach using card ending with ***(...7460) for KWD 536.32 in account ***24945231",
+      "timestamp": "2025-12-30T03:12:48.037Z",
+      "location": {
+        "country": "Afghanistan",
+        "city": "Lake Damonfort"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 36,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "965c84b9-0b0d-402d-af32-db3343d13522",
+      "fromAccount": "75633002",
+      "toAccount": "30458000",
+      "amount": 822001.94,
+      "currency": "NGN",
+      "transactionType": "CARD",
+      "description": "deposit transaction at Feest and Sons using card ending with ***(...2995) for BND 713.39 in account ***60754845",
+      "timestamp": "2025-12-30T17:01:59.716Z",
+      "location": {
+        "country": "Anguilla",
+        "city": "Connberg"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 99,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "66dc70c1-108a-4ded-8635-5f51ed2057fb",
+      "fromAccount": "96267531",
+      "toAccount": "75419703",
+      "amount": 216981.81,
+      "currency": "PAB",
+      "transactionType": "ACH",
+      "description": "invoice transaction at Daniel LLC using card ending with ***(...6970) for AOA 955.30 in account ***96830391",
+      "timestamp": "2025-12-30T07:49:12.979Z",
+      "location": {
+        "country": "Angola",
+        "city": "West Michelle"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 85,
+      "status": "CLEARED"
+    },
+    {
+      "id": "b37ada84-fc0f-44a5-a49f-d0d49883fb22",
+      "fromAccount": "92193467",
+      "toAccount": "33844721",
+      "amount": 136653.82,
+      "currency": "PLN",
+      "transactionType": "CHECK",
+      "description": "payment transaction at Boyer - Strosin using card ending with ***(...3472) for PGK 144.33 in account ***18985181",
+      "timestamp": "2025-12-30T08:32:50.672Z",
+      "location": {
+        "country": "Guam",
+        "city": "Weymouth Town"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 73,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "9635580a-a53d-450d-a698-e94173d88f22",
+      "fromAccount": "77839496",
+      "toAccount": "78406060",
+      "amount": 315021.2,
+      "currency": "PAB",
+      "transactionType": "CARD",
+      "description": "payment transaction at Pollich Inc using card ending with ***(...0763) for MRU 694.81 in account ***88527510",
+      "timestamp": "2025-12-30T14:29:25.757Z",
+      "location": {
+        "country": "Bosnia and Herzegovina",
+        "city": "San Buenaventura (Ventura)"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 53,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "9e1e275a-b988-42da-9bc1-4230f235bfee",
+      "fromAccount": "04358701",
+      "toAccount": "48206785",
+      "amount": 365807.31,
+      "currency": "ZWL",
+      "transactionType": "CASH",
+      "description": "withdrawal transaction at Brakus - Runolfsdottir using card ending with ***(...7447) for SSP 130.64 in account ***07246502",
+      "timestamp": "2025-12-30T12:07:12.490Z",
+      "location": {
+        "country": "Kuwait",
+        "city": "Fort Brendonworth"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 47,
+      "status": "CLEARED"
+    },
+    {
+      "id": "6eeef455-9e62-4ed2-8769-3ca3303ff0ab",
+      "fromAccount": "71028961",
+      "toAccount": "99502075",
+      "amount": 790904.67,
+      "currency": "KHR",
+      "transactionType": "ACH",
+      "description": "invoice transaction at MacGyver, Lynch and Ruecker using card ending with ***(...3683) for SBD 985.84 in account ***82476347",
+      "timestamp": "2025-12-29T23:14:32.994Z",
+      "location": {
+        "country": "Palestine",
+        "city": "New Bessieworth"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 55,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "9fcd8339-9e7c-4826-8ab3-044d4fc16c01",
+      "fromAccount": "64042872",
+      "toAccount": "80090945",
+      "amount": 191717.4,
+      "currency": "BYN",
+      "transactionType": "CASH",
+      "description": "payment transaction at Kemmer, Crona and Kreiger using card ending with ***(...2504) for VND 740.51 in account ***71561777",
+      "timestamp": "2025-12-30T13:22:15.444Z",
+      "location": {
+        "country": "Virgin Islands, British",
+        "city": "South Wilburnfurt"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 80,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "311f4eb7-ac07-4635-92ed-9e9b19f6c952",
+      "fromAccount": "07655070",
+      "toAccount": "71134565",
+      "amount": 261124.43,
+      "currency": "XOF",
+      "transactionType": "WIRE",
+      "description": "deposit transaction at Champlin LLC using card ending with ***(...4483) for IQD 20.95 in account ***57895666",
+      "timestamp": "2025-12-30T10:39:20.791Z",
+      "location": {
+        "country": "Bosnia and Herzegovina",
+        "city": "Euless"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 66,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "cdf7941f-89b5-43c0-86d4-66b256857e1b",
+      "fromAccount": "87485753",
+      "toAccount": "18571771",
+      "amount": 920346.78,
+      "currency": "EUR",
+      "transactionType": "ACH",
+      "description": "deposit transaction at Gleichner - Bahringer using card ending with ***(...5845) for VES 915.37 in account ***59663770",
+      "timestamp": "2025-12-30T03:05:10.192Z",
+      "location": {
+        "country": "Morocco",
+        "city": "East Orlandoshire"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 53,
+      "status": "FLAGGED"
+    },
+    {
+      "id": "fe030de0-3993-4da3-95f1-4e0934736899",
+      "fromAccount": "25482755",
+      "toAccount": "24982153",
+      "amount": 691241.6,
+      "currency": "AED",
+      "transactionType": "CASH",
+      "description": "invoice transaction at Wintheiser, Morar and Walter using card ending with ***(...8296) for PKR 319.72 in account ***41034310",
+      "timestamp": "2025-12-30T08:43:18.913Z",
+      "location": {
+        "country": "Bosnia and Herzegovina",
+        "city": "Schenectady"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT"
+      ],
+      "riskScore": 52,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "0da1bb20-192a-4a22-92d3-457ee3303b31",
+      "fromAccount": "55198778",
+      "toAccount": "06950553",
+      "amount": 224967.56,
+      "currency": "SHP",
+      "transactionType": "WIRE",
+      "description": "invoice transaction at Simonis Group using card ending with ***(...1763) for BWP 245.00 in account ***43730316",
+      "timestamp": "2025-12-30T11:02:24.183Z",
+      "location": {
+        "country": "Reunion",
+        "city": "Deshawnstad"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 77,
+      "status": "UNDER_INVESTIGATION"
+    },
+    {
+      "id": "51e2ac3d-3843-4fb7-9b7a-b607cb97f1a7",
+      "fromAccount": "98590025",
+      "toAccount": "89593813",
+      "amount": 383400.33,
+      "currency": "KHR",
+      "transactionType": "CHECK",
+      "description": "withdrawal transaction at Nikolaus LLC using card ending with ***(...7580) for BMD 477.22 in account ***82813143",
+      "timestamp": "2025-12-30T16:46:13.959Z",
+      "location": {
+        "country": "Bahamas",
+        "city": "McGlynnfurt"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN"
+      ],
+      "riskScore": 0,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "e3c75efa-f7cc-4dc2-be7a-d5996b8e59be",
+      "fromAccount": "82576796",
+      "toAccount": "98988532",
+      "amount": 291311.85,
+      "currency": "VES",
+      "transactionType": "CARD",
+      "description": "withdrawal transaction at Reichel - Rosenbaum using card ending with ***(...3204) for RUB 930.99 in account ***39875962",
+      "timestamp": "2025-12-30T09:19:30.048Z",
+      "location": {
+        "country": "South Africa",
+        "city": "Queenstad"
+      },
+      "suspiciousFlags": [
+        "HIGH_AMOUNT",
+        "UNUSUAL_PATTERN",
+        "CROSS_BORDER"
+      ],
+      "riskScore": 31,
+      "status": "FLAGGED"
+    }
+  ],
+  "suspiciousEntities": [
+    {
+      "id": "c69aa9f2-be01-4d16-893e-d11735515539",
+      "name": "Mr. Emanuel Bosco",
+      "type": "ORGANIZATION",
+      "watchlistType": "ADVERSE_MEDIA",
+      "country": "Malaysia",
+      "addedDate": "2025-01-02T02:27:26.443Z",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "id": "78f78881-6e1a-4925-a58e-7e757df5acd0",
+      "name": "Dr. Bryan Becker",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Lebanon",
+      "addedDate": "2025-12-03T07:18:50.441Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "7965d2b7-f326-4173-baa3-881a090b2394",
+      "name": "Jessie Veum",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Wallis and Futuna",
+      "addedDate": "2025-02-09T22:04:14.237Z",
+      "riskLevel": "HIGH"
+    },
+    {
+      "id": "addb7064-05a6-4505-bbe1-75faaa51157d",
+      "name": "Vicki Ledner I",
+      "type": "ORGANIZATION",
+      "watchlistType": "ADVERSE_MEDIA",
+      "country": "Virgin Islands, U.S.",
+      "addedDate": "2025-04-02T15:21:56.861Z",
+      "riskLevel": "HIGH"
+    },
+    {
+      "id": "abcb1017-742c-4be8-9a25-05207a0c151c",
+      "name": "Lance Doyle II",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Mayotte",
+      "addedDate": "2025-12-29T15:31:42.170Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "c6cd9170-51c8-4a72-8fbd-9a84ed385bd5",
+      "name": "Abraham Shanahan",
+      "type": "INDIVIDUAL",
+      "watchlistType": "PEP",
+      "country": "Panama",
+      "addedDate": "2025-05-02T07:17:16.764Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "4eba469a-f4b3-4c1c-a9ef-6c6f78c7d0e6",
+      "name": "Hugh Carter DVM",
+      "type": "INDIVIDUAL",
+      "watchlistType": "ADVERSE_MEDIA",
+      "country": "Grenada",
+      "addedDate": "2025-11-01T06:09:58.782Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "71253bb0-29a1-474e-8cb2-51b615070e0a",
+      "name": "Jaime O'Kon",
+      "type": "ORGANIZATION",
+      "watchlistType": "PEP",
+      "country": "Lesotho",
+      "addedDate": "2025-02-27T03:40:04.146Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "0ee2580f-91c7-4b6c-9e06-3c0db222de97",
+      "name": "Juanita Goldner",
+      "type": "ORGANIZATION",
+      "watchlistType": "ADVERSE_MEDIA",
+      "country": "Congo",
+      "addedDate": "2025-12-27T23:45:34.069Z",
+      "riskLevel": "HIGH"
+    },
+    {
+      "id": "5d3c1079-cd84-41bc-94fd-5f7b2cd1b8c1",
+      "name": "Samantha Hintz-Morissette",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Marshall Islands",
+      "addedDate": "2025-10-01T04:41:29.466Z",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "id": "50888de8-5c81-419c-9207-2a8a311b9bd4",
+      "name": "Miss Ellen Jerde",
+      "type": "ORGANIZATION",
+      "watchlistType": "PEP",
+      "country": "South Georgia and the South Sandwich Islands",
+      "addedDate": "2025-08-26T23:06:21.872Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "32b36cc9-1b61-4826-bbb6-ca36c4ab8794",
+      "name": "Drew Cronin",
+      "type": "INDIVIDUAL",
+      "watchlistType": "PEP",
+      "country": "Montenegro",
+      "addedDate": "2025-08-06T02:13:03.870Z",
+      "riskLevel": "HIGH"
+    },
+    {
+      "id": "1ae437c1-e89d-43b1-a20d-db835a9c15c7",
+      "name": "Marianne Braun",
+      "type": "INDIVIDUAL",
+      "watchlistType": "PEP",
+      "country": "Cyprus",
+      "addedDate": "2025-07-03T06:40:28.268Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "b755706c-1cf6-415c-9615-6d13e12525c6",
+      "name": "Willie Torphy",
+      "type": "INDIVIDUAL",
+      "watchlistType": "PEP",
+      "country": "Cayman Islands",
+      "addedDate": "2025-03-16T16:28:39.585Z",
+      "riskLevel": "HIGH"
+    },
+    {
+      "id": "2b1aa51d-ffe5-4a75-8559-e3e431b78aca",
+      "name": "Loren Kilback Jr.",
+      "type": "ORGANIZATION",
+      "watchlistType": "SANCTIONS",
+      "country": "Slovenia",
+      "addedDate": "2025-06-05T02:08:45.799Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "4075fcde-295e-4e57-b75b-f4d17c6ed94f",
+      "name": "Dr. Edward Bruen MD",
+      "type": "ORGANIZATION",
+      "watchlistType": "ADVERSE_MEDIA",
+      "country": "Democratic People's Republic of Korea",
+      "addedDate": "2025-03-24T19:07:42.029Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "4507e4e8-a391-4172-8316-d10cf68addb9",
+      "name": "Eva Rowe",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Ethiopia",
+      "addedDate": "2025-05-19T09:32:27.856Z",
+      "riskLevel": "LOW"
+    },
+    {
+      "id": "9d0ce1ad-5232-4339-ab7e-4dc437a110b2",
+      "name": "Herbert Romaguera",
+      "type": "INDIVIDUAL",
+      "watchlistType": "PEP",
+      "country": "Cuba",
+      "addedDate": "2025-08-26T19:19:31.397Z",
+      "riskLevel": "HIGH"
+    },
+    {
+      "id": "3551c074-a286-4f40-911a-6e54a9303f1e",
+      "name": "Blanche Feest",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Saint Martin",
+      "addedDate": "2025-04-24T07:54:00.846Z",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "id": "83b37927-e903-462a-859c-c3a10f5ff156",
+      "name": "Muriel Kuhn",
+      "type": "INDIVIDUAL",
+      "watchlistType": "SANCTIONS",
+      "country": "Bangladesh",
+      "addedDate": "2025-03-06T17:55:39.311Z",
+      "riskLevel": "MEDIUM"
+    }
+  ]
+}
